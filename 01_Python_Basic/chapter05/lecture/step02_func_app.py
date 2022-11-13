@@ -77,7 +77,8 @@ def pytha(s, t) :
     c = s**2 + t**2
     print("피타고라스의 정리 : 3변의 길이 : ",a,b,c)
 
-pytha(2, 1)
+#pytha(2, 1)
+pytha(1, 1)
     
 9+16 # 25
 
