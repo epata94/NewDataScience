@@ -1,0 +1,7 @@
+#계정/패스워드@주소:포트/SID
+# Oracle XE 설치
+# SQL PLUS 접속
+# ALTER SESSION SET "_ORACLE_SCRIPT"=true;
+# CREATE USER student IDENTIFIED BY 1111;
+# grant connect, resource, dba to student;
+# SQL Developer에서 새로운 새선을 생성한다.

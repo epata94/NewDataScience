@@ -1,0 +1,54 @@
+create database erd_students;
+use erd_students;
+CREATE TABLE IF NOT EXISTS Basic_Student_Info
+                          (Student_ID VARCHAR(15),
+                          Name VARCHAR(10),
+                          Sex VARCHAR(5),
+                          Age INT,
+                          Major VARCHAR(30));
+INSERT INTO Basic_Student_Info VALUES ('ITT001','이영호','남',45,'경영학');
+INSERT INTO Basic_Student_Info VALUES ('ITT002','윤민선','여',25,'컴퓨터공학');
+
+CREATE TABLE IF NOT EXISTS Student_Language
+                          (Student_ID VARCHAR(15),
+                          Name VARCHAR(10),
+                          Level VARCHAR(5),
+                          Period VARCHAR(10));
+
+INSERT INTO Student_Language VALUES ('ITT002','C','중','1년');
+INSERT INTO Student_Language VALUES ('ITT002','Java','하','1년');
+INSERT INTO Student_Language VALUES ('ITT002','C++','중','6개월');
+
+grant all privileges on *.* to 'open_source'@'localhost';
+
+# Equi Join
+SELECT * FROM Basic_Student_Info b, Student_Language s
+WHERE b.Student_ID = s.Student_ID;
++------------+--------+------+------+------------+------------+------+-------+--------+
+| Student_ID | Name   | Sex  | Age  | Major      | Student_ID | Name | Level | Period |
++------------+--------+------+------+------------+------------+------+-------+--------+
+| ITT002     | 윤민선 | 여   |   25 | 컴퓨터공학 | ITT002     | C    | 중    | 1년    |
+| ITT002     | 윤민선 | 여   |   25 | 컴퓨터공학 | ITT002     | Java | 하    | 1년    |
+| ITT002     | 윤민선 | 여   |   25 | 컴퓨터공학 | ITT002     | C++  | 중    | 6개월  |
++------------+--------+------+------+------------+------------+------+-------+--------+
+
+#Inner join
+SELECT * FROM Basic_Student_Info b INNER JOIN Student_Language s
+ON b.Student_ID = s.Student_ID;
++------------+--------+------+------+------------+------------+------+-------+--------+
+| Student_ID | Name   | Sex  | Age  | Major      | Student_ID | Name | Level | Period |
++------------+--------+------+------+------------+------------+------+-------+--------+
+| ITT002     | 윤민선 | 여   |   25 | 컴퓨터공학 | ITT002     | C    | 중    | 1년    |
+| ITT002     | 윤민선 | 여   |   25 | 컴퓨터공학 | ITT002     | Java | 하    | 1년    |
+| ITT002     | 윤민선 | 여   |   25 | 컴퓨터공학 | ITT002     | C++  | 중    | 6개월  |
++------------+--------+------+------+------------+------------+------+-------+--------+
+
+#Join with USING
+SELECT * FROM Basic_Student_Info b JOIN Student_Language s USING(Student_ID);
++------------+--------+------+------+------------+------+-------+--------+
+| Student_ID | Name   | Sex  | Age  | Major      | Name | Level | Period |
++------------+--------+------+------+------------+------+-------+--------+
+| ITT002     | 윤민선 | 여   |   25 | 컴퓨터공학 | C    | 중    | 1년    |
+| ITT002     | 윤민선 | 여   |   25 | 컴퓨터공학 | Java | 하    | 1년    |
+| ITT002     | 윤민선 | 여   |   25 | 컴퓨터공학 | C++  | 중    | 6개월  |
++------------+--------+------+------+------------+------+-------+--------+
