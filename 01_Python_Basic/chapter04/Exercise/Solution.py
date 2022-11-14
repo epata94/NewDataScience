@@ -2,6 +2,7 @@
 a = [1, 3, 5, 4, 2]
 a.sort( )
 a.reverse( )
+#a.sort(reverse=True)
 print(a)
 
 # Q2
@@ -23,7 +24,11 @@ print(b)          # [1,2,3,4,5] 출력
 
 # Q5
 
-shop = {'kim99': 12000, 'lee66': 11000, 'han55': 3000, 'hong77': 5000, 'hwang33': 18000}
+shop = {'kim99': 12000,
+        'lee66': 11000,
+        'han55': 3000,
+        'hong77': 5000,
+        'hwang33': 18000}
 num = 1
 
 for k in shop: # k = key
@@ -36,7 +41,7 @@ shop[TARGET_ID] = 5000
 
 # Q6-1
 for id in shop:
-    if id == 'han55':
+    if id == TARGET_ID:
         print(f'{id}님의 마일리지가 {shop[id]}점으로 수정되었습니다.')
 # Q6-2
 print(f'{TARGET_ID}님의 마일리지가 {shop.get(TARGET_ID)}점으로 수정되었습니다.')
@@ -62,7 +67,13 @@ for id in shop:
 print(f'{max_id}님의 {result}점이 가장 높은 점수입니다.')
 
 # Q9
-temperature = {'월': 25.5, '화': 28.3, '수': 33.2, '목': 32.1, '금': 17.3, '토': 35.3, '일': 33.3}
+temperature = {'월': 25.5,
+               '화': 28.3,
+               '수': 33.2,
+               '목': 32.1,
+               '금': 17.3,
+               '토': 35.3,
+               '일': 33.3}
 
 LINE_NUM = 54
 print('-' * LINE_NUM)
