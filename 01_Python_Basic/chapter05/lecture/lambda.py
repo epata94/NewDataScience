@@ -28,7 +28,8 @@ print(result2)
 # 람다 함수와 filter
 # 일반 함수 버전
 def is_even(x):
-    return x % 2 == 0
+    #return x % 2 == 0
+    return x % 2 == 1
 
 result1 = list(filter(is_even, range(10)))  # [0 ~ 9]
 print(result1)

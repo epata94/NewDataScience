@@ -4,6 +4,7 @@ import json
 import time
 
 access_key=""
+yyyymmdd=''
 
 def get_Request_URL(url):                 ## (1) 기상 정보(동네예보정보 조회 서비스) / (2) 통합대기환경 정보(대기오염정보 조회 서비스)
     req = urllib.request.Request(url)     ## request 날리는 함수
@@ -43,8 +44,9 @@ def Make_Weather_Json(day_time):     ## (1) 기상 정보(동네예보정보 조
 
     print('동구_신암동_초단기예보조회_%s_%s.json SAVED\n' % (yyyymmdd, day_time))
 
-def get_Realtime_Weather_Info():        
-	시간 정보를 보정하여 Make_Weather_Json()를 호출한다.
+def get_Realtime_Weather_Info():
+    pass
+#	시간 정보를 보정하여 Make_Weather_Json()를 호출한다.
     
 
 json_weather_result = []

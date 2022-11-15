@@ -61,7 +61,7 @@ def main():
     nTotal = 0
     nItems = 100
 
-    nStartYear = 2011
+    nStartYear = 2016
     nEndYear = 2017
 
     for year in range(nStartYear, nEndYear):

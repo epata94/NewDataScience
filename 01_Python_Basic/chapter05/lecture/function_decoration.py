@@ -19,6 +19,6 @@ def add_operation(count):
     for i in range(1, count + 1):
         sum+=i
 
-MAX_COUNT = 10000
+MAX_COUNT = 100000
 print_hello(MAX_COUNT)
 add_operation(MAX_COUNT)
