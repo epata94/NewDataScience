@@ -35,9 +35,11 @@ class Account:  # outer -> class
 acc = Account(1000, '홍길동', '125-152-4125-41') # 생성자
 
 # object.member()
-#acc.__balance # error
+# acc.__balance # error
+
 bal = acc.getBalance()
 print('계좌정보 : ', bal) # 계좌정보 :  (1000, '홍길동', '125-152-4125-41')
+print('계좌정보 : ', acc.__balance) # 계좌정보 :  (1000, '홍길동', '125-152-4125-41')
 
 # 10,000원 입금
 acc.deposit(10000)

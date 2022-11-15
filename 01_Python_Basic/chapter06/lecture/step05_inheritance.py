@@ -41,12 +41,12 @@ class Sub(Super) : # 클래스 상속
         self.gender = gender
         
     # 메서드 확장
-    def display(self):
-        print('name : %s, age : %d, gender : %s'
-              %(self.name, self.age, self.gender))
+    # def display(self):
+    #     print('name : %s, age : %d, gender : %s'
+    #           %(self.name, self.age, self.gender))
     
 sub = Sub('자식', 25, '여자')
-sub.display() # 자식 멤버 호출 
+# sub.display() # 자식 멤버 호출
 # name : 자식, age : 25, gender : 여자            
         
 # 2. super()
@@ -56,8 +56,8 @@ class Parent :
 
     # 생성자 : 객체 + 초기화 
     def __init__(self, name, job):
-        self.name = name
-        self.job = job
+        self.name = f'<{name}>'
+        self.job = f'<{job}>'
         
     # 멤버 함수(method)
     def display(self):
@@ -75,8 +75,10 @@ class Children(Parent): # Parent(member) -> Childen1(member)
     # 생성자
     def __init__(self, name, job, gender):
         # 부모 생성자 호출 
-        super().__init__(name, job) # name, job 초기화
-        self.gender = gender # 자식 멤버
+       super().__init__(name, job) # name, job 초기화
+       # self.name = name
+       # self.job = job
+       self.gender = gender # 자식 멤버
 
     # 멤버 함수(method) 
     def display(self): # 함수 재정의

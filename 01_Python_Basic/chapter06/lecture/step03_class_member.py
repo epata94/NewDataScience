@@ -19,6 +19,8 @@ class DatePro :
     # 객체 메서드(instance method)
     def display(self):
         print("%d-%d-%d"%(self.year, self.month, self.day))
+
+
         
     # 클래스 메서드(class method)
     @classmethod # 함수 장식자 
@@ -32,8 +34,10 @@ class DatePro :
 # 객체 멤버
 date = DatePro(1995, 10, 25) #  생성자
 print(date.content) # 날짜 처리 클래스
+date.content = '인스턴스로 날짜 처리 클래스 시작'
+print(date.content)
 print(date.year) # 1995
-date.display() # 1995-10-25
+date.display() # 1995-10-252
 
 # 클래스 멤버
 print(DatePro.content) # 날짜 처리 클래스
