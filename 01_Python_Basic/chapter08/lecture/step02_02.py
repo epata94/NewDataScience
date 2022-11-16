@@ -10,4 +10,3 @@ with open('D:/Pywork/NewDataScience/01_Python_Basic\chapter08/data/ftest.txt', m
         print(line.strip())
 # exam01
 
-mean()
