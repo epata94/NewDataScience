@@ -18,6 +18,9 @@ class Flight:
     def fly(self):
         print('날다, fly 원형 메서드')
 
+    def eat(self):
+        print('먹다')
+
 
 # (2) 자식 클래스 : 비행기
 class Airplane(Flight) :
@@ -39,6 +42,9 @@ class PaperAirplane(Flight) :
     # 함수 재정의
     def fly(self):
         print('종이 비행기가 날다.')
+
+    def jump(self):
+        print('종이 비행기가 뛴다')
 
 # (3) 객체 생성
 # 부모 객체 = 자식 객체(자식1, 자식2)

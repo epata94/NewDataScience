@@ -37,7 +37,7 @@ print('minus=', m())
 # 클래스 정의
 class calc_class :
     # 변수 선언
-    x = y = 0
+    # x = y = 0
     
     # 생성자 : 객체 생성 + [멤버변수 초기화] 
     def __init__(self, a, b):
@@ -60,7 +60,8 @@ class calc_class :
     
       
 # class(1) -> object(n) 생성 
-obj1 = calc_class(10, 20) # 생성자 -> 객체1  
+obj1 = calc_class(10, 20) # 생성자 -> 객체1
+
 
 # object.member()  
 print('plus = ', obj1.plus()) # plus =  30

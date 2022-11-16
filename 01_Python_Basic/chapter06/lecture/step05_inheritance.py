@@ -41,9 +41,9 @@ class Sub(Super) : # 클래스 상속
         self.gender = gender
         
     # 메서드 확장
-    # def display(self):
-    #     print('name : %s, age : %d, gender : %s'
-    #           %(self.name, self.age, self.gender))
+    def display(self):
+        print('name : %s, age : %d, gender : %s'
+              %(self.name, self.age, self.gender))
     
 sub = Sub('자식', 25, '여자')
 # sub.display() # 자식 멤버 호출
