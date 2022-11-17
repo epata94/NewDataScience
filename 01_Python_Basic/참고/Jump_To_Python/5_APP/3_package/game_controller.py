@@ -23,5 +23,5 @@ sys.path.append('new_pkg')
 # echo.echo_test()
 # wav.wav_test()
 
-from game.graphic.render import render_test
+from pkg_test.game import render_test
 render_test()
