@@ -1,6 +1,5 @@
-a = [1,2,3,4,5,6,7,8,9,10]
-b=0
-for i in range(len(a)) :
-	b=+a[i]
-
-print(b)
+result = 0
+for n in range(1, 1000):
+    if n % 3 == 0 or n % 5 == 0:
+        result += n
+print(result)
