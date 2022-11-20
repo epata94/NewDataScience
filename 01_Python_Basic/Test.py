@@ -1,5 +1,10 @@
-result = 0
-for n in range(1, 1000):
-    if n % 3 == 0 or n % 5 == 0:
-        result += n
-print(result)
+data = 10
+print(type(data))
+data = 10.1
+print(type(data))
+data = '10.1'
+print(type(data))
+data = True
+print(type(data))
+data = [1,2,3,4]
+print(type(data))
