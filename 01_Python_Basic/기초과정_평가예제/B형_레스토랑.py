@@ -9,15 +9,12 @@ class Restaurant:
                 self.number_served = int(customer_log)
         except FileNotFoundError:
             self.number_served = 0
-            # with open("./customer_file/고객서빙현황로그.txt", 'w', encoding='UTF-8') as customer_f:
-            #     customer_f.write("손님수\t누적손님수\t\n")
-            #     self.number_served = 0
 
     def describe_restaurant(self):
-        print("저희 레스토랑 명칭은 '%s'이고 %s 전문점입니다.\n" % (self.restaurant_name, self.cuisine_type))
+        print(f"저희 레스토랑 명칭은 '{self.restaurant_name}'이고 {self.cuisine_type} 전문점입니다.\n")
 
     def open_restaurant(self):
-        print("저희 %s 레스토랑 오픈했습니다. 어서오세요\n" % self.restaurant_name)
+        print(f"저희 {self.restaurant_name} 레스토랑 오픈했습니다. 어서오세요\n")
 
     def reset_number_served(self):
         self.today_customer = 0
@@ -26,14 +23,13 @@ class Restaurant:
     def increment_number_served(self, number):
         self.today_customer += number
         self.number_served += number
-        print("손님 %d명 들어오셨습니다. 자리를 안내해 드리겠습니다.\n" % number)
+        print(f"손님 {number}명 들어오셨습니다. 자리를 안내해 드리겠습니다.\n")
 
     def check_customer_number(self):
-        print("오늘 총 %d명 손님께서 오셨습니다. (전체 누적 손님: %d) \n" % (self.today_customer, self.number_served))
+        print(f"오늘 총 {self.today_customer}명 손님께서 오셨습니다. (전체 누적 손님: {self.number_served}) \n")
 
     def __del__(self):
-        print("%s 레스토랑 문닫습니다." % self.restaurant_name)
-        # self.number_served += self.today_customer
+        print(f"{self.restaurant_name} 레스토랑 문닫습니다.")
         with open("고객서빙현황로그.txt", 'a', encoding='UTF-8') as customer_f:
             customer_f.write("%d\t%d\n" % (self.today_customer, self.number_served))
 
@@ -41,9 +37,9 @@ class Restaurant:
 rest_name, rest_type = input("레스토랑 이름과 요리 종류를 선택하세요.(공백으로 구분): ").split(" ")
 opening_rest = Restaurant(rest_name, rest_type)
 opening_rest.describe_restaurant()
-yesOrNo = (input("레스토랑을 오픈하시겠습니까? (y / n): ")).lower()
+is_open = (input("레스토랑을 오픈하시겠습니까? (y / n): ")).lower()
 
-if yesOrNo[0] == 'y':
+if is_open[0] == 'y':
     input_num = 0
     opening_rest.open_restaurant()
     while True:
