@@ -34,6 +34,11 @@ class Restaurant:
     def check_customer_number(self):
         print(f'오늘 총 {self.today_customer}명 손님께서 오셨습니다. (전체 누적 손님 : {self.number_served})')
 
+    def __del__(self):
+        print("소멸자 호출")
+        with open("고객서빙현황로그.txt","a",encoding="UTF-8") as file:
+            file.write(f'{self.today_customer}\t{self.number_served}\n')
+
 restaurant_name, cuisine_type=input("레스토랑 이름과 요리 종류를 선택 하세요 (공백으로 구분) 예) 띵호와 중식 : ").split()
 
 restaurant=Restaurant(restaurant_name,cuisine_type)
@@ -47,9 +52,10 @@ while 1:
 
     if customerCount == '-1':
         print(f"{restaurant_name} 레스토랑 문 닫습니다.")
-        with open("고객서빙현황로그.txt","a",encoding="UTF-8") as file:
-            file.write(f'{restaurant.today_customer}\t{restaurant.number_served}\n')
-        quit()
+        # with open("고객서빙현황로그.txt","a",encoding="UTF-8") as file:
+        #     file.write(f'{restaurant.today_customer}\t{restaurant.number_served}\n')
+        # quit()
+        break
 
     elif customerCount == '0':
         restaurant.reset_number_served(0)
@@ -60,3 +66,6 @@ while 1:
 
     elif customerCount == 'p':
         restaurant.check_customer_number()
+
+del restaurant
+print('End')

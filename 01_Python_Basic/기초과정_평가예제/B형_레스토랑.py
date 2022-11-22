@@ -3,6 +3,7 @@ class Restaurant:
         self.restaurant_name = name
         self.cuisine_type = types
         self.today_customer = 0
+        self.number_served = 0
         try:
             with open("고객서빙현황로그.txt", 'r', encoding='UTF-8') as customer_f:
                 customer_log = ((customer_f.readlines())[-1].split("\t"))[1]
