@@ -1,0 +1,5 @@
+https://studyforus.tistory.com/167
+
+한글 표현 관계
+EUC ->  UTF ->  CP949(MS949)
+EUC X   UTF <-  CP949(MS949)
