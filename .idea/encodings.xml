@@ -3,5 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/01_Python_Basic/chapter08/Solution/test.txt" charset="x-windows-949" />
     <file url="file://$PROJECT_DIR$/01_Python_Basic/학생_추가연습문제/jy/메세지.txt" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/02_ETL/01_Pandas_basic/data/korea_movie_list.csv" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/02_ETL/01_Pandas_basic/data/weight_loss.csv" charset="x-windows-949" />
   </component>
 </project>
