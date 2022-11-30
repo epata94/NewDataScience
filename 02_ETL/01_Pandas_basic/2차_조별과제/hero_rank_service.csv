@@ -1,0 +1,610 @@
+,Name,Speed,Power,Gender,Publisher,Strength,Total,rank
+0,Zoom,100.0,100.0,Male,DC Comics,10.0,210.0,163
+1,Zatanna,25.0,100.0,Female,DC Comics,10.0,135.0,339
+2,Yoda,35.0,100.0,Male,George Lucas,55.0,190.0,201
+3,Ymir,30.0,100.0,Male,Marvel Comics,100.0,230.0,118
+4,Yellowjacket II,35.0,35.0,Female,Marvel Comics,10.0,80.0,521
+5,Yellowjacket,15.0,15.0,Male,Marvel Comics,10.0,40.0,599
+6,X-Man,55.0,100.0,Male,Marvel Comics,55.0,210.0,163
+7,X-23,45.0,55.0,Female,Marvel Comics,25.0,125.0,362
+8,Wyatt Wingfoot,15.0,5.0,Male,Marvel Comics,10.0,30.0,606
+9,Wonder Woman,80.0,100.0,Female,DC Comics,100.0,280.0,34
+10,Wonder Man,55.0,65.0,Male,Marvel Comics,100.0,220.0,139
+11,Wonder Girl,25.0,40.0,Female,DC Comics,90.0,155.0,270
+12,Wolverine,50.0,90.0,Male,Marvel Comics,35.0,175.0,235
+13,Wolfsbane,35.0,30.0,Female,Marvel Comics,20.0,85.0,506
+14,Winter Soldier,35.0,60.0,Male,Marvel Comics,35.0,130.0,352
+15,Wildfire,25.0,80.0,Male,DC Comics,35.0,140.0,319
+16,White Canary,35.0,50.0,Female,DC Comics,10.0,95.0,468
+17,Watcher,70.0,100.0,Male,Marvel Comics,80.0,250.0,66
+18,Wasp,60.0,30.0,Female,Marvel Comics,20.0,110.0,417
+19,Warpath,50.0,30.0,Male,Marvel Comics,75.0,155.0,270
+20,Warp,25.0,85.0,Male,DC Comics,10.0,120.0,388
+21,Warlock,80.0,75.0,Male,Marvel Comics,40.0,195.0,190
+22,War Machine,65.0,100.0,Male,Marvel Comics,80.0,245.0,71
+23,Walrus,10.0,15.0,Male,Marvel Comics,30.0,55.0,582
+24,Vulture,45.0,30.0,Male,Marvel Comics,25.0,100.0,453
+25,Vixen,50.0,65.0,Female,DC Comics,40.0,155.0,270
+26,Vision,55.0,100.0,Male,Marvel Comics,75.0,230.0,118
+27,Violet Parr,15.0,80.0,Female,Dark Horse Comics,10.0,105.0,430
+28,Vindicator,55.0,60.0,Female,Marvel Comics,65.0,180.0,227
+29,Vibe,20.0,100.0,Male,DC Comics,10.0,130.0,352
+30,Venompool,65.0,100.0,Male,Marvel Comics,60.0,225.0,129
+31,Venom III,35.0,75.0,Male,Marvel Comics,75.0,185.0,212
+32,Venom II,50.0,55.0,Male,Marvel Comics,60.0,165.0,250
+33,Venom,65.0,90.0,Male,Marvel Comics,60.0,215.0,148
+34,Vegeta,95.0,100.0,Male,Shueisha,100.0,295.0,15
+35,Vanisher,75.0,65.0,Male,Marvel Comics,10.0,150.0,285
+36,Utgard-Loki,25.0,85.0,Male,Marvel Comics,80.0,190.0,201
+37,Ultron,45.0,100.0,Male,Marvel Comics,85.0,230.0,118
+38,Ultragirl,35.0,35.0,Female,Marvel Comics,80.0,150.0,285
+39,Two-Face,15.0,10.0,Male,DC Comics,10.0,35.0,603
+40,Triton,50.0,35.0,Male,Marvel Comics,65.0,150.0,285
+41,Triplicate Girl,25.0,45.0,Female,DC Comics,10.0,80.0,521
+42,Trigon,85.0,100.0,Male,DC Comics,100.0,285.0,22
+43,Toxin,45.0,100.0,Male,Marvel Comics,80.0,225.0,129
+44,Toxin,45.0,100.0,Male,Marvel Comics,75.0,220.0,139
+45,Toxin,70.0,85.0,Male,Marvel Comics,80.0,235.0,103
+46,Toxin,70.0,85.0,Male,Marvel Comics,75.0,230.0,118
+47,Toad,60.0,70.0,Male,Marvel Comics,35.0,165.0,250
+48,Tinkerer,25.0,10.0,Male,Marvel Comics,10.0,45.0,595
+49,Tigra,55.0,35.0,Female,Marvel Comics,35.0,125.0,362
+50,Tiger Shark,50.0,55.0,Male,Marvel Comics,75.0,180.0,227
+51,Thundra,35.0,30.0,Female,Marvel Comics,85.0,150.0,285
+52,Thunderstrike,70.0,45.0,Male,Marvel Comics,80.0,195.0,190
+53,Thunderbird,30.0,15.0,Male,Marvel Comics,35.0,80.0,521
+54,Thor Girl,70.0,100.0,Female,Marvel Comics,85.0,255.0,62
+55,Thor,85.0,100.0,Male,Marvel Comics,100.0,285.0,22
+56,Thing,25.0,40.0,Male,Marvel Comics,85.0,150.0,285
+57,The Presence,100.0,100.0,Male,DC Comics,100.0,300.0,1
+58,The Comedian,20.0,15.0,Male,DC Comics,15.0,50.0,588
+59,Thanos,35.0,100.0,Male,Marvel Comics,100.0,235.0,103
+60,Tempest,45.0,70.0,Female,Marvel Comics,10.0,125.0,362
+61,Taskmaster,50.0,65.0,Male,Marvel Comics,15.0,130.0,352
+62,T-X,30.0,100.0,Female,Dark Horse Comics,65.0,195.0,190
+63,T-850,25.0,85.0,Male,Dark Horse Comics,80.0,190.0,201
+64,T-800,20.0,75.0,Male,Dark Horse Comics,35.0,130.0,352
+65,T-1000,35.0,100.0,Male,Dark Horse Comics,35.0,170.0,245
+66,Synch,25.0,75.0,Male,Marvel Comics,70.0,170.0,245
+67,Sylar,15.0,95.0,Male,NBC - Heroes,10.0,120.0,388
+68,Swarm,50.0,40.0,Male,Marvel Comics,20.0,110.0,417
+69,Swamp Thing,25.0,100.0,Male,DC Comics,95.0,220.0,139
+70,Superman,100.0,100.0,Male,DC Comics,100.0,300.0,1
+71,Supergirl,100.0,100.0,Female,DC Comics,100.0,300.0,1
+72,Superboy-Prime,100.0,100.0,Male,DC Comics,100.0,300.0,1
+73,Superboy,85.0,95.0,Male,DC Comics,95.0,275.0,40
+74,Sunspot,35.0,90.0,Male,Marvel Comics,65.0,190.0,201
+75,Stormtrooper,10.0,5.0,Male,George Lucas,10.0,25.0,608
+76,Storm,50.0,90.0,Female,Marvel Comics,10.0,150.0,285
+77,Steppenwolf,85.0,100.0,Male,DC Comics,100.0,285.0,22
+78,Stephanie Powell,55.0,25.0,Female,ABC Studios,10.0,90.0,479
+79,Steel,55.0,65.0,Male,DC Comics,85.0,205.0,172
+80,Static,45.0,90.0,Male,DC Comics,10.0,145.0,302
+81,Stargirl,50.0,90.0,Female,DC Comics,80.0,220.0,139
+82,Starfire,35.0,60.0,Female,DC Comics,80.0,175.0,235
+83,Stardust,100.0,100.0,Male,Marvel Comics,85.0,285.0,22
+84,Star-Lord,35.0,25.0,Male,Marvel Comics,20.0,80.0,521
+85,Spyke,20.0,50.0,Male,Marvel Comics,15.0,85.0,506
+86,Spock,20.0,60.0,Male,Star Trek,20.0,100.0,453
+87,Spider-Woman III,30.0,60.0,Female,Marvel Comics,50.0,140.0,319
+88,Spider-Woman,45.0,70.0,Female,Marvel Comics,45.0,160.0,261
+89,Spider-Man,70.0,75.0,Male,Marvel Comics,55.0,200.0,182
+90,Spider-Gwen,65.0,70.0,Female,Marvel Comics,55.0,190.0,201
+91,Spider-Girl,60.0,55.0,Female,Marvel Comics,40.0,155.0,270
+92,Speedy,35.0,30.0,Female,DC Comics,10.0,75.0,535
+93,Spectre,100.0,100.0,Male,DC Comics,100.0,300.0,1
+94,Spawn,50.0,100.0,Male,Image Comics,75.0,225.0,129
+95,Space Ghost,35.0,95.0,Male,DC Comics,20.0,150.0,285
+96,Songbird,30.0,55.0,Female,Marvel Comics,40.0,125.0,362
+97,Solomon Grundy,15.0,95.0,Male,DC Comics,95.0,205.0,172
+98,Sobek,25.0,20.0,Male,DC Comics,35.0,80.0,521
+99,Snowbird,30.0,70.0,Female,Marvel Comics,35.0,135.0,339
+100,Skaar,30.0,70.0,Male,Marvel Comics,85.0,185.0,212
+101,Siryn,50.0,50.0,Female,Marvel Comics,10.0,110.0,417
+102,Siren,80.0,95.0,Female,DC Comics,65.0,240.0,84
+103,Sinestro,55.0,100.0,Male,DC Comics,85.0,240.0,84
+104,Silverclaw,35.0,35.0,Female,Marvel Comics,30.0,100.0,453
+105,Silver Surfer,100.0,100.0,Male,Marvel Comics,100.0,300.0,1
+106,Silk,75.0,75.0,Female,Marvel Comics,50.0,200.0,182
+107,Sif,70.0,100.0,Female,Marvel Comics,90.0,260.0,57
+108,Shriek,25.0,45.0,Female,Marvel Comics,10.0,80.0,521
+109,Shocker,25.0,80.0,Male,Marvel Comics,10.0,115.0,403
+110,She-Thing,25.0,25.0,Female,Marvel Comics,75.0,125.0,362
+111,She-Ra,45.0,100.0,Female,Mattel,100.0,245.0,71
+112,She-Hulk,45.0,40.0,Female,Marvel Comics,100.0,185.0,212
+113,Shazam,90.0,100.0,Male,DC Comics,100.0,290.0,18
+114,Shatterstar,45.0,50.0,Male,Marvel Comics,50.0,145.0,302
+115,Shang-Chi,30.0,30.0,Male,Marvel Comics,15.0,75.0,535
+116,Shadowcat,25.0,70.0,Female,Marvel Comics,10.0,105.0,430
+117,Shadow Lass,70.0,80.0,Female,DC Comics,10.0,160.0,261
+118,Shadow King,30.0,100.0,-,Marvel Comics,15.0,145.0,302
+119,Sentry,100.0,100.0,Male,Marvel Comics,100.0,300.0,1
+120,Sebastian Shaw,15.0,40.0,Male,Marvel Comics,85.0,140.0,319
+121,Scorpion,60.0,50.0,Male,Marvel Comics,55.0,165.0,250
+122,Scorpia,45.0,35.0,Female,Marvel Comics,30.0,110.0,417
+123,Scarlet Witch,30.0,100.0,Female,Marvel Comics,10.0,140.0,319
+124,Scarlet Spider,60.0,50.0,Male,Marvel Comics,55.0,165.0,250
+125,Scarecrow,15.0,50.0,Male,DC Comics,10.0,75.0,535
+126,Savage Dragon,55.0,70.0,Male,Image Comics,70.0,195.0,190
+127,Sauron,35.0,100.0,Male,J. R. R. Tolkien,85.0,220.0,139
+128,Saturn Girl,50.0,90.0,Female,DC Comics,10.0,150.0,285
+129,Sasquatch,25.0,15.0,Male,Marvel Comics,80.0,120.0,388
+130,Sandman,50.0,100.0,Male,Marvel Comics,75.0,225.0,129
+131,Sage,15.0,30.0,Female,Marvel Comics,10.0,55.0,582
+132,Sabretooth,40.0,50.0,Male,Marvel Comics,50.0,140.0,319
+133,Rorschach,30.0,25.0,Male,DC Comics,10.0,65.0,560
+134,Ronin,25.0,15.0,Male,Marvel Comics,15.0,55.0,582
+135,Rogue,15.0,80.0,Female,Marvel Comics,10.0,105.0,430
+136,Rocket Raccoon,25.0,30.0,Male,Marvel Comics,5.0,60.0,568
+137,Robin VI,25.0,20.0,Female,DC Comics,10.0,55.0,582
+138,Robin V,35.0,30.0,Male,DC Comics,10.0,75.0,535
+139,Robin III,30.0,30.0,Male,DC Comics,15.0,75.0,535
+140,Robin II,30.0,30.0,Male,DC Comics,15.0,75.0,535
+141,Rip Hunter,10.0,100.0,Male,DC Comics,10.0,120.0,388
+142,Riddler,15.0,10.0,Male,DC Comics,10.0,35.0,603
+143,Rick Flag,25.0,20.0,Male,DC Comics,15.0,60.0,568
+144,Rhino,45.0,40.0,Male,Marvel Comics,80.0,165.0,250
+145,Rey,25.0,90.0,Female,George Lucas,10.0,125.0,362
+146,Red Tornado,70.0,100.0,Male,DC Comics,40.0,210.0,163
+147,Red Skull,15.0,20.0,Male,Marvel Comics,10.0,45.0,595
+148,Red Robin,30.0,30.0,Male,DC Comics,15.0,75.0,535
+149,Red Mist,25.0,20.0,Male,Icon Comics,10.0,55.0,582
+150,Red Hulk,50.0,85.0,Male,Marvel Comics,100.0,235.0,103
+151,Red Hood,25.0,35.0,Male,DC Comics,15.0,75.0,535
+152,Red Arrow,25.0,25.0,Male,DC Comics,20.0,70.0,548
+153,Ray,95.0,100.0,Male,DC Comics,10.0,205.0,172
+154,Raven,30.0,85.0,Female,DC Comics,10.0,125.0,362
+155,Raphael,50.0,60.0,Male,IDW Publishing,20.0,130.0,352
+156,Rachel Pirzad,10.0,55.0,Female,SyFy,5.0,70.0,548
+157,Ra's Al Ghul,35.0,30.0,Male,DC Comics,30.0,95.0,468
+158,Quill,15.0,25.0,Male,Marvel Comics,10.0,50.0,588
+159,Quicksilver,100.0,85.0,Male,Marvel Comics,30.0,215.0,148
+160,Question,30.0,20.0,Male,DC Comics,15.0,65.0,560
+161,Quake,50.0,85.0,Female,Marvel Comics,40.0,175.0,235
+162,Q,20.0,100.0,Male,Star Trek,15.0,135.0,339
+163,Pyro,15.0,55.0,Male,Marvel Comics,10.0,80.0,521
+164,Purple Man,10.0,95.0,Male,Marvel Comics,10.0,115.0,403
+165,Punisher,25.0,45.0,Male,Marvel Comics,20.0,90.0,479
+166,Psylocke,25.0,100.0,Female,Marvel Comics,35.0,160.0,261
+167,Proto-Goblin,25.0,25.0,Male,Marvel Comics,40.0,90.0,479
+168,Professor Zoom,100.0,85.0,Male,DC Comics,10.0,195.0,190
+169,Professor X,15.0,100.0,Male,Marvel Comics,10.0,125.0,362
+170,Predator,25.0,100.0,Male,Dark Horse Comics,30.0,155.0,270
+171,Power Girl,100.0,100.0,Female,DC Comics,100.0,300.0,1
+172,Polaris,45.0,100.0,Female,Marvel Comics,75.0,220.0,139
+173,Poison Ivy,30.0,100.0,Female,DC Comics,15.0,145.0,302
+174,Plastique,25.0,60.0,Female,DC Comics,10.0,95.0,468
+175,Plastic Man,25.0,100.0,Male,DC Comics,65.0,190.0,201
+176,Plantman,25.0,65.0,Male,Marvel Comics,60.0,150.0,285
+177,Phoenix,85.0,100.0,Female,Marvel Comics,100.0,285.0,22
+178,Phantom Stranger,25.0,100.0,Male,DC Comics,10.0,135.0,339
+179,Phantom Girl,25.0,55.0,Female,DC Comics,10.0,90.0,479
+180,Peter Petrelli,25.0,70.0,Male,NBC - Heroes,30.0,125.0,362
+181,Penguin,15.0,45.0,Male,DC Comics,10.0,70.0,548
+182,Paul Blart,25.0,10.0,Male,Sony Pictures,15.0,50.0,588
+183,Parademon,20.0,55.0,-,DC Comics,30.0,105.0,430
+184,Ozymandias,35.0,50.0,Male,DC Comics,20.0,105.0,430
+185,Osiris,60.0,65.0,Male,DC Comics,85.0,210.0,163
+186,Oracle,25.0,20.0,Female,DC Comics,15.0,60.0,568
+187,Onslaught,35.0,100.0,Male,Marvel Comics,100.0,235.0,103
+188,One-Above-All,100.0,100.0,-,Marvel Comics,100.0,300.0,1
+189,One Punch Man,85.0,55.0,Male,Shueisha,100.0,240.0,84
+190,Offspring,35.0,100.0,Male,DC Comics,10.0,145.0,302
+191,Odin,70.0,100.0,Male,Marvel Comics,85.0,255.0,62
+192,Nova,100.0,100.0,Female,Marvel Comics,60.0,260.0,57
+193,Nova,100.0,100.0,Female,Marvel Comics,85.0,285.0,22
+194,Nova,75.0,100.0,Male,Marvel Comics,60.0,235.0,103
+195,Nova,75.0,100.0,Male,Marvel Comics,85.0,260.0,57
+196,Nina Theroux,10.0,70.0,Female,SyFy,5.0,85.0,506
+197,Niki Sanders,35.0,40.0,Female,NBC - Heroes,55.0,130.0,352
+198,Nightwing,35.0,40.0,Male,DC Comics,15.0,90.0,479
+199,Nightcrawler,50.0,80.0,Male,Marvel Comics,10.0,140.0,319
+200,Nick Fury,25.0,25.0,Male,Marvel Comics,15.0,65.0,560
+201,Negasonic Teenage Warhead,10.0,45.0,Female,Marvel Comics,10.0,65.0,560
+202,Nebula,15.0,45.0,Female,Marvel Comics,55.0,115.0,403
+203,Naruto Uzumaki,35.0,100.0,Male,Shueisha,80.0,215.0,148
+204,Namorita,50.0,40.0,Female,Marvel Comics,75.0,165.0,250
+205,Namora,45.0,50.0,Female,Marvel Comics,85.0,180.0,227
+206,Namor,60.0,75.0,Male,Marvel Comics,95.0,230.0,118
+207,Mystique,25.0,65.0,Female,Marvel Comics,15.0,105.0,430
+208,Mysterio,20.0,85.0,Male,Marvel Comics,10.0,115.0,403
+209,Multiple Man,25.0,30.0,Male,Marvel Comics,15.0,70.0,548
+210,Ms Marvel II,25.0,15.0,Female,Marvel Comics,65.0,105.0,430
+211,Mr Incredible,35.0,30.0,Male,Dark Horse Comics,85.0,150.0,285
+212,Mr Immortal,10.0,70.0,Male,Marvel Comics,10.0,90.0,479
+213,Moses Magnum,15.0,55.0,Male,Marvel Comics,30.0,100.0,453
+214,Morlun,35.0,75.0,Male,Marvel Comics,60.0,170.0,245
+215,Moonstone,50.0,75.0,Female,Marvel Comics,70.0,195.0,190
+216,Moon Knight,25.0,30.0,Male,Marvel Comics,40.0,95.0,468
+217,Monica Dawson,35.0,50.0,Female,NBC - Heroes,10.0,95.0,468
+218,Molten Man,25.0,55.0,Male,Marvel Comics,75.0,155.0,270
+219,MODOK,25.0,80.0,Male,Marvel Comics,20.0,125.0,362
+220,Mockingbird,40.0,50.0,Female,Marvel Comics,35.0,125.0,362
+221,Mister Zsasz,35.0,30.0,Male,DC Comics,25.0,90.0,479
+222,Mister Sinister,50.0,100.0,Male,Marvel Comics,50.0,200.0,182
+223,Mister Mxyzptlk,100.0,100.0,Male,DC Comics,85.0,285.0,22
+224,Mister Knife,20.0,15.0,Male,Marvel Comics,10.0,45.0,595
+225,Mister Freeze,15.0,40.0,Male,DC Comics,35.0,90.0,479
+226,Mister Fantastic,20.0,35.0,Male,Marvel Comics,10.0,65.0,560
+227,Miss Martian,60.0,100.0,Female,DC Comics,85.0,245.0,71
+228,Misfit,25.0,95.0,Female,DC Comics,35.0,155.0,270
+229,Mimic,50.0,80.0,Male,Marvel Comics,70.0,200.0,182
+230,Micro Lad,30.0,45.0,Male,DC Comics,30.0,105.0,430
+231,Michelangelo,50.0,60.0,Male,IDW Publishing,15.0,125.0,362
+232,Micah Sanders,15.0,60.0,Male,NBC - Heroes,10.0,85.0,506
+233,Metron,50.0,100.0,Male,DC Comics,10.0,160.0,261
+234,Metallo,25.0,90.0,Male,DC Comics,55.0,170.0,245
+235,Mera,80.0,95.0,Female,DC Comics,65.0,240.0,84
+236,Mephisto,35.0,100.0,Male,Marvel Comics,85.0,220.0,139
+237,Meltdown,15.0,65.0,Female,Marvel Comics,10.0,90.0,479
+238,Medusa,35.0,40.0,Female,Marvel Comics,35.0,110.0,417
+239,Maya Herrera,15.0,60.0,Female,NBC - Heroes,10.0,85.0,506
+240,Maxima,35.0,85.0,Female,DC Comics,90.0,210.0,163
+241,Maverick,15.0,60.0,Male,Marvel Comics,10.0,85.0,506
+242,Matt Parkman,15.0,60.0,Male,NBC - Heroes,10.0,85.0,506
+243,Match,85.0,100.0,Male,DC Comics,95.0,280.0,34
+244,Master Chief,35.0,70.0,Male,Microsoft,75.0,180.0,227
+245,Marvel Girl,50.0,100.0,Female,Marvel Comics,85.0,235.0,103
+246,Martian Manhunter,95.0,100.0,Male,DC Comics,95.0,290.0,18
+247,Mantis,35.0,100.0,Female,Marvel Comics,10.0,145.0,302
+248,Mandarin,25.0,100.0,Male,Marvel Comics,30.0,155.0,270
+249,Man-Wolf,35.0,45.0,Male,Marvel Comics,45.0,125.0,362
+250,Man-Thing,10.0,100.0,Male,Marvel Comics,35.0,145.0,302
+251,Man-Bat,50.0,35.0,Male,DC Comics,20.0,105.0,430
+252,Man of Miracles,100.0,100.0,-,Image Comics,100.0,300.0,1
+253,Magog,25.0,70.0,Male,DC Comics,50.0,145.0,302
+254,Magneto,30.0,95.0,Male,Marvel Comics,80.0,205.0,172
+255,Machine Man,35.0,55.0,-,Marvel Comics,35.0,125.0,362
+256,Mach-IV,60.0,60.0,Male,Marvel Comics,40.0,160.0,261
+257,Luna,85.0,55.0,Female,Marvel Comics,10.0,150.0,285
+258,Luke Skywalker,45.0,100.0,Male,George Lucas,40.0,185.0,212
+259,Luke Cage,30.0,45.0,Male,Marvel Comics,65.0,140.0,319
+260,Longshot,30.0,75.0,Male,Marvel Comics,10.0,115.0,403
+261,Loki,50.0,100.0,Male,Marvel Comics,65.0,215.0,148
+262,Lobo,55.0,100.0,Male,DC Comics,100.0,255.0,62
+263,Lizard,60.0,80.0,Male,Marvel Comics,55.0,195.0,190
+264,Living Tribunal,100.0,100.0,-,Marvel Comics,100.0,300.0,1
+265,Living Brain,35.0,35.0,-,Marvel Comics,55.0,125.0,362
+266,Lightning Lord,25.0,70.0,Male,DC Comics,10.0,105.0,430
+267,Lightning Lad,25.0,60.0,Male,DC Comics,10.0,95.0,468
+268,Light Lass,35.0,70.0,Female,DC Comics,10.0,115.0,403
+269,Lex Luthor,25.0,70.0,Male,DC Comics,55.0,150.0,285
+270,Leonardo,50.0,60.0,Male,IDW Publishing,20.0,130.0,352
+271,Legion,45.0,100.0,Male,Marvel Comics,100.0,245.0,71
+272,Leech,15.0,65.0,Male,Marvel Comics,5.0,85.0,506
+273,Leader,15.0,60.0,Male,Marvel Comics,10.0,85.0,506
+274,Lady Deathstrike,45.0,50.0,Female,Marvel Comics,30.0,125.0,362
+275,Kylo Ren,35.0,100.0,Male,George Lucas,45.0,180.0,227
+276,Krypto,100.0,85.0,Male,DC Comics,80.0,265.0,47
+277,Kraven the Hunter,35.0,25.0,Male,Marvel Comics,35.0,95.0,468
+278,Kraven II,25.0,45.0,Male,Marvel Comics,35.0,105.0,430
+279,Kratos,65.0,100.0,Male,Wildstorm,95.0,260.0,57
+280,Klaw,35.0,65.0,Male,Marvel Comics,40.0,140.0,319
+281,Kingpin,25.0,15.0,Male,Marvel Comics,20.0,60.0,568
+282,King Shark,50.0,90.0,Male,DC Comics,90.0,230.0,118
+283,Kilowog,55.0,100.0,Male,DC Comics,90.0,245.0,71
+284,Killer Frost,15.0,60.0,Female,DC Comics,10.0,85.0,506
+285,Killer Croc,35.0,55.0,Male,DC Comics,55.0,145.0,302
+286,Kid Flash,95.0,20.0,Male,DC Comics,5.0,120.0,388
+287,Kick-Ass,25.0,25.0,Male,Icon Comics,10.0,60.0,568
+288,Kevin 11,15.0,100.0,Male,DC Comics,10.0,125.0,362
+289,Kathryn Janeway,25.0,25.0,Female,Star Trek,10.0,60.0,568
+290,Karate Kid,70.0,50.0,Male,DC Comics,65.0,185.0,212
+291,Kang,60.0,100.0,Male,Marvel Comics,50.0,210.0,163
+292,Justice,35.0,55.0,Male,Marvel Comics,10.0,100.0,453
+293,Junkpile,20.0,85.0,Male,Marvel Comics,40.0,145.0,302
+294,Juggernaut,45.0,85.0,Male,Marvel Comics,100.0,230.0,118
+295,Judge Dredd,40.0,55.0,Male,Rebellion,20.0,115.0,403
+296,Jubilee,25.0,70.0,Female,Marvel Comics,10.0,105.0,430
+297,Jolt,30.0,35.0,Female,Marvel Comics,15.0,80.0,521
+298,Joker,15.0,45.0,Male,DC Comics,10.0,70.0,548
+299,John Wraith,35.0,90.0,Male,Marvel Comics,15.0,140.0,319
+300,John Constantine,10.0,55.0,Male,DC Comics,10.0,75.0,535
+301,JJ Powell,10.0,15.0,Male,ABC Studios,10.0,35.0,603
+302,Jim Powell,25.0,25.0,Male,ABC Studios,40.0,90.0,479
+303,Jessica Jones,50.0,20.0,Female,Marvel Comics,45.0,115.0,403
+304,Jennifer Kale,35.0,75.0,Female,Marvel Comics,10.0,120.0,388
+305,Jean-Luc Picard,20.0,30.0,Male,Star Trek,10.0,60.0,568
+306,Jean Grey,25.0,95.0,Female,Marvel Comics,80.0,200.0,182
+307,Jason Voorhees,25.0,100.0,Male,Dark Horse Comics,35.0,160.0,261
+308,Jar Jar Binks,35.0,25.0,Male,George Lucas,10.0,70.0,548
+309,James T. Kirk,20.0,30.0,Male,Star Trek,15.0,65.0,560
+310,James Bond,20.0,25.0,Male,Titan Books,15.0,60.0,568
+311,Jack-Jack,70.0,100.0,Male,Dark Horse Comics,35.0,205.0,172
+312,Jack of Hearts,100.0,80.0,Male,Marvel Comics,55.0,235.0,103
+313,Isis,75.0,50.0,Female,DC Comics,50.0,175.0,235
+314,Iron Monger,25.0,60.0,Male,Marvel Comics,65.0,150.0,285
+315,Iron Man,60.0,100.0,Male,Marvel Comics,85.0,245.0,71
+316,Iron Fist,35.0,95.0,Male,Marvel Comics,55.0,185.0,212
+317,Invisible Woman,30.0,95.0,Female,Marvel Comics,10.0,135.0,339
+318,Ink,20.0,75.0,Male,Marvel Comics,30.0,125.0,362
+319,Indigo,50.0,100.0,Female,DC Comics,65.0,215.0,148
+320,Indiana Jones,20.0,20.0,Male,George Lucas,10.0,50.0,588
+321,Impulse,100.0,75.0,Male,DC Comics,10.0,185.0,212
+322,Iceman,55.0,100.0,Male,Marvel Comics,35.0,190.0,201
+323,Hyperion,100.0,90.0,Male,Marvel Comics,100.0,290.0,18
+324,Hydro-Man,25.0,70.0,Male,Marvel Comics,15.0,110.0,417
+325,Hybrid,60.0,100.0,Male,Marvel Comics,65.0,225.0,129
+326,Husk,35.0,50.0,Female,Marvel Comics,65.0,150.0,285
+327,Huntress,25.0,35.0,Female,DC Comics,10.0,70.0,548
+328,Human Torch,65.0,90.0,Male,Marvel Comics,15.0,170.0,245
+329,Hulk,65.0,100.0,Male,Marvel Comics,100.0,265.0,47
+330,Hope Summers,15.0,95.0,Female,Marvel Comics,10.0,120.0,388
+331,Hit-Girl,30.0,30.0,Female,Icon Comics,10.0,70.0,548
+332,Hercules,50.0,90.0,Male,Marvel Comics,100.0,240.0,84
+333,Hellcat,35.0,50.0,Female,Marvel Comics,15.0,100.0,453
+334,Hellboy,25.0,75.0,Male,Dark Horse Comics,55.0,155.0,270
+335,Hela,50.0,100.0,Female,Marvel Comics,100.0,250.0,66
+336,Heat Wave,20.0,30.0,Male,DC Comics,10.0,60.0,568
+337,He-Man,75.0,75.0,Male,Mattel,100.0,250.0,66
+338,Hawkman,60.0,85.0,Male,DC Comics,40.0,185.0,212
+339,Hawkgirl,55.0,100.0,Female,DC Comics,30.0,185.0,212
+340,Hawkeye II,10.0,25.0,Female,Marvel Comics,10.0,45.0,595
+341,Hawkeye,25.0,30.0,Male,Marvel Comics,15.0,70.0,548
+342,Hawk,35.0,45.0,Male,DC Comics,40.0,120.0,388
+343,Havok,25.0,75.0,Male,Marvel Comics,10.0,110.0,417
+344,Harry Potter,25.0,100.0,Male,J. K. Rowling,10.0,135.0,339
+345,Harley Quinn,35.0,55.0,Female,DC Comics,15.0,105.0,430
+346,Hancock,70.0,100.0,Male,Sony Pictures,90.0,260.0,57
+347,Han Solo,20.0,45.0,Male,George Lucas,10.0,75.0,535
+348,Groot,35.0,100.0,Male,Marvel Comics,85.0,220.0,139
+349,Green Lantern,50.0,100.0,Female,DC Comics,90.0,240.0,84
+350,Green Lantern,50.0,100.0,Female,DC Comics,90.0,240.0,84
+351,Green Lantern,50.0,100.0,Female,DC Comics,90.0,240.0,84
+352,Green Lantern,50.0,100.0,Female,DC Comics,90.0,240.0,84
+353,Green Lantern,50.0,100.0,Female,DC Comics,80.0,230.0,118
+354,Green Lantern,50.0,100.0,Female,DC Comics,90.0,240.0,84
+355,Green Lantern,45.0,100.0,Male,DC Comics,90.0,235.0,103
+356,Green Lantern,45.0,100.0,Male,DC Comics,90.0,235.0,103
+357,Green Lantern,45.0,100.0,Male,DC Comics,90.0,235.0,103
+358,Green Lantern,45.0,100.0,Male,DC Comics,90.0,235.0,103
+359,Green Lantern,45.0,100.0,Male,DC Comics,80.0,225.0,129
+360,Green Lantern,45.0,100.0,Male,DC Comics,90.0,235.0,103
+361,Green Lantern,50.0,100.0,Male,DC Comics,90.0,240.0,84
+362,Green Lantern,50.0,100.0,Male,DC Comics,90.0,240.0,84
+363,Green Lantern,50.0,100.0,Male,DC Comics,90.0,240.0,84
+364,Green Lantern,50.0,100.0,Male,DC Comics,90.0,240.0,84
+365,Green Lantern,50.0,100.0,Male,DC Comics,80.0,230.0,118
+366,Green Lantern,50.0,100.0,Male,DC Comics,90.0,240.0,84
+367,Green Lantern,55.0,100.0,Male,DC Comics,90.0,245.0,71
+368,Green Lantern,55.0,100.0,Male,DC Comics,90.0,245.0,71
+369,Green Lantern,55.0,100.0,Male,DC Comics,90.0,245.0,71
+370,Green Lantern,55.0,100.0,Male,DC Comics,90.0,245.0,71
+371,Green Lantern,55.0,100.0,Male,DC Comics,80.0,235.0,103
+372,Green Lantern,55.0,100.0,Male,DC Comics,90.0,245.0,71
+373,Green Lantern,25.0,100.0,Male,DC Comics,90.0,215.0,148
+374,Green Lantern,25.0,100.0,Male,DC Comics,90.0,215.0,148
+375,Green Lantern,25.0,100.0,Male,DC Comics,90.0,215.0,148
+376,Green Lantern,25.0,100.0,Male,DC Comics,90.0,215.0,148
+377,Green Lantern,25.0,100.0,Male,DC Comics,80.0,205.0,172
+378,Green Lantern,25.0,100.0,Male,DC Comics,90.0,215.0,148
+379,Green Lantern,75.0,100.0,Male,DC Comics,90.0,265.0,47
+380,Green Lantern,75.0,100.0,Male,DC Comics,90.0,265.0,47
+381,Green Lantern,75.0,100.0,Male,DC Comics,90.0,265.0,47
+382,Green Lantern,75.0,100.0,Male,DC Comics,90.0,265.0,47
+383,Green Lantern,75.0,100.0,Male,DC Comics,80.0,255.0,62
+384,Green Lantern,75.0,100.0,Male,DC Comics,90.0,265.0,47
+385,Green Goblin II,40.0,45.0,Male,Marvel Comics,55.0,140.0,319
+386,Green Goblin,40.0,50.0,Male,Marvel Comics,50.0,140.0,319
+387,Green Arrow,35.0,40.0,Male,DC Comics,15.0,90.0,479
+388,Greedo,15.0,35.0,Male,George Lucas,10.0,60.0,568
+389,Gravity,35.0,70.0,Male,Marvel Comics,35.0,140.0,319
+390,Gorilla Grodd,35.0,100.0,Male,DC Comics,55.0,190.0,201
+391,Goku,75.0,100.0,Male,Shueisha,100.0,275.0,40
+392,Gog,50.0,40.0,Male,DC Comics,35.0,125.0,362
+393,Goblin Queen,25.0,65.0,Female,Marvel Comics,10.0,100.0,453
+394,Gladiator,100.0,80.0,Male,Marvel Comics,100.0,280.0,34
+395,Giganta,25.0,35.0,Female,DC Comics,90.0,150.0,285
+396,Ghost Rider,25.0,100.0,Male,Marvel Comics,55.0,180.0,227
+397,General Zod,100.0,100.0,Male,DC Comics,100.0,300.0,1
+398,Gary Bell,10.0,55.0,Male,SyFy,5.0,70.0,548
+399,Gamora,45.0,55.0,Female,Marvel Comics,85.0,185.0,212
+400,Gambit,25.0,55.0,Male,Marvel Comics,10.0,90.0,479
+401,Galactus,85.0,100.0,Male,Marvel Comics,100.0,285.0,22
+402,Frenzy,35.0,40.0,Female,Marvel Comics,55.0,130.0,352
+403,Franklin Storm,5.0,0.0,-,Marvel Comics,10.0,15.0,609
+404,Franklin Richards,50.0,100.0,Male,Marvel Comics,80.0,230.0,118
+405,Forge,15.0,25.0,-,Marvel Comics,10.0,50.0,588
+406,Flash IV,100.0,100.0,Male,DC Comics,10.0,210.0,163
+407,Flash III,100.0,100.0,Male,DC Comics,10.0,210.0,163
+408,Flash II,100.0,100.0,Male,DC Comics,50.0,250.0,66
+409,Flash,100.0,70.0,Male,DC Comics,10.0,180.0,227
+410,Firestorm,60.0,100.0,Male,DC Comics,80.0,240.0,84
+411,Firestorm,60.0,100.0,Male,DC Comics,55.0,215.0,148
+412,Firestorm,60.0,100.0,Male,DC Comics,80.0,240.0,84
+413,Firestorm,60.0,100.0,Male,DC Comics,55.0,215.0,148
+414,Firestar,55.0,75.0,Female,Marvel Comics,10.0,140.0,319
+415,Firelord,75.0,55.0,-,Marvel Comics,65.0,195.0,190
+416,Firebird,40.0,100.0,Female,Marvel Comics,10.0,150.0,285
+417,Fin Fang Foom,25.0,75.0,Male,Marvel Comics,85.0,185.0,212
+418,Feral,45.0,30.0,-,Marvel Comics,30.0,105.0,430
+419,Faora,75.0,100.0,Female,DC Comics,95.0,270.0,42
+420,Fallen One II,85.0,100.0,Male,Marvel Comics,85.0,270.0,42
+421,Falcon,50.0,25.0,Male,Marvel Comics,15.0,90.0,479
+422,Exodus,30.0,100.0,Male,Marvel Comics,85.0,215.0,148
+423,Evilhawk,35.0,85.0,Male,Marvel Comics,35.0,155.0,270
+424,Evil Deadpool,50.0,100.0,Male,Marvel Comics,35.0,185.0,212
+425,Etrigan,20.0,100.0,Male,DC Comics,85.0,205.0,172
+426,Enchantress,25.0,100.0,Female,DC Comics,15.0,140.0,319
+427,Emma Frost,35.0,100.0,Female,Marvel Comics,65.0,200.0,182
+428,Elongated Man,35.0,45.0,Male,DC Comics,10.0,90.0,479
+429,Elle Bishop,15.0,65.0,Female,NBC - Heroes,10.0,90.0,479
+430,Elektra,30.0,60.0,Female,Marvel Comics,15.0,105.0,430
+431,Electro,50.0,70.0,Male,Marvel Comics,10.0,130.0,352
+432,Elastigirl,35.0,55.0,Female,Dark Horse Comics,35.0,125.0,362
+433,Ego,85.0,75.0,-,Marvel Comics,80.0,240.0,84
+434,Drax the Destroyer,25.0,50.0,Male,Marvel Comics,80.0,155.0,270
+435,Dr Manhattan,45.0,100.0,Male,DC Comics,100.0,245.0,71
+436,Dormammu,85.0,100.0,Male,Marvel Comics,95.0,280.0,34
+437,Doppelganger,60.0,70.0,Male,Marvel Comics,65.0,195.0,190
+438,Doomsday,70.0,100.0,Male,DC Comics,100.0,270.0,42
+439,Donatello,50.0,60.0,Male,IDW Publishing,15.0,125.0,362
+440,Domino,30.0,50.0,Female,Marvel Comics,10.0,90.0,479
+441,Doctor Strange,15.0,100.0,Male,Marvel Comics,10.0,125.0,362
+442,Doctor Octopus,35.0,55.0,Male,Marvel Comics,50.0,140.0,319
+443,Doctor Fate,25.0,100.0,Male,DC Comics,20.0,145.0,302
+444,Doctor Doom,20.0,100.0,Male,Marvel Comics,35.0,155.0,270
+445,Doc Samson,35.0,40.0,Male,Marvel Comics,80.0,155.0,270
+446,DL Hawkins,15.0,50.0,Male,NBC - Heroes,15.0,80.0,521
+447,Diamondback,25.0,45.0,Male,Marvel Comics,20.0,90.0,479
+448,Destroyer,60.0,85.0,Male,Marvel Comics,95.0,240.0,84
+449,Demogoblin,45.0,70.0,Male,Marvel Comics,50.0,165.0,250
+450,Deathstroke,35.0,50.0,Male,DC Comics,30.0,115.0,403
+451,Deathlok,30.0,40.0,Male,Marvel Comics,35.0,105.0,430
+452,Deadshot,25.0,55.0,Male,DC Comics,10.0,90.0,479
+453,Deadpool,50.0,100.0,Male,Marvel Comics,35.0,185.0,212
+454,Deadman,35.0,100.0,Male,DC Comics,10.0,145.0,302
+455,Dazzler,35.0,100.0,Female,Marvel Comics,10.0,145.0,302
+456,Data,25.0,60.0,Male,Star Trek,35.0,120.0,388
+457,Dash,95.0,20.0,Male,Dark Horse Comics,15.0,130.0,352
+458,Darth Vader,35.0,100.0,Male,George Lucas,50.0,185.0,212
+459,Darth Maul,50.0,100.0,Male,George Lucas,50.0,200.0,182
+460,Darkstar,35.0,80.0,Female,Marvel Comics,10.0,125.0,362
+461,Darkseid,85.0,100.0,Male,DC Comics,100.0,285.0,22
+462,Darkman,25.0,15.0,Male,Universal Studios,15.0,55.0,582
+463,Darkhawk,35.0,75.0,Male,Marvel Comics,35.0,145.0,302
+464,Daredevil,35.0,65.0,Male,Marvel Comics,15.0,115.0,403
+465,Daphne Powell,10.0,60.0,Female,ABC Studios,10.0,80.0,521
+466,Dagger,35.0,55.0,Female,Marvel Comics,10.0,100.0,453
+467,Cyclops,25.0,80.0,Male,Marvel Comics,10.0,115.0,403
+468,Cyborg Superman,95.0,100.0,Male,DC Comics,95.0,290.0,18
+469,Cyborg,45.0,75.0,Male,DC Comics,55.0,175.0,235
+470,Crystal,15.0,65.0,Female,Marvel Comics,20.0,100.0,453
+471,Cottonmouth,10.0,30.0,Male,Marvel Comics,10.0,50.0,588
+472,Copycat,25.0,55.0,Female,Marvel Comics,10.0,90.0,479
+473,Colossus,35.0,45.0,Male,Marvel Comics,85.0,165.0,250
+474,Clock King,20.0,10.0,Male,DC Comics,10.0,40.0,599
+475,Cloak,50.0,100.0,Male,Marvel Comics,10.0,160.0,261
+476,Claire Bennet,15.0,90.0,Female,NBC - Heroes,10.0,115.0,403
+477,Citizen Steel,35.0,25.0,Male,DC Comics,95.0,155.0,270
+478,Chewbacca,25.0,40.0,Male,George Lucas,40.0,105.0,430
+479,Cheetah III,90.0,80.0,Female,DC Comics,100.0,270.0,42
+480,Cheetah II,45.0,40.0,Female,DC Comics,20.0,105.0,430
+481,Cheetah,45.0,35.0,Female,DC Comics,10.0,90.0,479
+482,Changeling,25.0,65.0,Male,Marvel Comics,10.0,100.0,453
+483,Chameleon,20.0,50.0,Male,Marvel Comics,10.0,80.0,521
+484,Chamber,20.0,60.0,Male,Marvel Comics,10.0,90.0,479
+485,Century,55.0,100.0,Male,Marvel Comics,80.0,235.0,103
+486,Catwoman,35.0,30.0,Female,DC Comics,15.0,80.0,521
+487,Carnage,70.0,90.0,Male,Marvel Comics,65.0,225.0,129
+488,Captain Planet,75.0,100.0,Male,Marvel Comics,90.0,265.0,47
+489,Captain Marvel II,30.0,35.0,Male,DC Comics,85.0,150.0,285
+490,Captain Marvel,75.0,100.0,Female,Marvel Comics,90.0,265.0,47
+491,Captain Hindsight,85.0,10.0,Male,South Park,10.0,105.0,430
+492,Captain Cold,20.0,30.0,Male,DC Comics,10.0,60.0,568
+493,Captain Britain,50.0,35.0,Male,Marvel Comics,80.0,165.0,250
+494,Captain Atom,85.0,100.0,Male,DC Comics,95.0,280.0,34
+495,Captain America,40.0,60.0,Male,Marvel Comics,20.0,120.0,388
+496,Cannonball,70.0,95.0,Male,Marvel Comics,30.0,195.0,190
+497,Cameron Hicks,25.0,55.0,Male,SyFy,10.0,90.0,479
+498,Callisto,25.0,55.0,Female,Marvel Comics,55.0,135.0,339
+499,Cable,25.0,100.0,Male,Marvel Comics,50.0,175.0,235
+500,Bushido,10.0,20.0,Male,DC Comics,10.0,40.0,599
+501,Bumblebee,25.0,50.0,Female,DC Comics,30.0,105.0,430
+502,Bullseye,25.0,20.0,Male,Marvel Comics,15.0,60.0,568
+503,Buffy,45.0,50.0,Female,Dark Horse Comics,30.0,125.0,362
+504,Brainiac 5,25.0,60.0,Male,DC Comics,10.0,95.0,468
+505,Brainiac,65.0,60.0,Male,DC Comics,95.0,220.0,139
+506,Box IV,25.0,15.0,-,Marvel Comics,75.0,115.0,403
+507,Booster Gold,45.0,100.0,Male,DC Comics,85.0,230.0,118
+508,Boom-Boom,15.0,60.0,Female,Marvel Comics,10.0,85.0,506
+509,Boba Fett,40.0,70.0,Male,George Lucas,10.0,120.0,388
+510,Blue Beetle III,60.0,100.0,Male,DC Comics,35.0,195.0,190
+511,Bloodhawk,50.0,80.0,Male,Marvel Comics,10.0,140.0,319
+512,Bloodaxe,35.0,100.0,Female,Marvel Comics,80.0,215.0,148
+513,Blob,25.0,30.0,Male,Marvel Comics,85.0,140.0,319
+514,Blizzard II,30.0,50.0,Male,Marvel Comics,10.0,90.0,479
+515,Blink,20.0,80.0,Female,Marvel Comics,10.0,110.0,417
+516,Bling!,15.0,55.0,Female,Marvel Comics,15.0,85.0,506
+517,Blade,40.0,40.0,Male,Marvel Comics,30.0,110.0,417
+518,Blackwulf,10.0,70.0,Male,Marvel Comics,30.0,110.0,417
+519,Blackwing,35.0,20.0,Male,Marvel Comics,10.0,65.0,560
+520,Blackout,45.0,45.0,Male,Marvel Comics,35.0,125.0,362
+521,Black Widow,35.0,40.0,Female,Marvel Comics,15.0,90.0,479
+522,Black Panther,30.0,45.0,Male,Marvel Comics,20.0,95.0,468
+523,Black Manta,50.0,80.0,Male,DC Comics,30.0,160.0,261
+524,Black Mamba,35.0,90.0,Female,Marvel Comics,10.0,135.0,339
+525,Black Lightning,55.0,70.0,Male,DC Comics,15.0,140.0,319
+526,Black Knight III,10.0,45.0,Male,Marvel Comics,10.0,65.0,560
+527,Black Flash,100.0,100.0,Male,DC Comics,10.0,210.0,163
+528,Black Cat,35.0,25.0,Female,Marvel Comics,20.0,80.0,521
+529,Black Canary,35.0,55.0,Female,DC Comics,10.0,100.0,453
+530,Black Canary,35.0,55.0,Female,DC Comics,10.0,100.0,453
+531,Black Canary,35.0,45.0,Female,DC Comics,10.0,90.0,479
+532,Black Canary,35.0,45.0,Female,DC Comics,10.0,90.0,479
+533,Black Bolt,100.0,100.0,Male,Marvel Comics,70.0,270.0,42
+534,Black Adam,95.0,100.0,Male,DC Comics,100.0,295.0,15
+535,Bizarro,100.0,100.0,Male,DC Comics,95.0,295.0,15
+536,Bishop,25.0,100.0,Male,Marvel Comics,15.0,140.0,319
+537,Bird-Brain,35.0,25.0,-,Marvel Comics,10.0,70.0,548
+538,Bill Harken,35.0,30.0,Male,SyFy,40.0,105.0,430
+539,Big Man,25.0,20.0,Male,Marvel Comics,15.0,60.0,568
+540,Big Daddy,15.0,25.0,Male,Icon Comics,10.0,50.0,588
+541,Big Barda,80.0,100.0,Female,DC Comics,100.0,280.0,34
+542,Bi-Beast,60.0,30.0,Male,Marvel Comics,100.0,190.0,201
+543,Beyonder,100.0,100.0,Male,Marvel Comics,100.0,300.0,1
+544,Beta Ray Bill,35.0,100.0,Male,Marvel Comics,80.0,215.0,148
+545,Ben 10,10.0,90.0,Male,DC Comics,10.0,110.0,417
+546,Beast Boy,50.0,80.0,Male,DC Comics,30.0,160.0,261
+547,Beast,40.0,45.0,Male,Marvel Comics,50.0,135.0,339
+548,Batwoman V,30.0,30.0,Female,DC Comics,10.0,70.0,548
+549,Battlestar,35.0,50.0,Male,Marvel Comics,55.0,140.0,319
+550,Batman II,35.0,40.0,Male,DC Comics,15.0,90.0,479
+551,Batman,30.0,65.0,Male,DC Comics,40.0,135.0,339
+552,Batman,30.0,65.0,Male,DC Comics,20.0,115.0,403
+553,Batman,30.0,50.0,Male,DC Comics,40.0,120.0,388
+554,Batman,30.0,50.0,Male,DC Comics,20.0,100.0,453
+555,Batgirl VI,25.0,25.0,Female,DC Comics,10.0,60.0,568
+556,Batgirl,35.0,35.0,Female,DC Comics,15.0,85.0,506
+557,Bantam,25.0,25.0,Male,Marvel Comics,55.0,105.0,430
+558,Banshee,60.0,65.0,Male,Marvel Comics,10.0,135.0,339
+559,Bane,25.0,55.0,Male,DC Comics,40.0,120.0,388
+560,Azrael,20.0,35.0,Male,DC Comics,20.0,75.0,535
+561,Azazel,50.0,100.0,Male,Marvel Comics,15.0,165.0,250
+562,Aurora,100.0,75.0,Female,Marvel Comics,10.0,185.0,212
+563,Atom II,35.0,40.0,Male,DC Comics,10.0,85.0,506
+564,Atom Girl,25.0,40.0,Female,DC Comics,10.0,75.0,535
+565,Atlas,45.0,30.0,Male,DC Comics,100.0,175.0,235
+566,Atlas,45.0,30.0,Male,DC Comics,80.0,155.0,270
+567,Atlas,25.0,100.0,Male,Marvel Comics,100.0,225.0,129
+568,Atlas,25.0,100.0,Male,Marvel Comics,80.0,205.0,172
+569,Armor,15.0,55.0,Female,Marvel Comics,65.0,135.0,339
+570,Ariel,15.0,95.0,Female,Marvel Comics,10.0,120.0,388
+571,Ares,35.0,85.0,Male,Marvel Comics,85.0,205.0,172
+572,Ardina,100.0,100.0,Female,Marvel Comics,100.0,300.0,1
+573,Arclight,25.0,55.0,Female,Marvel Comics,65.0,145.0,302
+574,Archangel,60.0,35.0,Male,Marvel Comics,15.0,110.0,417
+575,Arachne,50.0,75.0,Female,Marvel Comics,50.0,175.0,235
+576,Aquaman,80.0,100.0,Male,DC Comics,85.0,265.0,47
+577,Aqualad,45.0,90.0,Male,DC Comics,45.0,180.0,227
+578,Aquababy,15.0,40.0,Male,DC Comics,20.0,75.0,535
+579,Apocalypse,35.0,100.0,Male,Marvel Comics,100.0,235.0,103
+580,Anti-Venom,65.0,100.0,Male,Marvel Comics,60.0,225.0,129
+581,Anti-Monitor,50.0,100.0,Male,DC Comics,100.0,250.0,66
+582,Ant-Man II,20.0,55.0,Male,Marvel Comics,20.0,95.0,468
+583,Ant-Man,25.0,35.0,Male,Marvel Comics,20.0,80.0,521
+584,Annihilus,50.0,60.0,Male,Marvel Comics,80.0,190.0,201
+585,Animal Man,50.0,75.0,Male,DC Comics,50.0,175.0,235
+586,Angel Salvadore,30.0,60.0,Female,Marvel Comics,10.0,100.0,453
+587,Angel Dust,25.0,20.0,Female,Marvel Comics,55.0,100.0,453
+588,Angel,60.0,100.0,Male,Dark Horse Comics,30.0,190.0,201
+589,Angel,60.0,100.0,Male,Dark Horse Comics,15.0,175.0,235
+590,Angel,50.0,30.0,Male,Marvel Comics,30.0,110.0,417
+591,Angel,50.0,30.0,Male,Marvel Comics,15.0,95.0,468
+592,Amazo,85.0,100.0,Male,DC Comics,100.0,285.0,22
+593,Alien,45.0,60.0,Male,Dark Horse Comics,30.0,135.0,339
+594,Alfred Pennyworth,20.0,10.0,Male,DC Comics,10.0,40.0,599
+595,Alex Mercer,45.0,100.0,Male,Wildstorm,80.0,225.0,129
+596,Ajax,35.0,35.0,Male,Marvel Comics,50.0,120.0,388
+597,Air-Walker,100.0,100.0,Male,Marvel Comics,85.0,285.0,22
+598,Agent Zero,40.0,75.0,Male,Marvel Comics,30.0,145.0,302
+599,Agent Bob,15.0,5.0,Male,Marvel Comics,10.0,30.0,606
+600,Adam Strange,35.0,40.0,Male,DC Comics,10.0,85.0,506
+601,Adam Monroe,15.0,100.0,Male,NBC - Heroes,10.0,125.0,362
+602,Absorbing Man,25.0,100.0,Male,Marvel Comics,80.0,205.0,172
+603,Abraxas,85.0,100.0,Male,Marvel Comics,100.0,285.0,22
+604,Abomination,55.0,65.0,Male,Marvel Comics,80.0,200.0,182
+605,Abin Sur,55.0,100.0,Male,DC Comics,90.0,245.0,71
+606,Abe Sapien,35.0,100.0,Male,Dark Horse Comics,30.0,165.0,250
+607,A-Bomb,20.0,25.0,Male,Marvel Comics,100.0,145.0,302
+608,3-D Man,45.0,25.0,Male,Marvel Comics,35.0,105.0,430
