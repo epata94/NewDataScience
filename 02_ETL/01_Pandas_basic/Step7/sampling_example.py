@@ -1,3 +1,4 @@
+# 샘플링한 데이터를 원본에서 소진하는 예제
 import pandas as pd
 df = pd.DataFrame([1,2,3,4,5,6,7,8,9,10], columns=['관측치'])
 
