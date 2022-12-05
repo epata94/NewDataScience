@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 import numpy as np
 import matplotlib.pyplot as plt
-plt.style.use('ggplot')
+# plt.style.use('ggplot')
+import matplotlib
+matplotlib.use('TKAgg')
 
 N = 500
 # normal: loc => 평균, scale => 표준 편차

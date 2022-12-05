@@ -2,7 +2,9 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-plt.style.use('ggplot')
+# plt.style.use('ggplot')
+import matplotlib
+matplotlib.use('TKAgg')
 x = np.arange(start=1, stop=15, step=1)
 y_linear = x + 5 * np.random.randn(14)
 y_quadratic = x**2 + 10 * np.random.randn(14)
@@ -20,6 +22,7 @@ ax1.yaxis.set_ticks_position('left')
 ax1.set_title('Scatter Plots with Best Fit Lines')
 plt.xlabel('x')
 plt.ylabel('f(x)')
+
 
 predict_x = 16
 predict_y = fn_linear(predict_x)

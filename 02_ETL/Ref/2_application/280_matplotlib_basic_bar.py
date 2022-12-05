@@ -1,6 +1,8 @@
 # 막대 그래프
 import matplotlib.pyplot as plt
-plt.style.use('ggplot')
+# plt.style.use('ggplot')
+import matplotlib
+matplotlib.use('TKAgg')
 
 customers = ['ABC', 'DEF', 'GHI', 'JKL', 'MNO']
 customers_index = range(len(customers)) # range(0,5) => [0,1,2,3,4]
