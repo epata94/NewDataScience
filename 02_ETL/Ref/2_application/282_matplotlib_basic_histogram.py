@@ -17,8 +17,8 @@ ax1 = fig.add_subplot(1,1,1)
 # bins:  수치가 클수록 세로축이 정교해짐
 # normed: False일 경우 확률이 아니라 빈도로 표시
 # alpha: 투명도
-n, bins, patches = ax1.hist(x1, bins=50, normed=False, color='darkgreen')
-n, bins, patches = ax1.hist(x2, bins=50, normed=False, color='orange', alpha=0.5)
+n, bins, patches = ax1.hist(x1, bins=50, color='darkgreen')
+n, bins, patches = ax1.hist(x2, bins=50, color='orange', alpha=0.5)
 ax1.xaxis.set_ticks_position('bottom')
 ax1.yaxis.set_ticks_position('left')
 
