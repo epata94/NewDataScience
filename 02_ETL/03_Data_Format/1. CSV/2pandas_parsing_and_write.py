@@ -2,7 +2,7 @@
 import sys
 import pandas as pd
 
-input_file = sys.argv[1]
+input_file = sys.argv[1] # supplier_data.csv
 output_file = sys.argv[2] # output_files/1output_index_false_pandas.csv
 
 data_frame = pd.read_csv(input_file)

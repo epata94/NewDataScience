@@ -1,8 +1,6 @@
 # 목적: CSV 파일 읽고 쓰기
-import sys
-
-input_file = sys.argv[1]  # supplier_data.csv
-output_file = sys.argv[2] # output_files/1output_index_false.csv
+input_file = 'supplier_data.csv'
+output_file = 'output_files/1output_index_false.csv'
 
 # with open(input_file, 'r', newline='') as filereader:
 with open(input_file, 'r') as filereader:
