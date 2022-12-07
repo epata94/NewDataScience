@@ -15,14 +15,14 @@ with open(input_file, 'r', newline='') as csv_in_file:
 			supplier = str(row_list[0]).strip()
 			# cost = str(row_list[3]).strip('$').replace(',', '')
 			cost = str(row_list[3]).strip('$')
-
-			if (float(cost) > 600.00) and (float(cost) < 620.00):
-				filewriter.writerow(row_list)
+			# cost의 가격이 600보다 크고 620보다 작은 행 필더링하는 조건
+			# if (float(cost) > 600.00) and (float(cost) < 620.00):
+			# 	filewriter.writerow(row_list)
 
 			# 같은 결과의 검색 => Supplier Name열의 값이 Z인 경우
 			# if supplier == 'Supplier Z':
 			# 	filewriter.writerow(row_list)
 
 			# 복합검색
-			# if supplier == 'Supplier Y' and float(cost) < 200.0:
-			# 	filewriter.writerow(row_list)
+			if supplier == 'Supplier Y' and float(cost) < 200.0:
+				filewriter.writerow(row_list)
