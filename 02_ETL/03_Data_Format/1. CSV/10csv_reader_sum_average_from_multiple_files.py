@@ -5,8 +5,8 @@ import os
 import string
 import sys
 
-input_path = sys.argv[1] # .
-output_file = sys.argv[2] # output_files/10output_basic.csv
+input_path = '.'
+output_file = 'output_files/10output_basic.csv'
 
 output_header_list = ['file_name', 'total_sales', 'average_sales']
 
@@ -21,6 +21,7 @@ for input_file in glob.glob(os.path.join(input_path,'sales_*')):
 		output_list.append(os.path.basename(input_file))
 		header = next(filereader)
 		total_sales = 0.0
+		# 평균을 구하기 위해 전체 Sale Amount 행 갯수를 파악하기 위한 변수
 		number_of_sales = 0.0
 		for row in filereader:
 			sale_amount = row[3]

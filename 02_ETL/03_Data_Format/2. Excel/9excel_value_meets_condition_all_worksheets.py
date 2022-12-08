@@ -4,8 +4,8 @@ from datetime import date
 from xlrd import open_workbook, xldate_as_tuple
 from xlwt import Workbook
 
-input_file = sys.argv[1]
-output_file = sys.argv[2]
+input_file = 'sales_2013.xls'
+output_file = 'output_files/9output_basic.xls'
 
 output_workbook = Workbook()
 output_worksheet = output_workbook.add_sheet('filtered_rows_all_worksheets')
@@ -16,6 +16,11 @@ threshold = 2000.0
 first_worksheet = True
 with open_workbook(input_file) as workbook:
 	data = []
+	# 모든 워크시트를 처리하기 위해서는 3중 for문이 필요하다.
+	# for <= 워크시트
+	#	for 	<= 행
+	#		for	<= 열
+	# workbook.sheets() 엑셀 파일의 모든 워크시트를 반환한다.
 	for worksheet in workbook.sheets():
 		if first_worksheet:
 			header_row = worksheet.row_values(0)

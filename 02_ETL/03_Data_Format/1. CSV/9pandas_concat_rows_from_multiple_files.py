@@ -4,8 +4,8 @@ import glob
 import os
 import sys
 
-input_path = sys.argv[1] # .
-output_file = sys.argv[2] # output_files/9output_pandas.csv
+input_path = '.'
+output_file = 'output_files/9output_pandas.csv'
 
 # pandas에서 분산파일을 읽거나 쓰기 위한 라이브러리는 특별히 제공되지 않는다.
 all_files = glob.glob(os.path.join(input_path,'sales_*'))

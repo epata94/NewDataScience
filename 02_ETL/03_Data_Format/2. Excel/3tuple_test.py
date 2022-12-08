@@ -9,4 +9,3 @@ date_cell = date(*my_date[0:3]).strftime \
 					('%m/%d/%Y')
 print(date_cell)
 print("End")
-#new_data = *my_date[0:3] <- Error 남

@@ -4,8 +4,8 @@ import glob
 import os
 import sys
 
-input_path = sys.argv[1] # .
-output_file = sys.argv[2] # output_files/9output_basic.csv
+input_path = '.'
+output_file = 'output_files/9output_basic.csv'
  
 first_file = True # 플래그 변수
 for input_file in glob.glob(os.path.join(input_path,'sales_*')):

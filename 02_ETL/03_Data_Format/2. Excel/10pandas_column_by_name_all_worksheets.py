@@ -2,10 +2,10 @@
 import pandas as pd
 import sys
 
-input_file = sys.argv[1]
-output_file = sys.argv[2]
+input_file = 'sales_2013.xlsx'
+output_file = 'output_files/10output_pandas.xlsx'
 
-data_frame = pd.read_excel(input_file, sheetname=None, index_col=None)
+data_frame = pd.read_excel(input_file, sheet_name=None, index_col=None)
 
 column_output = []
 for worksheet_name, data in data_frame.items():

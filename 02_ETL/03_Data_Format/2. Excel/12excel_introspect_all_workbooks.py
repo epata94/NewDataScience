@@ -4,7 +4,7 @@ import os
 import sys
 from xlrd import open_workbook
 
-input_directory = sys.argv[1] #.
+input_directory = '.'
 
 workbook_counter = 0
 for input_file in glob.glob(os.path.join(input_directory, '*.xls*')):

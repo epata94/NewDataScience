@@ -2,8 +2,8 @@
 import pandas as pd
 import sys
 
-input_file = sys.argv[1] # supplier_data.csv
-output_file = sys.argv[2] # output_files/5output_pandas.csv
+input_file = 'supplier_data.csv'
+output_file = 'output_files/5output_pandas.csv'
 
 data_frame = pd.read_csv(input_file)
 data_frame_value_matches_pattern = data_frame.ix[data_frame['Invoice Number']\

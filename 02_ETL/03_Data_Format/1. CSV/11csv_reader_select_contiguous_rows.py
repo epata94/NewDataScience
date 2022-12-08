@@ -2,8 +2,8 @@
 import csv
 import sys
 
-input_file = sys.argv[1] # supplier_data_unnecessary_header_footer.csv
-output_file = sys.argv[2] # output_files/11output_basic.csv
+input_file = 'supplier_data_unnecessary_header_footer.csv'
+output_file = 'output_files/11output_basic.csv'
 
 row_counter = 0
 with open(input_file, 'r', newline='') as csv_in_file:

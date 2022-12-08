@@ -2,8 +2,8 @@
 import pandas as pd
 import sys
 
-input_file = sys.argv[1]
-output_file = sys.argv[2]
+input_file = 'sales_2013.xlsx'
+output_file = 'output_files/7output_pandas.xlsx'
 
 data_frame = pd.read_excel(input_file, 'january_2013', index_col=None)
 

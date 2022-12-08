@@ -4,8 +4,8 @@ from datetime import date
 from xlrd import open_workbook, xldate_as_tuple
 from xlwt import Workbook
 
-input_file = sys.argv[1]
-output_file = sys.argv[2]
+input_file = 'sales_2013.xls'
+output_file = 'output_files/3output_basic_org.xls'
 
 output_workbook = Workbook()
 output_worksheet = output_workbook.add_sheet('jan_2013_output')
@@ -22,7 +22,8 @@ with open_workbook(input_file) as workbook:
 					(row_index, col_index),workbook.datemode)
 				# date_cell = date(*date_cell[0:3]).strftime\
 				date_cell = date(*date_cell[0:3]).strftime \
-					('%m/%d/%Y')
+					('%Y-%m-%d')
+				# ('%m/%d/%Y')
 				# 연습으로 원본과 똑같은 형태의 날짜도 저장할 것
 				row_list_output.append(date_cell)
 				output_worksheet.write(row_index, col_index, date_cell)

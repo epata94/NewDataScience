@@ -2,8 +2,8 @@
 import pandas as pd
 import sys
 
-input_file = sys.argv[1]
-output_file = sys.argv[2]
+input_file = 'sales_2013.xlsx'
+output_file = 'output_files/11output_pandas.xlsx'
 
 my_sheets = [0,1]
 threshold = 1900.0

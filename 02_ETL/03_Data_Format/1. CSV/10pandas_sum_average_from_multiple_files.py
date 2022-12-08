@@ -4,8 +4,8 @@ import glob
 import os
 import sys
 
-input_path = sys.argv[1]
-output_file = sys.argv[2]
+input_path = '.'
+output_file = 'output_files/10output_pandas.csv'
 
 all_files = glob.glob(os.path.join(input_path,'sales_*'))
 all_data_frames = []

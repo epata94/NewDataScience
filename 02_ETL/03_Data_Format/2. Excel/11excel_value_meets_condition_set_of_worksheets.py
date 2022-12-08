@@ -4,8 +4,8 @@ from datetime import date
 from xlrd import open_workbook, xldate_as_tuple
 from xlwt import Workbook
 
-input_file = sys.argv[1]
-output_file = sys.argv[2]
+input_file = 'sales_2013.xls'
+output_file = 'output_files/11output_basic.xls'
 
 output_workbook = Workbook()
 output_worksheet = output_workbook.add_sheet('set_of_worksheets')

@@ -3,8 +3,8 @@ import csv
 import re
 import sys
 
-input_file = sys.argv[1] # supplier_data.csv
-output_file = sys.argv[2] # output_files/5output_basic.csv
+input_file = 'supplier_data.csv'
+output_file = 'output_files/5output_basic.csv'
 
 pattern = re.compile(r'(?P<my_pattern_group>^001-.*)', re.I)
 # pattern = re.compile(r'(^001-.*)', re.I)

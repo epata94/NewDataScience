@@ -2,8 +2,8 @@
 import pandas as pd
 import sys
 
-input_file = sys.argv[1] # supplier_data_unnecessary_header_footer.csv
-output_file = sys.argv[2] # output_files/11output_pandas_backup.csv
+input_file = 'supplier_data_unnecessary_header_footer.csv'
+output_file = 'output_files/11output_pandas_backup.csv'
 
 # header=None => 첫번째 행이 헤더로 되는 것을 방지하기 위한 인자
 data_frame = pd.read_csv(input_file, header=None)
