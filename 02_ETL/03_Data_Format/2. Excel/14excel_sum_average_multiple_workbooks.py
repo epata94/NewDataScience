@@ -19,7 +19,7 @@ header = ['workbook', 'worksheet', 'worksheet_total', 'worksheet_average',\
  					'workbook_total', 'workbook_average']
 all_data.append(header)
 
-for input_file in glob.glob(os.path.join(input_folder, '*.xls*')):
+for input_file in glob.glob(os.path.join(input_folder, '*.xls')):
 	with open_workbook(input_file) as workbook:
 		list_of_totals = []
 		list_of_numbers = []

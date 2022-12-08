@@ -8,7 +8,7 @@ output_file = 'output_files/11output_pandas.xlsx'
 my_sheets = [0,1]
 threshold = 1900.0
 
-data_frame = pd.read_excel(input_file, sheetname=my_sheets, index_col=None)
+data_frame = pd.read_excel(input_file, sheet_name=my_sheets, index_col=None)
 
 row_list = []
 for worksheet_name, data in data_frame.items():

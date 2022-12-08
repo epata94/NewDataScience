@@ -7,7 +7,7 @@ from xlrd import open_workbook
 input_directory = '.'
 
 workbook_counter = 0
-for input_file in glob.glob(os.path.join(input_directory, '*.xls*')):
+for input_file in glob.glob(os.path.join(input_directory, '*.xls')):
 	workbook = open_workbook(input_file)
 	print('Workbook: {}'.format(os.path.basename(input_file)))
 	print('Number of worksheets: {}'.format(workbook.nsheets))
