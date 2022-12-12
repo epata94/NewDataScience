@@ -1,4 +1,4 @@
-# 목적: 통합 문서 및 워크시트별 합계 및 평균 구하기
+# 목적: 모든 Excel 파일 대상 통합 합계 및 평균 구하기
 import glob
 import os
 import sys
@@ -32,7 +32,7 @@ for input_file in glob.glob(os.path.join(input_folder, '*.xls')):
 			worksheet_list.append(worksheet.name)
 			for row_index in range(1,worksheet.nrows):
 				try:
-					total_sales += float(str(worksheet.cell_value(row_index,sales_column_index)).strip('$').replace(',',''))
+					total_sales += worksheet.cell_value(row_index,sales_column_index)
 					number_of_sales += 1.
 				except:
 					total_sales += 0.

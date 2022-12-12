@@ -4,7 +4,7 @@
 import csv
 import sys
 
-input_file = 'supplier_data.csv'
+input_file = 'supplier_data_org.csv'
 output_file = 'output_files/7output_basic.csv'
 
 my_columns = ['Invoice Number', 'Purchase Date']

@@ -20,10 +20,12 @@ from_tag = note.find("from")
 print(from_tag.text)
 
 print("모든 자식 노드의 값 접근")
-for parent in tree.getiterator():
+
+# for parent in tree.getiterator():
+for parent in tree.iter():
     for child in parent:
         print(child.text)
 
 print("특정 태그 자식 노드 접근")
-for child in note.getiterator():
+for child in note.iter():
     print(child.text)

@@ -6,7 +6,7 @@ import sqlite3
 import sys
 
 # Path to and name of a CSV input file
-# input_file = sys.argv[1] # supplier_data.csv
+# input_file = sys.argv[1] # supplier_data_org.csv
 input_file = 'supplier_data.csv'
 
 # Create a table called Suppliers with five attributes

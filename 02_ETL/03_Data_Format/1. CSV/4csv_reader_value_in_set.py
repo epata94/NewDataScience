@@ -2,7 +2,7 @@
 import csv
 import sys
 
-input_file = sys.argv[1] # supplier_data.csv
+input_file = sys.argv[1] # supplier_data_org.csv
 output_file = sys.argv[2] # output_files/4output_basic.csv
 
 # 한개의 열에서 필터링하는 조건이 2가지 이상일 때

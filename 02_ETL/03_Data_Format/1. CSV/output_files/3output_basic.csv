@@ -1,4 +1,4 @@
 Supplier Name,Invoice Number,Part Number,Cost,Purchase Date
-Supplier Y,50-9501,7009,$250.00,1/30/23
-Supplier Y,50-9501,7009,$250.00,1/31/23
-Supplier Y,50-9505,6650,$125.00,2/3/23
+Supplier Y,50-9501,7009,$250.00,2023-01-30
+Supplier Y,50-9501,7009,$250.00,2023-01-31
+Supplier Y,50-9505,6650,$125.00,2023-02-03

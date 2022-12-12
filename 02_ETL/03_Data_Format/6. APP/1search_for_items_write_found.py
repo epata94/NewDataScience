@@ -6,16 +6,16 @@ import sys
 from datetime import date
 from xlrd import open_workbook, xldate_as_tuple
 
-item_numbers_file = sys.argv[1] # item_numbers_to_find.csv
-path_to_folder = sys.argv[2] # historical_files
-output_file = sys.argv[3] # output_files/1output.csv
+item_numbers_file = 'item_numbers_to_find.csv'
+path_to_folder = 'historical_files'
+output_file = 'output_files/1output.csv'
 
 item_numbers_to_find = []
 with open(item_numbers_file, 'r', newline='') as item_numbers_csv_file:
 	filereader = csv.reader(item_numbers_csv_file)
 	for row in filereader:
 		item_numbers_to_find.append(row[0])
-print(item_numbers_to_find)
+print(f'검색할 Item 번호 리스트: {item_numbers_to_find}')
 
 filewriter = csv.writer(open(output_file, 'a', newline=''))
 
@@ -75,4 +75,3 @@ print('Number of files: {}'.format(file_counter))
 print('Number of lines: {}'.format(line_counter))
 print('Number of item numbers: {}'.format(count_of_item_numbers))
 
-# DB 조회로직

@@ -3,7 +3,7 @@ import csv
 import datetime
 
 
-input_file = 'supplier_data.csv'
+input_file = 'supplier_data2.csv'
 output_file = 'output_files/3output_basic.csv'
 
 with open(input_file, 'r', newline='') as csv_in_file:
@@ -29,13 +29,15 @@ with open(input_file, 'r', newline='') as csv_in_file:
 			#	filewriter.writerow(row_list)
 
 			# 날짜 검색
-			date_raw =[ int(value) for value in row_list[4].split('/') ]
-			current_date = datetime.date(2000+date_raw[2],date_raw[0],date_raw[1])
+														 # ['1','20','23']
+			date_raw =[ int(value) for value in row_list[4].split('-') ]
+					  # [1,20,23]
+			current_date = datetime.date(date_raw[0],date_raw[1],date_raw[2])
 			start_date_condition = datetime.date(2023,1,30)
 			end_date_condition = datetime.date(2023, 2, 3)
 
-			# if (current_date >= start_date_condition) and (current_date <= end_date_condition):
-			# 	filewriter.writerow(row_list)
+			if (current_date >= start_date_condition) and (current_date <= end_date_condition):
+				filewriter.writerow(row_list)
 
 			# end_date_condition = start_date_condition + datetime.timedelta(days=4)
 			# if (current_date >= start_date_condition) and (current_date <= end_date_condition):
@@ -47,7 +49,7 @@ with open(input_file, 'r', newline='') as csv_in_file:
 			# 	filewriter.writerow(row_list)
 
 			# 1월 데이터 추출
-			# if current_date.month == 1:
+			# if current_date.month == 2:
 			#  	filewriter.writerow(row_list)
 
 			# 2023년 데이터 추출

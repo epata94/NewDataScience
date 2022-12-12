@@ -1,5 +1,5 @@
 # 목적: CSV 파일 읽고 쓰기
-input_file = 'supplier_data.csv'
+input_file = 'supplier_data_org.csv'
 output_file = 'output_files/1output_index_false.csv'
 
 # with open(input_file, 'r', newline='') as filereader:

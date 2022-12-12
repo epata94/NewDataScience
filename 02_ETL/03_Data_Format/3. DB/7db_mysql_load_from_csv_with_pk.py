@@ -13,7 +13,7 @@ from datetime import datetime, date
 # 			 Purchase_Date DATE);
 
 # Path to and name of a CSV input file
-input_file = sys.argv[1] # supplier_data.csv
+input_file = sys.argv[1] # supplier_data_org.csv
 
 # db: Database명 create database my_suppliers <= 이렇게 생성한 db명과 매칭
 con = MySQLdb.connect(host='localhost', port=3306, db='my_suppliers', user='open_source', passwd='1111')

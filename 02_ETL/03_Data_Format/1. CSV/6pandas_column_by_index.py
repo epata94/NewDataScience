@@ -2,7 +2,7 @@
 import pandas as pd
 import sys
 
-input_file = 'supplier_data.csv'
+input_file = 'supplier_data_org.csv'
 output_file = 'output_files/6output_pandas.csv'
 
 data_frame = pd.read_csv(input_file)

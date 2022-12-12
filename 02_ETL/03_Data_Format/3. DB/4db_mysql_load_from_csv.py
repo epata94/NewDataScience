@@ -5,7 +5,7 @@ import sys
 from datetime import datetime, date
 
 # Path to and name of a CSV input file
-input_file = sys.argv[1] # supplier_data.csv
+input_file = sys.argv[1] # supplier_data_org.csv
 
 # Connect to a MySQL database
 #con = MySQLdb.connect(host='localhost', port=3306, db='my_suppliers', user='python_training', passwd='python_training')
