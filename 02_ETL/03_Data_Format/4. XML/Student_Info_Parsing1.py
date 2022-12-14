@@ -33,6 +33,7 @@ def sumup_xml():
        for cont in parent.iter("practicable_computer_languages"):
           if cont:
                lan_cnt += 1
+
        for language_value in parent.iter("language"):
            if language_value:
                if language_value.get("name").find("python")!=-1:
@@ -62,12 +63,16 @@ def whole_xml():
        print("- 성별: %s"%parent.get("sex"))
        print("- 나이: %s"%parent.findtext("age"))
        print("- 전공: %s"%parent.findtext("major"))
-       for language_value in parent.iter("language"):
-           if language_value:
-               for period_value in language_value.iter("period"):
-                   print("> %s 학습기간:%s,level:%s"%(language_value.get("name"),period_value.get("value"),language_value.get("level")))
 
+       pcl_node = parent.find('practicable_computer_languages')
+       if pcl_node:
+           for language in pcl_node.iter("language"):
+               name = language.get("name")
+               level = language.get('level')
+               period = language.find('period').get('value')
+               print(f"> {name} 학습기간: {period},level: {level}")
    print("")
+
 while True:
     print("학생정보 XML데이터 분석 시작..")
     input_data=input("1.요약정보 \n2.전체데이터 조회 \n3.종료 \n메뉴입력: ")

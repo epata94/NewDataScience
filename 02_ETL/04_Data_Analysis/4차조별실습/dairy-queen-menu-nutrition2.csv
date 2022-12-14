@@ -1,0 +1,230 @@
+Menu Item,Calories (kcal),Fat Calories (kcal),Total Fat (g),Saturated Fat (g),Trans Fat (g),Cholesterol (mg),Sodium (mg),Carbohydrates (g),Fiber (g),Sugars (g),Protein (g),Allergens
+Caramel Mocha Chip Shake - Small,600.0,100.0,27.0,21.0,1.0,45.0,240.0,79.0,1.0,65.0,12.0,M\S
+Caramel Mocha Chip Shake - Medium,830.0,170.0,39.0,31.0,1.0,55.0,310.0,106.0,1.0,86.0,16.0,M\S
+Caramel Mocha Chip Shake - Large,1100.0,230.0,52.0,41.0,1.5,75.0,410.0,140.0,2.0,113.0,20.0,M\S
+Cinnamon Roll Centers Blizzard - Mini,360.0,300.0,13.0,8.0,0.5,45.0,150.0,53.0,0.0,43.0,8.0,E\M\W
+Cinnamon Roll Centers Blizzard - Small,620.0,240.0,22.0,14.0,1.0,85.0,270.0,93.0,0.0,75.0,13.0,E\M\W
+Cinnamon Roll Centers Blizzard - Medium,890.0,350.0,32.0,20.0,1.5,120.0,390.0,132.0,1.0,106.0,18.0,E\M\W
+Cinnamon Roll Centers Blizzard - Large,1170.0,470.0,43.0,27.0,2.0,160.0,520.0,175.0,1.0,139.0,22.0,E\M\W
+Frosted Sugar Cookie Blizzard - Mini,390.0,110.0,16.0,8.0,0.0,35.0,160.0,54.0,0.0,42.0,8.0,E\M\S\W
+Frosted Sugar Cookie Blizzard - Small,700.0,200.0,30.0,14.0,1.0,55.0,290.0,95.0,0.0,74.0,13.0,E\M\S\W
+Frosted Sugar Cookie Blizzard - Medium,960.0,290.0,42.0,19.0,1.0,75.0,400.0,129.0,1.0,100.0,17.0,E\M\S\W
+Frosted Sugar Cookie Blizzard - Large,1240.0,390.0,55.0,24.0,1.5,95.0,520.0,167.0,1.0,129.0,22.0,E\M\S\W
+Heath Caramel Brownie Cupfection,760.0,150.0,29.0,14.0,0.5,65.0,390.0,117.0,2.0,90.0,11.0,E\M\S\T\W\(P)
+Popcorn Shrimp Basket,700.0,270.0,31.0,7.0,0.0,105.0,2710.0,88.0,7.0,14.0,18.0,F\SF\S\W
+Pumpkin Pie Blizzard - Mini,360.0,380.0,14.0,9.0,0.5,25.0,190.0,52.0,1.0,41.0,7.0,E\M\S\W
+Pumpkin Pie Blizzard - Small,560.0,500.0,20.0,13.0,1.0,40.0,330.0,86.0,2.0,68.0,11.0,E\M\S\W
+Pumpkin Pie Blizzard - Medium,720.0,260.0,25.0,15.0,1.0,50.0,440.0,110.0,2.0,85.0,14.0,E\M\S\W
+Pumpkin Pie Blizzard - Large,940.0,270.0,32.0,19.0,1.5,70.0,570.0,145.0,2.0,112.0,19.0,E\M\S\W
+Bacon Two Cheese Deluxe Burger - Double,720.0,420.0,47.0,19.0,2.0,130.0,1890.0,39.0,2.0,9.0,37.0,E\M\SS\S\W
+Bacon Two Cheese Deluxe Burger - Triple,920.0,560.0,63.0,26.0,2.5,180.0,2300.0,40.0,2.0,9.0,49.0,E\M\SS\S\W
+FlameThrower Burger - Double,720.0,440.0,49.0,19.0,2.0,125.0,1430.0,37.0,2.0,7.0,34.0,E\M\SS\S\W
+FlameThrower Burger - Triple,910.0,580.0,65.0,27.0,2.5,170.0,1820.0,38.0,2.0,7.0,46.0,E\M\SS\S\W
+Hamburger,320.0,120.0,13.0,5.0,0.5,35.0,870.0,36.0,1.0,7.0,15.0,SS\W
+Hamburger - Double,460.0,220.0,25.0,10.0,1.5,70.0,1030.0,36.0,1.0,7.0,24.0,SS\W
+Hamburger - Triple,610.0,330.0,37.0,15.0,2.0,110.0,1190.0,36.0,1.0,7.0,33.0,SS\W
+Loaded A.1. Burger - Double,820.0,460.0,51.0,19.0,2.0,130.0,2080.0,52.0,2.0,13.0,38.0,E\M\SS\S\W
+Loaded A.1. Burger - Triple,1020.0,600.0,67.0,27.0,2.5,180.0,2500.0,53.0,2.0,14.0,49.0,E\M\SS\S\W
+Original Cheeseburger - Single,370.0,160.0,18.0,8.0,1.0,50.0,1120.0,37.0,1.0,8.0,17.0,M\SS\S\W
+Original Cheeseburger - Double,570.0,300.0,34.0,15.0,1.5,100.0,1530.0,38.0,1.0,8.0,29.0,M\SS\S\W
+Original Cheeseburger -Triple,760.0,450.0,50.0,23.0,2.5,150.0,1940.0,39.0,1.0,9.0,40.0,M\SS\S\W
+Two Cheese Deluxe Burger - Double,620.0,350.0,39.0,16.0,2.0,105.0,1510.0,39.0,2.0,9.0,29.0,E\M\SS\S\W
+Two Cheese Deluxe Burger - Triple,820.0,500.0,55.0,24.0,2.5,155.0,1930.0,40.0,2.0,9.0,41.0,E\M\SS\S\W
+Bacon Cheese Dog,420.0,240.0,26.0,11.0,1.0,60.0,1140.0,27.0,1.0,3.0,19.0,M\W
+Cheese Dog,390.0,220.0,24.0,10.0,1.0,50.0,1000.0,27.0,1.0,3.0,16.0,M\W
+Chili Cheese Dog,420.0,240.0,26.0,11.0,1.0,55.0,1070.0,28.0,1.0,4.0,18.0,M\S\W
+Chili Cheese Dogs (2),850.0,470.0,53.0,22.0,2.5,110.0,2140.0,56.0,2.0,7.0,36.0,M\S\W
+Chili Dog,360.0,190.0,22.0,8.0,1.0,40.0,970.0,27.0,1.0,4.0,14.0,S\W
+Hot Dog,330.0,170.0,19.0,8.0,1.0,35.0,820.0,25.0,1.0,3.0,12.0,W
+Relish Dog,350.0,180.0,20.0,8.0,1.0,35.0,1060.0,31.0,1.0,8.0,13.0,W
+Applesauce,45.0,0.0,0.0,0.0,0.0,0.0,0.0,11.0,2.0,7.0,0.0,
+Banana,110.0,5.0,0.0,0.0,0.0,0.0,0.0,27.0,3.0,14.0,1.0,
+Chicken Strips - 2 pc,280.0,120.0,13.0,2.5,0.0,30.0,640.0,28.0,1.0,1.0,13.0,S\W
+"Fries, Kids'",170.0,70.0,8.0,1.0,0.0,0.0,370.0,23.0,2.0,0.0,3.0,
+Hamburger,320.0,120.0,13.0,5.0,0.5,35.0,870.0,36.0,1.0,7.0,15.0,W
+Hot Dog,330.0,170.0,19.0,8.0,1.0,35.0,820.0,25.0,1.0,3.0,12.0,W
+Milk,110.0,25.0,2.5,1.5,0.0,10.0,130.0,12.0,0.0,12.0,8.0,M
+Cheese Curds - Regular,500.0,300.0,34.0,19.0,0.0,85.0,990.0,26.0,0.0,1.0,24.0,E\M\S\W
+Cheese Curds - Large,1000.0,600.0,67.0,38.0,0.5,165.0,1960.0,52.0,0.0,3.0,49.0,E\M\S\W
+Doritos¢ç Nacho Cheese Tortilla Chips,240.0,130.0,14.0,2.0,0.0,0.0,360.0,28.0,2.0,0.0,3.0,M
+"Fries, Large",450.0,190.0,21.0,3.0,0.0,0.0,950.0,59.0,4.0,0.0,8.0,
+"Fries, Regular",280.0,110.0,13.0,2.0,0.0,0.0,590.0,36.0,3.0,0.0,5.0,
+Lay¡¯s¢ç BBQ Potato Chips,230.0,140.0,15.0,2.0,0.0,0.0,230.0,23.0,2.0,3.0,3.0,
+Lay¡¯s¢ç Potato Chips - Original,240.0,140.0,16.0,2.0,0.0,0.0,250.0,23.0,2.0,1.0,3.0,
+"Onion Rings, Large",450.0,180.0,20.0,3.0,0.0,0.0,1050.0,60.0,3.0,4.0,7.0,M\W
+"Onion Rings, Regular",290.0,120.0,13.0,2.0,0.0,0.0,680.0,39.0,2.0,3.0,5.0,M\W
+Oven Baked Lay¡¯s¢ç Original Potato Crisps,130.0,20.0,2.0,0.0,0.0,0.0,150.0,26.0,2.0,2.0,2.0,S
+Soft Pretzel Sticks with Zesty Queso,330.0,80.0,9.0,3.0,0.0,5.0,2060.0,52.0,2.0,7.0,9.0,M\W
+BBQ Dipping Sauce Cup,90.0,0.0,0.0,0.0,0.0,0.0,430.0,21.0,1.0,16.0,1.0,
+Country Gravy Dipping Sauce,70.0,40.0,4.5,1.5,,0.0,360.0,6.0,0.0,1.0,0.0,M\S\W
+Honey Mustard Dipping Sauce Cup,240.0,180.0,20.0,3.0,0.0,15.0,450.0,15.0,0.0,14.0,1.0,E
+House Made Hidden Valley Ranch Dipping Sauce Cup,220.0,200.0,22.0,4.0,0.0,20.0,370.0,3.0,0.0,2.0,1.0,E\M\S
+Kraft Fat Free Italian Dressing,25.0,2.0,0.3,0.0,0.0,0.0,380.0,4.0,0.0,3.0,0.5,M
+Kraft Honey Mustard Dressing,130.0,80.0,9.0,1.5,0.2,10.0,330.0,12.0,0.0,0.0,0.3,E
+Marzetti Dijon Honey Mustard,180.0,150.0,16.0,2.5,,10.0,230.0,7.0,0.0,7.0,0.0,E
+Marzetti Light Italian Dressing,15.0,10.0,1.0,0.0,0.0,0.0,730.0,2.0,0.0,2.0,0.0,
+Wild Buffalo Dipping Sauce Cup,90.0,90.0,10.0,1.0,0.0,0.0,1000.0,1.0,0.0,0.0,0.0,
+Zesty Queso Dipping Sauce,110.0,90.0,10.0,3.0,0.0,10.0,570.0,3.0,0.0,1.0,2.0,M
+BBQ Sandwich,280.0,60.0,7.0,2.5,0.0,25.0,750.0,39.0,2.0,12.0,14.0,W
+Chili Cheese Fries,990.0,470.0,52.0,14.0,1.0,50.0,2280.0,107.0,9.0,4.0,25.0,M\S
+Corn Dog,240.0,120.0,13.0,3.0,0.0,25.0,390.0,25.0,2.0,7.0,6.0,E\M\S\W
+Mega Chili Cheese Dog,760.0,440.0,49.0,20.0,2.0,100.0,1910.0,49.0,2.0,6.0,32.0,M\S\W
+Pork Tenderloin Sandwich,600.0,310.0,34.0,7.0,0.0,45.0,990.0,52.0,3.0,7.0,21.0,E\M\S\W
+Steakfinger Basket,940.0,460.0,51.0,13.0,0.5,50.0,2120.0,97.0,5.0,3.0,23.0,E\M\S\W
+Wild Alaskan Fish Sandwich,420.0,140.0,16.0,3.0,0.0,30.0,960.0,50.0,1.0,7.0,17.0,E\F\W
+Butterfinger¢ç Blizzard - Mini,350.0,110.0,12.0,7.0,0.0,30.0,150.0,52.0,1.0,41.0,9.0,M\P\S\(E)\(T)\(W)
+Butterfinger¢ç Blizzard - Small,520.0,160.0,18.0,11.0,0.5,40.0,230.0,76.0,1.0,58.0,13.0,M\P\S\(E)\(T)\(W)
+Butterfinger¢ç Blizzard - Medium,730.0,230.0,26.0,15.0,1.0,55.0,330.0,107.0,2.0,81.0,18.0,M\P\S\(E)\(T)\(W)
+Butterfinger¢ç Blizzard - Large,970.0,310.0,34.0,20.0,1.0,75.0,440.0,142.0,2.0,108.0,24.0,M\P\S\(E)\(T)\(W)
+Choco Brownie Extreme Blizzard - Mini,400.0,150.0,17.0,10.0,0.0,30.0,180.0,56.0,2.0,45.0,9.0,E\M\S\W
+Choco Brownie Extreme Blizzard - Small,620.0,250.0,28.0,15.0,0.5,40.0,280.0,86.0,3.0,68.0,12.0,E\M\S\W
+Choco Brownie Extreme Blizzard - Medium,810.0,330.0,36.0,21.0,1.0,55.0,370.0,111.0,4.0,87.0,16.0,E\M\S\W
+Choco Brownie Extreme Blizzard - Large,1120.0,460.0,52.0,28.0,1.0,70.0,510.0,154.0,6.0,120.0,22.0,E\M\S\W
+Chocolate Chip Cookie Dough Blizzard - Mini,420.0,140.0,16.0,9.0,0.0,30.0,220.0,61.0,1.0,46.0,8.0,M\S\W
+Chocolate Chip Cookie Dough Blizzard - Small,710.0,250.0,28.0,16.0,0.5,45.0,380.0,104.0,1.0,76.0,12.0,M\S\W
+Chocolate Chip Cookie Dough Blizzard - Medium,1030.0,370.0,41.0,24.0,1.0,60.0,570.0,151.0,2.0,111.0,17.0,M\S\W
+Chocolate Chip Cookie Dough Blizzard - Large,1340.0,480.0,53.0,32.0,1.0,75.0,740.0,195.0,3.0,143.0,22.0,M\S\W
+Heath¢ç Blizzard - Mini,370.0,140.0,15.0,9.0,0.0,30.0,180.0,53.0,0.0,46.0,8.0,M\S\T\(E)\(P)\(W)
+Heath¢ç Blizzard - Small,600.0,230.0,25.0,16.0,0.5,50.0,300.0,84.0,1.0,74.0,11.0,M\S\T\(E)\(P)\(W)
+Heath¢ç Blizzard - Medium,860.0,330.0,37.0,23.0,1.0,65.0,440.0,119.0,1.0,106.0,16.0,M\S\T\(E)\(P)\(W)
+Heath¢ç Blizzard - Large,1150.0,450.0,50.0,32.0,1.5,85.0,590.0,159.0,2.0,142.0,20.0,M\S\T\(E)\(P)\(W)
+M&M¡¯s¢ç Chocolate Candy Blizzard -Mini,370.0,110.0,12.0,8.0,0.0,30.0,125.0,58.0,1.0,50.0,8.0,M\S\(E)\(P)\(T)\(W)
+M&M¡¯s¢ç Chocolate Candy Blizzard - Small,630.0,190.0,21.0,13.0,0.5,50.0,210.0,99.0,1.0,85.0,13.0,M\S\(E)\(P)\(T)\(W)
+M&M¡¯s¢ç Chocolate Candy Blizzard - Medium,800.0,240.0,27.0,17.0,1.0,60.0,250.0,124.0,2.0,107.0,16.0,M\S\(E)\(P)\(T)\(W)
+M&M¡¯s¢ç Chocolate Candy Blizzard - Large,1100.0,320.0,36.0,23.0,1.0,80.0,350.0,173.0,3.0,150.0,22.0,M\S\(E)\(P)\(T)\(W)
+OREO¢ç Cookie Blizzard - Mini,380.0,130.0,14.0,7.0,0.0,30.0,180.0,56.0,0.0,44.0,8.0,M\S\W
+OREO¢ç Cookie Blizzard - Small,620.0,210.0,24.0,12.0,0.5,40.0,300.0,91.0,1.0,70.0,12.0,M\S\W
+OREO¢ç Cookie Blizzard - Medium,790.0,280.0,31.0,15.0,1.0,50.0,400.0,117.0,1.0,88.0,14.0,M\S\W
+OREO¢ç Cookie Blizzard - Large,1140.0,400.0,44.0,21.0,1.0,75.0,570.0,169.0,2.0,128.0,21.0,M\S\W
+OREO¢ç Hot Cocoa Blizzard - Mini,470.0,190.0,21.0,11.0,0.5,30.0,210.0,63.0,1.0,50.0,8.0,M\S\W
+OREO¢ç Hot Cocoa Blizzard - Small,800.0,320.0,35.0,17.0,1.0,50.0,380.0,111.0,2.0,86.0,14.0,M\S\W
+OREO¢ç Hot Cocoa Blizzard - Medium,1050.0,410.0,45.0,22.0,1.5,65.0,500.0,147.0,2.0,113.0,19.0,M\S\W
+OREO¢ç Hot Cocoa Blizzard - Large,1390.0,540.0,60.0,28.0,1.5,80.0,680.0,195.0,4.0,150.0,24.0,M\S\W
+Reese's¢ç Peanut Butter Cups Blizzard - Mini,360.0,130.0,14.0,7.0,0.0,30.0,170.0,50.0,1.0,43.0,9.0,M\P\S\(E)\(T)\(W)
+Reese's¢ç Peanut Butter Cups Blizzard - Small,570.0,210.0,23.0,12.0,0.5,45.0,290.0,79.0,1.0,68.0,15.0,M\P\S\(E)\(T)\(W)
+Reese's¢ç Peanut Butter Cups Blizzard - Medium,750.0,280.0,31.0,16.0,1.0,60.0,380.0,102.0,2.0,88.0,19.0,M\P\S\(E)\(T)\(W)
+Reese's¢ç Peanut Butter Cups Blizzard - Large,1000.0,380.0,42.0,21.0,1.0,80.0,510.0,136.0,3.0,118.0,25.0,M\P\S\(E)\(T)\(W)
+Reese's¢ç Take Five Blizzard - Mini,430.0,170.0,18.0,8.0,0.0,30.0,310.0,56.0,2.0,44.0,11.0,M\P\S\W\(E)\(T)
+Reese's¢ç Take Five Blizzard - Small,770.0,310.0,34.0,15.0,0.5,50.0,580.0,99.0,3.0,76.0,21.0,M\P\S\W\(E)\(T)
+Reese's¢ç Take Five Blizzard - Medium,1120.0,440.0,49.0,21.0,1.0,65.0,860.0,145.0,5.0,111.0,29.0,M\P\S\W\(E)\(T)
+Reese's¢ç Take Five Blizzard - Large,1510.0,590.0,66.0,28.0,1.5,90.0,1150.0,198.0,6.0,151.0,39.0,M\P\S\W\(E)\(T)
+Royal New York Cheesecake Blizzard Filled with Strawberry - Mini,450.0,160.0,18.0,8.0,0.5,40.0,220.0,65.0,1.0,53.0,8.0,E\M\S\W\(P)\(T)
+Royal New York Cheesecake Blizzard Filled with Strawberry - Small,750.0,290.0,32.0,15.0,1.0,75.0,380.0,102.0,2.0,82.0,14.0,E\M\S\W\(P)\(T)
+Royal New York Cheesecake Blizzard Filled with Strawberry - Medium,1040.0,410.0,46.0,21.0,1.5,105.0,530.0,140.0,2.0,112.0,19.0,E\M\S\W\(P)\(T)
+Royal New York Cheesecake Blizzard Filled with Strawberry - Large,1350.0,540.0,61.0,28.0,2.0,135.0,700.0,177.0,3.0,141.0,25.0,E\M\S\W\(P)\(T)
+Royal Ultimate Choco Brownie Blizzard Filled with Fudge - Mini,480.0,190.0,21.0,13.0,0.0,30.0,220.0,68.0,2.0,55.0,9.0,E\M\S\W
+Royal Ultimate Choco Brownie Blizzard Filled with Fudge - Small,770.0,300.0,34.0,20.0,0.5,45.0,350.0,107.0,4.0,86.0,14.0,E\M\S\W
+Royal Ultimate Choco Brownie Blizzard Filled with Fudge - Medium,1040.0,410.0,45.0,29.0,1.0,65.0,480.0,146.0,5.0,117.0,19.0,E\M\S\W
+Royal Ultimate Choco Brownie Blizzard Filled with Fudge - Large,1340.0,540.0,60.0,36.0,1.0,80.0,620.0,186.0,8.0,148.0,25.0,E\M\S\W
+Snickers¢ç Blizzard - Mini,350.0,100.0,12.0,7.0,0.0,30.0,150.0,53.0,0.0,45.0,8.0,E\M\P\S\(T)
+Snickers¢ç Blizzard - Small,610.0,180.0,20.0,11.0,0.5,50.0,260.0,92.0,1.0,78.0,14.0,E\M\P\S\(T)
+Snickers¢ç Blizzard - Medium,800.0,250.0,28.0,15.0,1.0,65.0,340.0,120.0,1.0,102.0,19.0,E\M\P\S\(T)
+Snickers¢ç Blizzard - Large,1060.0,320.0,36.0,20.0,1.0,80.0,450.0,162.0,2.0,138.0,24.0,E\M\P\S\(T)
+Snickers¢ç Brownie Blizzard - Mini,410.0,130.0,15.0,8.0,0.0,30.0,200.0,60.0,1.0,48.0,9.0,E\M\P\S\W\(T)
+Snickers¢ç Brownie Blizzard - Small,710.0,240.0,26.0,14.0,1.0,50.0,350.0,105.0,2.0,82.0,15.0,E\M\P\S\W\(T)
+Snickers¢ç Brownie Blizzard - Medium,1010.0,340.0,37.0,20.0,1.0,70.0,510.0,151.0,3.0,118.0,21.0,E\M\P\S\W\(T)
+Snickers¢ç Brownie Blizzard - Large,1350.0,450.0,50.0,26.0,1.5,90.0,680.0,203.0,4.0,158.0,28.0,E\M\P\S\W\(T)
+Turtle Pecan Cluster Blizzard - Mini,430.0,200.0,22.0,14.0,0.0,30.0,160.0,51.0,1.0,42.0,8.0,M\S\T
+Turtle Pecan Cluster Blizzard - Small,680.0,300.0,34.0,18.0,0.5,50.0,270.0,84.0,2.0,68.0,14.0,M\S\T
+Turtle Pecan Cluster Blizzard - Medium,1020.0,470.0,52.0,29.0,1.0,65.0,390.0,123.0,3.0,99.0,18.0,M\S\T
+Turtle Pecan Cluster Blizzard - Large,1370.0,640.0,71.0,41.0,1.5,85.0,510.0,165.0,4.0,132.0,24.0,M\S\T
+Very Cherry Chip Blizzard - Mini,320.0,100.0,11.0,7.0,0.0,30.0,115.0,48.0,1.0,41.0,7.0,M\S
+Very Cherry Chip Blizzard - Small,550.0,170.0,19.0,13.0,0.5,50.0,190.0,84.0,1.0,72.0,12.0,M\S
+Very Cherry Chip Blizzard - Medium,730.0,230.0,25.0,18.0,1.0,65.0,250.0,113.0,2.0,97.0,16.0,M\S
+Very Cherry Chip Blizzard - Large,920.0,290.0,32.0,22.0,1.0,80.0,310.0,143.0,2.0,122.0,20.0,M\S
+Banana Shake - Large,750.0,240.0,27.0,19.0,1.5,75.0,310.0,109.0,2.0,88.0,21.0,M\S
+Banana Shake - Medium,590.0,200.0,22.0,16.0,1.0,55.0,240.0,83.0,1.0,68.0,16.0,M\S
+Banana Shake - Small,470.0,170.0,19.0,13.0,1.0,45.0,190.0,64.0,1.0,53.0,13.0,M\S
+Caramel Shake - Large,980.0,280.0,31.0,21.0,1.5,85.0,450.0,154.0,0.0,124.0,22.0,M\S
+Caramel Shake - Medium,750.0,220.0,25.0,17.0,1.5,65.0,330.0,115.0,0.0,93.0,17.0,M\S
+Caramel Shake - Small,550.0,180.0,20.0,14.0,1.0,50.0,240.0,79.0,0.0,65.0,13.0,M\S
+Chocolate Shake - Large,920.0,250.0,28.0,19.0,1.5,75.0,390.0,147.0,2.0,128.0,21.0,M\S
+Chocolate Shake - Medium,710.0,210.0,23.0,16.0,1.0,60.0,290.0,110.0,1.0,96.0,16.0,M\S
+Chocolate Shake - Small,530.0,170.0,19.0,14.0,1.0,45.0,220.0,77.0,1.0,67.0,13.0,M\S
+Hot Fudge Shake - Large,990.0,340.0,38.0,29.0,1.5,75.0,440.0,140.0,1.0,112.0,23.0,M\S
+Hot Fudge Shake - Medium,750.0,270.0,30.0,23.0,1.5,60.0,330.0,105.0,1.0,85.0,17.0,M\S
+Hot Fudge Shake - Small,550.0,200.0,22.0,17.0,1.0,45.0,240.0,75.0,0.0,61.0,13.0,M\S
+Make It A Malt Adds - Large,110.0,10.0,1.0,1.0,0.0,5.0,105.0,23.0,1.0,16.0,2.0,M\W
+Make It A Malt Adds - Medium,80.0,10.0,1.0,0.5,0.0,5.0,80.0,18.0,1.0,12.0,1.0,M\W
+Make It A Malt Adds - Small,60.0,5.0,0.5,0.0,0.0,0.0,50.0,12.0,0.0,8.0,1.0,M\W
+Peanut Butter Shake - Large,1250.0,650.0,72.0,26.0,1.5,75.0,830.0,119.0,4.0,89.0,30.0,M\P\S\(T)
+Peanut Butter Shake - Medium,930.0,480.0,53.0,20.0,1.0,60.0,590.0,91.0,3.0,69.0,22.0,M\P\S\(T)
+Peanut Butter Shake - Small,640.0,310.0,34.0,16.0,1.0,45.0,370.0,67.0,1.0,54.0,16.0,M\P\S\(T)
+Strawberry Shake - Large,800.0,250.0,27.0,19.0,1.5,75.0,340.0,120.0,1.0,105.0,21.0,M\S
+Strawberry Shake - Medium,630.0,200.0,23.0,16.0,1.0,60.0,260.0,92.0,1.0,80.0,16.0,M\S
+Strawberry Shake - Small,490.0,170.0,19.0,14.0,1.0,45.0,200.0,68.0,0.0,59.0,13.0,M\S
+Vanilla Shake - Large,860.0,260.0,29.0,20.0,1.5,80.0,340.0,127.0,0.0,112.0,22.0,M\S
+Vanilla Shake - Medium,660.0,210.0,23.0,16.0,1.0,60.0,260.0,97.0,0.0,85.0,16.0,M\S
+Vanilla Shake - Small,520.0,170.0,19.0,14.0,1.0,50.0,200.0,73.0,0.0,65.0,13.0,M\S
+Caramel MooLatte - Large,780.0,190.0,21.0,15.0,1.0,50.0,320.0,135.0,0.0,113.0,13.0,M\S
+Caramel MooLatte - Medium,620.0,160.0,18.0,13.0,1.0,40.0,240.0,103.0,0.0,87.0,10.0,M\S
+Caramel MooLatte - Small,490.0,140.0,15.0,11.0,1.0,30.0,190.0,81.0,0.0,69.0,8.0,M\S
+Mocha MooLatte - Large,780.0,260.0,29.0,16.0,1.0,50.0,310.0,121.0,2.0,106.0,14.0,M\S
+Mocha MooLatte - Medium,620.0,210.0,23.0,14.0,1.0,40.0,240.0,94.0,2.0,82.0,11.0,M\S
+Mocha MooLatte - Small,500.0,160.0,18.0,12.0,1.0,30.0,180.0,76.0,1.0,67.0,9.0,M\S
+Vanilla MooLatte - Large,700.0,170.0,19.0,14.0,1.0,45.0,240.0,121.0,0.0,109.0,12.0,M\S
+Vanilla MooLatte - Medium,560.0,150.0,17.0,12.0,1.0,35.0,190.0,93.0,0.0,84.0,9.0,M\S
+Vanilla MooLatte - Small,450.0,130.0,14.0,11.0,1.0,30.0,150.0,74.0,0.0,67.0,7.0,M\S
+Mango Misty¢ç Freeze - Large,640.0,140.0,15.0,10.0,1.0,50.0,210.0,115.0,0.0,101.0,12.0,M
+Mango Misty¢ç Freeze - Medium,490.0,110.0,12.0,8.0,0.5,40.0,170.0,86.0,0.0,75.0,10.0,M
+Mango Misty¢ç Freeze - Small,390.0,90.0,10.0,6.0,0.0,30.0,130.0,69.0,0.0,60.0,8.0,M
+Mango Misty¢ç Slush - Large,390.0,0.0,0.0,0.0,0.0,0.0,60.0,99.0,0.0,95.0,0.0,
+Mango Misty¢ç Slush - Medium,290.0,0.0,0.0,0.0,0.0,0.0,45.0,74.0,0.0,71.0,0.0,
+Mango Misty¢ç Slush - Small,230.0,0.0,0.0,0.0,0.0,0.0,35.0,57.0,0.0,55.0,0.0,
+Misty¢ç Freeze - Large,590.0,140.0,15.0,10.0,1.0,50.0,210.0,102.0,0.0,90.0,12.0,M
+Misty¢ç Freeze - Medium,450.0,110.0,12.0,8.0,0.5,40.0,160.0,77.0,0.0,68.0,10.0,M
+Misty¢ç Freeze - Small,360.0,90.0,10.0,6.0,0.0,30.0,130.0,62.0,0.0,55.0,8.0,M
+Misty¢ç Slush - Large,340.0,0.0,0.0,0.0,0.0,0.0,55.0,86.0,0.0,85.0,0.0,
+Misty¢ç Slush - Medium,260.0,0.0,0.0,0.0,0.0,0.0,40.0,65.0,0.0,64.0,0.0,
+Misty¢ç Slush - Small,200.0,0.0,0.0,0.0,0.0,0.0,35.0,50.0,0.0,50.0,0.0,
+Add DQ Sprinkles,35.0,10.0,1.5,1.0,0.0,0.0,0.0,6.0,0.0,3.0,0.0,S
+Caramel Sundae - Large,600.0,140.0,16.0,10.0,1.0,55.0,260.0,102.0,0.0,81.0,12.0,M
+Caramel Sundae - Medium,430.0,100.0,11.0,7.0,0.5,35.0,190.0,73.0,0.0,58.0,9.0,M
+Caramel Sundae - Small,300.0,70.0,8.0,5.0,0.0,25.0,130.0,50.0,0.0,40.0,6.0,M
+Chocolate Sundae - Large,560.0,130.0,14.0,9.0,0.5,45.0,220.0,97.0,1.0,84.0,12.0,M
+Chocolate Sundae - Medium,400.0,90.0,10.0,6.0,0.0,30.0,160.0,70.0,1.0,60.0,8.0,M
+Chocolate Sundae - Small,270.0,60.0,7.0,4.5,0.0,25.0,110.0,48.0,1.0,41.0,6.0,M
+Hot Fudge Sundae - Large,610.0,190.0,21.0,16.0,1.0,50.0,260.0,93.0,1.0,73.0,13.0,M\S
+Hot Fudge Sundae - Medium,430.0,130.0,15.0,11.0,0.5,35.0,190.0,66.0,1.0,52.0,9.0,M\S
+Hot Fudge Sundae - Small,300.0,90.0,10.0,8.0,0.0,25.0,125.0,46.0,0.0,36.0,6.0,M\S
+Peanut Butter Sundae - Large,780.0,400.0,44.0,13.0,0.5,45.0,520.0,79.0,3.0,58.0,18.0,M\P\(T)
+Peanut Butter Sundae - Medium,560.0,290.0,32.0,10.0,0.0,30.0,380.0,56.0,2.0,40.0,13.0,M\P\(T)
+Peanut Butter Sundae - Small,380.0,190.0,22.0,7.0,0.0,25.0,260.0,39.0,1.0,28.0,9.0,M\P\(T)
+Pineapple Sundae - Large,480.0,120.0,14.0,9.0,0.5,45.0,170.0,77.0,1.0,67.0,12.0,M
+Pineapple Sundae - Medium,330.0,90.0,10.0,6.0,0.0,30.0,120.0,54.0,1.0,47.0,8.0,M
+Pineapple Sundae - Small,230.0,60.0,7.0,4.5,0.0,25.0,85.0,38.0,0.0,33.0,6.0,M
+Strawberry Sundae - Large,490.0,120.0,14.0,9.0,0.5,45.0,190.0,80.0,1.0,69.0,12.0,M
+Strawberry Sundae - Medium,340.0,90.0,10.0,6.0,0.0,30.0,135.0,56.0,1.0,49.0,8.0,M
+Strawberry Sundae - Small,240.0,60.0,7.0,4.5,0.0,25.0,95.0,39.0,0.0,34.0,6.0,M
+Chocolate Cone - Kids',160.0,45.0,5.0,3.0,0.0,15.0,60.0,25.0,0.0,17.0,4.0,M\W
+Chocolate Cone - Large,480.0,130.0,15.0,9.0,0.5,45.0,190.0,73.0,0.0,50.0,12.0,M\W
+Chocolate Cone - Medium,340.0,90.0,10.0,6.0,0.0,30.0,130.0,52.0,0.0,35.0,8.0,M\W
+Chocolate Cone - Small,240.0,70.0,7.0,4.5,0.0,25.0,90.0,36.0,0.0,25.0,6.0,M\W
+"Dipped Cone, Butterscotch - Kids'",210.0,80.0,9.0,7.0,0.0,15.0,70.0,28.0,0.0,21.0,4.0,M\S\W
+"Dipped Cone, Butterscotch - Large",640.0,270.0,30.0,23.0,0.5,45.0,220.0,83.0,0.0,63.0,12.0,M\S\W
+"Dipped Cone, Butterscotch - Medium",460.0,190.0,21.0,17.0,0.0,30.0,150.0,59.0,0.0,45.0,8.0,M\S\W
+"Dipped Cone, Butterscotch - Small",320.0,130.0,15.0,12.0,0.3,25.0,105.0,40.0,0.0,32.0,6.0,M\S\W
+"Dipped Cone, Cherry - Kids'",210.0,80.0,9.0,7.0,0.0,15.0,65.0,28.0,0.0,20.0,4.0,M\S\W
+"Dipped Cone, Cherry - Large",650.0,270.0,30.0,24.0,0.5,45.0,200.0,82.0,0.0,62.0,12.0,M\S\W
+"Dipped Cone, Cherry - Medium",460.0,200.0,22.0,18.0,0.0,30.0,140.0,58.0,0.0,44.0,8.0,M\S\W
+"Dipped Cone, Cherry - Small",320.0,140.0,15.0,12.0,0.0,25.0,95.0,40.0,0.0,31.0,6.0,M\S\W
+"Dipped Cone, Chocolate - Kids'",200.0,80.0,9.0,7.0,0.0,15.0,65.0,28.0,0.0,20.0,4.0,M\S\W
+"Dipped Cone, Chocolate - Large",640.0,270.0,30.0,23.0,0.5,45.0,200.0,81.0,1.0,60.0,13.0,M\S\W
+"Dipped Cone, Chocolate - Medium",460.0,190.0,22.0,17.0,0.0,30.0,140.0,58.0,1.0,43.0,9.0,M\S\W
+"Dipped Cone, Chocolate - Small",320.0,130.0,15.0,12.0,0.0,25.0,95.0,40.0,1.0,30.0,6.0,M\S\W
+Vanilla Cone - Kids',160.0,40.0,4.5,3.0,0.2,15.0,65.0,25.0,0.0,18.0,4.0,M\W
+Vanilla Cone - Large,450.0,120.0,14.0,9.0,0.5,45.0,180.0,71.0,0.0,52.0,12.0,M\W
+Vanilla Cone - Medium,320.0,90.0,10.0,6.0,0.0,30.0,130.0,50.0,0.0,36.0,8.0,M\W
+Vanilla Cone - Small,220.0,60.0,7.0,4.5,0.0,25.0,90.0,34.0,0.0,26.0,6.0,M\W
+Mango Pineapple Smoothie - Large,420.0,0.0,0.0,0.0,0.0,0.0,180.0,96.0,1.0,92.0,8.0,M
+Mango Pineapple Smoothie - Medium,330.0,0.0,0.0,0.0,0.0,0.0,135.0,77.0,1.0,74.0,6.0,M
+Mango Pineapple Smoothie - Small,250.0,0.0,0.0,0.0,0.0,0.0,90.0,59.0,1.0,56.0,4.0,M
+Mango Pineapple Smoothie - XLarge,590.0,5.0,0.0,0.0,0.0,0.0,230.0,136.0,1.0,130.0,10.0,M
+Strawberry Banana Smoothie - Large,440.0,5.0,0.0,0.0,0.0,0.0,190.0,103.0,3.0,93.0,8.0,M
+Strawberry Banana Smoothie - Medium,350.0,5.0,0.0,0.0,0.0,0.0,140.0,83.0,3.0,75.0,6.0,M
+Strawberry Banana Smoothie - Small,260.0,0.0,0.0,0.0,0.0,0.0,100.0,62.0,2.0,56.0,4.0,M
+Strawberry Banana Smoothie - XLarge,620.0,5.0,0.5,0.0,0.0,0.0,240.0,144.0,5.0,131.0,11.0,M
+Tripleberry Smoothie - Large,460.0,0.0,0.0,0.0,0.0,0.0,180.0,107.0,2.0,104.0,8.0,M
+Tripleberry Smoothie - Medium,370.0,0.0,0.0,0.0,0.0,0.0,135.0,87.0,2.0,84.0,6.0,M
+Tripleberry Smoothie - Small,280.0,0.0,0.0,0.0,0.0,0.0,90.0,66.0,1.0,65.0,4.0,M
+Tripleberry Smoothie - XLarge,660.0,0.0,0.0,0.0,0.0,0.0,220.0,153.0,3.0,149.0,10.0,M

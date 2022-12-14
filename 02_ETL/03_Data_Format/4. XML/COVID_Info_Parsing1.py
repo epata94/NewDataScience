@@ -1,8 +1,8 @@
 from xml.etree.ElementTree import parse
 import pandas as pd
 
-def student_xml_to_df():
-    tree = parse("students_info.xml")
+def covid_xml_to_df():
+    tree = parse("12월14일_코로나_예방접종현황.xml")
     note = tree.getroot()
     student_list=[]
     for parent in note.iter("student"):
@@ -37,6 +37,6 @@ def student_xml_to_df():
     return pd.DataFrame(student_list, columns=column_list)
 
 
-df = student_xml_to_df()
+df = covid_xml_to_df()
 print(df)
-df.to_csv('students_info.csv', encoding='cp949', index=False)
+df.to_csv('covid_info_1213.csv', encoding='cp949', index=False)
