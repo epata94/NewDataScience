@@ -31,7 +31,7 @@ while True:
     select = input("\n\t1. 커피 로또\n\t2. 발표자 순서\n\n메뉴를 선택하세요 ( 엔터는 종료 ) : ")
 
 #    student_base_list = ['김유진','김지혜', '문성준', '박종민', '송지예', '양석훈', '이예지', '임성혁', '한권제', '현재봉']
-    student_base_list = ['한권제','송지예','양석훈']
+    student_base_list = ['한권제','이예지','김지혜']
     class_all_list = student_base_list[:]
     class_all_list.append('이현구')
 
