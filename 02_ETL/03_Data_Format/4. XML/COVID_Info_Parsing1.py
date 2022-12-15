@@ -30,4 +30,5 @@ def covid_xml_to_df():
 df = covid_xml_to_df()
 print(df)
 
-df.to_csv('12월14일_코로나_예방접종현황_v1.csv', encoding='utf-8', index=False)
+# df.to_csv('12월14일_코로나_예방접종현황_v1.csv', encoding='utf-8', index=False)
+df.to_csv('12월14일_코로나_예방접종현황_v1.csv', encoding='cp949', index=False)

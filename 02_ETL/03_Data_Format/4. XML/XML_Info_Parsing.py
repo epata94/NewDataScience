@@ -2,7 +2,7 @@ from xml.etree.ElementTree import parse
 import pandas as pd
 
 def get_record_column_names(items):
-    for item in items.iter("item"):
+    for item in items.iter("record"):
         column_list = []
         is_first = True
         for column_data in item.iter():
@@ -16,7 +16,7 @@ def get_record_column_names(items):
 def get_all_records(items):
 
     all_records = []
-    for item in items.iter("item"):
+    for item in items.iter("record"):
 
         simple_row_list=[] # 행 데이터
 
@@ -31,17 +31,18 @@ def get_all_records(items):
     return all_records
 
 
-tree = parse("12월13일_시도별_코로나백신_접종현황.xml")
-response = tree.getroot()
-items = response.find('body').find('items')
-print(items.tag)
+tree = parse("전국공공시설개방정보표준데이터.xml")
+root = tree.getroot()
+records = root.find('records')
+print(records.tag)
 
+print(get_record_column_names(records))
 
-print(get_record_column_names(items))
-
-all_records = get_all_records(items)
-column_list = get_record_column_names(items)
-print(all_records)
-print(column_list)
+all_records = get_all_records(records)
+column_list = get_record_column_names(records)
+# print(all_records)
+# print(column_list)
 df = pd.DataFrame(all_records, columns=column_list)
-df.to_csv('12월13일_시도별_코로나백신_접종현황.csv', encoding='cp949', index=False)
+print(df.head())
+print(df.shape)
+# df.to_csv('12월13일_시도별_코로나백신_접종현황.csv', encoding='utf-8', index=False)
