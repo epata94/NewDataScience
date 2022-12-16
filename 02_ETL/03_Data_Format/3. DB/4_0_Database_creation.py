@@ -15,6 +15,7 @@
 # Query OK, 1 row affected (0.00 sec)
 # grant all privileges on *.* to 'open_source'@'localhost';
 
+# install mysql-connector
 import mysql.connector
 
 mydb = mysql.connector.connect(host='localhost',user='open_source', passwd='1111')

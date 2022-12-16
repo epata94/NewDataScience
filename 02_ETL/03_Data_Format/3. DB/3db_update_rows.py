@@ -4,7 +4,7 @@ import sqlite3
 import sys
 
 # Path to and name of a CSV input file
-input_file = sys.argv[1] #data_for_updating.csv
+input_file = 'data_for_updating.csv'
 
 # Create an in-memory SQLite3 database
 # Create a table called sales with four attributes

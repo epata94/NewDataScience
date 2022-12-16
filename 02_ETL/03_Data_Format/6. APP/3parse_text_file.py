@@ -1,8 +1,8 @@
 # 목적: 비정형 텍스트 데이터에서 카테고리별 통계치 계산하기
 import sys
 
-input_file = sys.argv[1] # mysql_server_error_log.txt
-output_file = sys.argv[2] # output_files/3output.csv
+input_file = 'mysql_server_error_log.txt'
+output_file = 'output_files/3output.csv'
 
 messages = {}
 notes = []

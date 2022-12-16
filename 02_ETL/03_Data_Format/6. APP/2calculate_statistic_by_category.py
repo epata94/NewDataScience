@@ -13,8 +13,8 @@ def date_diff(date1, date2):
 		diff = 0
 	return diff
 	
-input_file = sys.argv[1] # customer_category_history.csv
-output_file = sys.argv[2] # output_files/2output.csv
+input_file =  'customer_category_history.csv'
+output_file = 'output_files/2output.csv'
 
 packages = {}
 previous_name = 'N/A'

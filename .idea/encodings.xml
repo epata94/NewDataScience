@@ -6,5 +6,6 @@
     <file url="file://$PROJECT_DIR$/02_ETL/01_Pandas_basic/data/korea_movie_list.csv" charset="x-windows-949" />
     <file url="file://$PROJECT_DIR$/02_ETL/01_Pandas_basic/data/weight_loss.csv" charset="x-windows-949" />
     <file url="file://$PROJECT_DIR$/02_ETL/03_Data_Format/5. JSON/student_zero.csv" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/02_ETL/03_Data_Format/5. JSON/student_zero2.json" charset="x-windows-949" />
   </component>
 </project>

@@ -6,7 +6,7 @@ con = sqlite3.connect('Suppliers.db')
 c = con.cursor()
 
 # 중복 레코드를 제거하는 distinct
-# output = c.execute("SELECT distinct Supplier_Name from suppliers")
+output = c.execute("SELECT distinct Supplier_Name from suppliers")
 
 # WHERE 이후 여러 조건
 # output = c.execute("SELECT * FROM Suppliers WHERE Supplier_Name = 'Supplier X' and Purchase_Date = '1/20/14' ")
@@ -24,12 +24,12 @@ c = con.cursor()
 # output = c.execute("SELECT count(*) from suppliers")
 
 # 함수 사용 (MAX, MIN)
-output = c.execute("SELECT MAX(cost) from suppliers")
+# output = c.execute("SELECT MAX(cost) from suppliers")
 
 # like
 # output = c.execute("SELECT * from suppliers")
-output = c.execute("SELECT * from suppliers where Invoice_Number like '%001'")
-output = c.execute("SELECT * from suppliers where Invoice_Number like '%1-1'")
+# output = c.execute("SELECT * from suppliers where Invoice_Number like '%001'")
+# output = c.execute("SELECT * from suppliers where Invoice_Number like '%1-1'")
 # output = c.execute("SELECT * from suppliers where Invoice_Number like '001*'")
 
 rows = output.fetchall()
