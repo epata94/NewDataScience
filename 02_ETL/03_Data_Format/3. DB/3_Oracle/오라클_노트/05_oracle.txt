@@ -1,0 +1,70 @@
+05_oracle.txt
+
+■ 특정데이터 추출하기 (select)
+
+emp테이블에서 부서가 10번인 데이터를 추출하시오
+
+ > select deptno from emp where deptno=10;
+
+
+emp테이블에서 급여가 2000이상인 데이터를 추출하시오
+
+ > select sal from emp where sal>=2000;
+
+ > select * from emp where sal>=2000;
+
+
+emp테이블에서 이름이 'FORD'인 사람의 사원번호와 이름을 추출하시오
+(데이터는 대소문자중요)
+
+ > select empno,ename from emp where ename='FORD';
+
+emp테이블에서 1982/01/01 이후에 입사한 사람만 추출하시오 (ename,hiredate,deptno만)
+(중요****)
+
+ > select ename,hiredate,deptno from emp where hiredate>='1982-01-01';
+
+ > select ename,hiredate,deptno from emp where hiredate>='1982/01/01';
+
+
+emp테이블에서 ename에 'A'가 포함된 사람만 추출하시오
+
+ > select * from emp where ename like '%A%';
+
+
+emp테이블에서 커미션이 300 또는 500 또는 1400인 사람을 추출하시오 (or연산자)
+
+ > select * from emp where comm='300' or comm='500' or comm='1400';
+
+ > select * from emp where comm=300 or comm=500 or comm=1400;
+
+
+emp테이블에서 급여가 500과 1400사이인 사람만 추출하시오 (and연산자)
+
+ >  select * from emp where sal=>500 and sal<=1400;
+ >  select * from emp where sal between 500 and 1400;
+
+
+emp테이블에서 직급(job)이 CLERK(사무원)이고, 부서가 10번인 자료를 추출하시오
+
+ > select * from emp where job='CLERK' and deptno=10;
+
+
+emp테이블에서 ename에 'A'가 포함이 안된 사람만 추출하시오
+
+ > select * from emp where ename not like '%A%';
+
+
+emp테이블에서 ename을 오름차순으로 나열하여 추출하시오
+
+ > select * from emp order by ename asc; (asc는생략가능)
+
+emp테이블에서 입사일을 내림차순으로 나열하여 추출하시오
+
+ > select * from emp order by hiredate desc;
+
+
+emp테이블에서 부서번호를 오름차순으로 나열하고 사원번호를 오름차순으로 나열하여 출력하시오
+
+ > select * from emp order by deptno (asc), empno (asc);
+

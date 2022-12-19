@@ -4,7 +4,7 @@ import MySQLdb
 import sys
 
 # Path to and name of a CSV input file
-input_file = sys.argv[1] #data_for_updating_mysql.csv
+input_file = 'data_for_updating_mysql.csv'
 
 # Connect to a MySQL database
 con = MySQLdb.connect(host='localhost', port=3306, db='my_suppliers', \

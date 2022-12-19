@@ -1,0 +1,144 @@
+﻿Win10
+
+c:\>sqlplus system/12345  관라자 모드로 접속 
+
+탐색기에서
+C:\oraclexe\app\oracle\product
+scott.sql 검색
+
+SQL>@C:\oraclexe\app\oracle\product\11.2.0\server\rdbms\admin\scott.sql
+
+ctrl + C      < Oracle 서버 중지>
+
+C:\>sqlplus system/12345  < 관리자 모드로 다시접속 >
+
+SQL>alter user scott account unlock;  <사용자 계정 unlock하고 >
+SQL>alter user scott identified by tiger; < 암호 지정 >
+
+ctrl + C  < Oracle 서버 중지 >
+
+※ scott계정(user계정)으로 오라클 접속
+c:\>sqlplus scott
+Enter password:tiger
+
+c:\>sqlplus scott/tiger       scott계정(user계정)으로 오라클 접속
+     
+===========================
+테이블들 확인
+SQL>select * from tab;  ( MySQL : show tables)
+emp 
+dept
+bonus
+salgrade
+
+테이블 확인 할 것
+
+-------------------------------------
+select * from emp;
+
+desc emp;
+
+EMPNO NUMBER 4),사원번호
+ENAME VARCHAR2(10),사원이름
+JOB VARCHAR2(9), 사무직,~~~~~(부서)
+MGR NUMBER(4),  매니저
+HIREDATE DATE,  입사일 
+SAL  NUMBER(7,2) 급여
+COMM NUMBER(7,2) 커미션 ( 성과급)
+DEPTNO NUMBER(2) 부서번호 ( F.K)
+-------------------------------------
+★오라클 자료형
+
+
+VARCHAR2  : 문자열(C의 포인터와 유사 )
+CAHR      : 문자배열(C의 문자 배열 , 메모리 낭비)
+
+NUMBER(4);  //정수 4자리
+NUMBER(7,2) //실수 총7자리, 소수이하 2자리
+
+DATE  : 날짜 
+------------------------------------
+★ 테이블 작성 
+
+create TABLE test(
+id varchar2(30) NOT NULL primary key,--아이디
+pwd varchar2(30) NOT NULL,--암호
+name varchar2(30) NOT NULL,--이름
+addr varchar2(60) NOT NULL,--주소
+hp   varchar(40) NOT NULL--핸드폰 번호
+);
+-------------------------------------
+desc test; 구조보기 
+
+-------------------------------------
+데이터 입력 : insert
+
+insert into test(id,pwd,name,addr,hp)
+values('kim','kim123','김연아','인천광역시','010-2222-3333');
+
+insert into test values('lee','lee123','이동국','전북','010-3456-7868');
+insert into test values('lee','lee123','이동국','전북','010-3456-7868');
+
+p.k 에러 (중복 불가 ) : id, 주민번호, 학번, 사번
+
+insert into test values('park','park123','박지성','서울','010-1111-7868');
+insert into test values('young','young123','박영탁','대구','010-2323-7888');
+insert into test values('im','im123','임영웅','포천','010-2323-7878');
+
+-------------------------------------
+select * from test;
+
+■이름만 검색 하기
+select name from test;
+
+
+■id,pwd,name 검색하기 
+
+select id,pwd,name from test;
+
+
+■ id가 im자료를 검색하시오.
+
+select * from test where id='im';
+
+
+■주소가 '서울'인 자료를 검색 하시오.
+select * from test where addr like '%서울%';
+select name,addr from test where addr like '%서울%';
+
+-------------------------------------
+글 수정 : 조건을 p.k로 해야 한다 
+-------------------------------------
+insert into test 
+values('hong','hong123','홍길동','서울','010-2323-2323');
+
+
+■ 홍길동을 홍길순으로 수정 하시오.
+
+update test set name='홍길순' where id='hong';
+
+select * from test where id='hong';
+
+-------------------------------------
+■글 삭제 : 조건을 p.k로 해야 한다 
+          '홍길순' 삭제 하시오 where id='hong'
+-------------------------------------
+delete from test where id='hong';
+
+=================================================
+
+■ 오라클 계정 생성
+
+1. 관리자 모드로 접속 한다
+
+
+
+
+
+
+
+
+
+
+
+

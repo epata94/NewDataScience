@@ -1,0 +1,73 @@
+11_subQuery.txt
+
+join은 하나 이상의 테이블에서 원하는 데이터를 찾기위해서
+join을 사용했다면 ...
+
+subQuery는 하나의 테이블에서 검색결과를 다른 테이블에 전달하여
+새로운 결과를 검색하는 경우에 사용한다
+
+같은 테이블에서 쿼리작업을 여러번 하는경우도 있다 (게시판 할 때 사용)
+
+
+
+
+문제1) 'JONES'이 근무하는 부서와 일치하는 부서명을 출력하시오
+
+> select deptno from emp where ename='JONES';
+> select dname,deptno from dept where deptno=20;
+
+＃두 개의 쿼리를 하나로 만든다
+
+> select dname,deptno from dept
+   where deptno=(select deptno from emp where ename='JONES');
+
+
+
+
+문제2) 10번부서에서 근무하는 자료를 검색하되 
+         emp와 dept테이블에서 부서번호로 조인한 결과에서 부서번호가 10인 조건을 추가한다
+         (출력할 필드명 : ename,dname,deptno)
+
+> select e.ename,d.dname,d.deptno
+   from emp e,(select deptno,dname from dept where deptno=10) d;
+
+
+
+문제3) 20번부서에서 최대급여를 받는사원과 동일급여를 받는사원을 검색하시오
+         (출력할 필드명 : empno,ename,sal,deptno)
+
+> select empno,ename,sal,deptno
+   from emp
+   where sal=(select max(sal) from emp where deptno=20);
+
+==============================================================================
+
+문제4) 게시판 서브쿼리
+
+(연습) rownum은 오라클테이블의 일련번호
+        rownum은 데이터가 있는것만 일련번호가 부여된다
+
+> select rownum from emp;
+> select rownum rnum from emp; // 별칭사용
+
+
+■ String sql="select * from(select 필드명,필드명 ... from(select * from 테이블명 order by 키필드)) 
+                  where rnum<=10";
+
+   String sql="select * from(select rownum rnum,writer,subject,content...from(select * from 테이블명 order by 키필드)) 
+                  where rnum<=10";
+
+
+■ mysql 서브쿼리
+
+   select * from board ordery by 키필드 limit ?,?
+                                                       위치,갯수
+
+
+■ 오라클 게시판 서브쿼리 검색
+    // 서브쿼리
+        sql="select * from(select rownum rnum,num,"
+         +"writer,email,subject,passwd,regdate,"
+         +"readcount,ref,re_step,re_level,content,"
+         +"ip from(select * from board order by ref desc,"
+         +"re_step asc)) where rnum>=? and rnum<?";

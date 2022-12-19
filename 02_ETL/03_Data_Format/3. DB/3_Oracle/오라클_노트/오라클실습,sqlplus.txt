@@ -1,0 +1,168 @@
+■ 오라클실습
+
+C:\>sqlplus scott/tiger
+
+* 테이블제공
+
+emp; 사원테이블, deptno(f.k)
+
+dept; 부서테이블, deptno(p.k)
+
+bonus; 보너스
+
+salgrade;  급여등급
+
+
+* 크기순서
+
+DB >> table >> record(행) >> field(아이템)
+
+
+create table test01(
+id varchar2(20) primary key not null,
+pw varchar2(20) not null,
+name varchar2(30) not null,
+hp varchar2(14) not null,
+addr varchar2(50) not null
+);
+
+insert into test01 values('kim1','k12','김길동','010-1111-1111','서울 구로구 구로동');
+.... ....
+
+> *** commit; 은 꼭 해주세요! ( 데이터가 저장이 안될 수도 있기 때문에 )
+
+
+***
+이효리 검색
+select * from test01 where name='이효리';
+
+이름에 이가 포함되어있는 자료 검색
+select * from test01 where name like '%이%';
+
+이효리를 이상순으로 변경
+update test01 set name='이효리' where name='이상순';
+
+name을 역순으로 변경
+select * from test01 order by name desc;
+select name test01 order by name desc;
+
+이순신을 삭제하시오
+delete from test01 where name='이순신';
+
+
+***rollback; 을 하면 commit; 저장하기전으로 돌아감
+
+
+=============================================================================================
+
+■ SQL_SQLPlus
+
+> SQL(Structured Query Language)? 
+
+   관계형DB (oracle,mysql,ms_sql ...)을 처리하기위한언어이다.
+   CRUD(create=insert, read=select, update, delete) 이런 작업들 ...
+
+> SQL*Plus?
+
+   SQL언어를 구현한 오라클 RDBMS를 관리할 수 있는 
+   오라클사의 클라이언트 툴 제품명이다
+
+> SQL*Plus 실습
+
+select * from emp;
+
+/ 는 명령을 바로 수행
+
+r 은 명령을 수행하기전에 명령버퍼에 저장된 내용을 
+다시 한번 출력하고 수행한다
+
+ed는 버퍼에 있는 내용을 메모장으로 편집하기위한 명령
+
+> dos 프롬프트로 나가는 명령
+
+sql>host
+
+c:\>exit (다시 SQL롤 돌아온다)
+
+
+>
+sql>select * from emp;
+sql>host
+c:\>dir *.sql
+c:\>exit
+
+>
+SQL>spool b001.txt
+
+select * from emp;
+select * from dep;
+select * salgrade;
+
+SQL>SPOOL OFF
+
+SQL>host
+c:\>dir b001.* // 다 볼 수 있다 .. select결과값도 나옴
+c:\>notepad b001.lst // 메모장으로 실행
+c:\>exit
+
+
+========================================================================
+
+SQL>select * from dept;
+SQL>set heading off; // 헤딩삭제 (데이터만보임)
+SQL>set heading on; // 다시보이게
+
+========================================================================
+
+SQL>set linesize 120; // 가로폭지정
+
+SQL>pagesize // 한페이지에 출력되는 페이지크기 지정
+(10으로 지정하면 7개가 출력된다.. 헤더부분이 3줄차지)
+
+SQL>set pagesize 10;
+SQL>select * from emp;
+
+
+SQL>column empno heading '사원번호'; // 칼럼제목 설정하기
+SQL>select empno,empname from emp;
+
+SQL>column dname format a12; // 칼럼폭 크기변경하기
+SQL>column loc format a18;
+SQL>select * from dept;
+
+
+> 숫자데이터
+
+SQL>column sal format 99,999;
+SQL>select * from emp;
+
+SQL>column sal format 0,000,000;
+SQL>select * from emp;
+
+SQL>column sal format 99999; // 원상복귀
+
+
+============================================================================
+
+SQL>select 5+7 from dual; // dual이라는 가상의테이블이 생김 (연산가능)
+
+SQL>select sysdate from dual; // 날짜 출력
+
+SQL>select to_char(sysdate,'yyyy-MM-dd HH:MI:SS DY') from dual; // 년 월 일 시간 요일 순으로 출력
+  결과 : 2022-09-21 12:37:30 수
+
+SQL>select to_char(sysdate,'yyyy-MON-dd HH:MI:SS DY') from dual;
+  결과 : 2022-9월 -21 12:38:58 수
+
+
+to_char()함수는 날짜를 문자로 변환 or 숫자를 문자로 변환
+
+to_date()함수는 문자를 날짜로 변환
+
+to_number()함수는 문자를 숫자로 변환
+
+
+
+
+   
+   

@@ -1,0 +1,147 @@
+06_문자날짜함수.txt
+
+
+■ 문자처리함수
+
+ upper : 대문자로변환 ( 자바 : toUpperCase() )
+
+ lower : 소문자로변환 ( 자바 : toLowerCase() )
+
+ 
+ initcap : 첫글자만 대문자로 변환
+ > select initcap(ename) from emp;
+
+ 
+ trim : 공백제거 ( 자바 : tfName.getText().trim()... )
+ 
+ ltrim : 왼쪽 공백제거
+ 
+ rtrim : 오른쪽 공백제거
+
+
+ substr : 문자열 일부분을 추출 ( 자바 : str.substring(7,8) )
+
+
+
+ 문제1) emp테이블에서 ename을 소문자로 출력하시오
+
+ > select lower(ename) from emp;
+
+
+ 문제2) emp테이블에서 ename을 대문자로 출력하시오
+
+ > select upper(ename) from emp;
+
+
+
+ 문제3) emp테이블에서 ename, hiredate를 출력하되 hiredate를 년도만 출력하시오
+
+ > select ename,substr(hiredate,1,2) from emp; (hiredate에 첫글자부터 두글자 출력)
+
+ 문제4) 날짜만 출력하시오
+
+ > select ename,substr(hiredate,1,2) from emp;
+
+
+ 문제5) emp테이블의 ename에서 3번째 문자가 R인 자료를 출력하시오
+
+ > select ename from emp where substr(ename,3,1)='R';
+
+
+ 문제6) 날짜처리 ... *****
+           emp테이블에서 82년도에 입사한 사람만 추출하시오
+
+
+ > select * from emp where substr(hiredate,1,2)='82';
+
+
+===========================================================================
+
+자바에서 문자열을 숫자로 변환 : Integer.PaserInt("123");
+
+자바에서 숫자를 문자열로 변환 : " ";
+
+자바에서 날짜를 문자열로 변환 : date.toString();
+
+자바에서 StringBuffer를 문자열로 변환 : sb.toString();
+
+===========================================================================
+
+오라클에서 문자를 숫자로 변환 : to_numbmer
+
+                 숫자를 문자로 변환 : to_char
+
+오라클에서 날짜를 문자로 변환 : to_char
+  
+                 문자를 날짜로 변환 : to_date
+
+
+
+
+
+■ 날짜출력형식
+
+yyyy : 년도 4자리
+yy : 년도 2자리
+
+MM : 월(달)을 숫자로 표기
+MON : 월(달)을 알파벳으로 표기
+
+dd : 날짜를 두자리로 표기
+
+DAY : 요일 표현
+DY : 요일을 약어로 표현
+
+
+■ 시간출력형식
+
+AM/PM : 오전 / 오후
+
+HH / HH12 : 12시간제 표기
+HH24 : 24시간제 표기
+
+MI : 분
+SS : 초
+
+
+===================================================================
+
+문제1)
+
+> select to_char(to_date('20220921','yyyymmdd'),'yyyy "of" mm/dd') from dual;
+
+문제2)
+
+> select to_char(sysdate,'MONTH'),to_char(sysdate,'MON') from dual;
+
+문제3)
+
+> select to_char(sysdate,'YYYY'),to_char(sysdate,'YY')from dual;
+
+
+문제4)
+
+> select to_char(sysdate,'YYYY-MON-dd') from dual;
+    결과 2022-9월 -21
+
+> select to_char(sysdate,'YYYY-MM-dd') from dual;
+    결과 2022-09-21
+
+
+문제5)
+
+> select to_char(sysdate,'YYYY-MM-DD DAY') from dual;
+    결과 2022-09-21 수요일
+
+> select to_char(sysdate,'YYYY-MM-DD DY') from dual;
+    결과 2022-09-21 수
+
+
+문제6) emp테이블에서 sal를 6자리로 하고 앞에 $를 붙여 출력하시오
+
+> select ename,to_char(sal,'$999,999') from emp;
+
+
+문제7) 지역 통화기호를 붙여 급여를 출력하시오 ( 대한민국 : \)
+
+> select ename,to_char(sal,'L999,999') from emp;

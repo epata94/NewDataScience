@@ -1,0 +1,191 @@
+12_f_k_check.txt
+
+
+■ 제약사항 종류
+    not null
+    primary key
+
+    UNIQUE : 유일한 값
+
+    check
+    foreign key
+
+■ DCL : 유저생성, 권한부여
+ 
+ 1.관리자로 접속
+    c:\>sqlplus system/12345
+
+ 2.유저생성형식
+    create user 유저명 identified by 암호;
+
+    create user j123 identified by j123;
+
+ 3.권한부여
+    grant connect,resource to 유저;
+
+    grant connect,resource to j123;
+
+ 4.ctrl+c 종료
+
+ 5.j123/j123으로 접속
+    c:\>sqlplus j123/j123
+
+================================================================
+■ 실습 (j123/123으로 들어가고...)
+
+    dname varchar2(20) unique; // 부서명은 유일성을 가져야한다
+
+    #생성
+    create table dept07(
+    deptno number(2) not null primary key,
+    dname varchar2(20) not null unique,
+    loc varchar2(30) not null
+    );
+
+    #구조확인
+    desc dept07;
+
+    #데이터입력
+    insert into dept07 values(11,'영업부','서울');
+    insert into dept07 values(12,'회계부','부산');
+    insert into dept07 values(15,'영업부','대전'); // unique에러
+
+
+  ▶ check 제약사항
+      지정된 값이나 지정된 범위만 입력해야 할 때 사용 ( 예, 성별입력 )
+
+      1.테이블생성
+      
+      2.제약사항확인
+      3.제약사항삭제
+
+      4.사용자권한취소
+      5.사용자계정삭제
+
+======================================================================
+        
+        1.테이블생성
+
+        >dept77테이블생성
+
+         create table dept77(
+         deptno number(2) not null primary key,
+         dname varchar2(20) not null unique,
+          loc varchar2(30) not null
+           );
+
+        >emp77테이블생성
+
+         create table emp77(
+         empno number(4) constraint emp77_pk primary key,
+         ename varchar2(30) not null,
+         deptno number(2),
+         sal number(7,2) constraint emp77_ck check(sal between 500 and 1000),
+         constraint emp77_fk foreign key(deptno) references dept77(deptno)
+          );
+
+
+
+      #컬럼폭지정
+     
+       col table_name format a15;
+       col column_name format a15;
+       col constraint_name format a15;
+
+
+
+      2.제약사항확인
+
+       select table_name,column_name,constraint_name
+       from user_cons_columns
+       where table_name in('EMP77','DEPT77');
+
+       ※ 테이블명은 반드시 대문자로 입력하여 출력하세요
+
+
+
+      #데이터입력 (dept77)
+      
+       insert into dept77 values(10,'영업부','서울');
+       insert into dept77 values(20,'전산실','부산');
+       insert into dept77 values(30,'리서치','대구');
+
+       insert into dept77 values(40,'영업부','서울'); // unique제약사항
+
+
+
+      #데이터입력 (emp77)
+ 
+        insert into emp77 values(001,'박문수',10,1000);
+        insert into emp77 values(002,'임영웅',20,900);
+        insert into emp77 values(003,'영탁',30,700);
+
+        insert into emp77 values(003,'홍길동',30,700); // pk에러
+        insert into emp77 values(004,'홍길동',30,700);
+
+        insert into emp77 values(005,'갑순이',30,1010); // ck에러
+        insert into emp77 values(005,'갑돌이',30,450); // ck에러
+
+
+
+
+      3.제약사항삭제
+
+       alter table emp77 drop constraint emp77_pk cascade;
+       (cascade는 연계된 키까지 삭제함)
+
+       (확인)
+       select table_name,column_name,constraint_name
+       from user_cons_columns
+       where table_name in('EMP77','DEPT77');
+
+
+
+      #테이블 생성 후 외래키(FK) 설정을 나중에 할 때
+        
+        alter table emp77
+        add constraint emp77_fk foreign key(deptno)
+        references dept77(deptno);
+
+
+
+      #foreign key 제약사항삭제
+
+       alter table emp77
+       drop constraint emp77_fk;
+
+       alter table emp77
+       drop constraint emp77_fk cascade;
+       (cascade는 연계된 키까지 삭제함)
+
+      #check 제약사항삭제
+        
+       alter table emp77
+       drop constraint emp77_ck cascade;
+
+
+
+      4.사용자(j123) 권한 취소
+         
+         ctrl+c ( 프로그램종료 )
+         
+         관리자로 접속
+         sqlplus system/12345
+         
+  SQL>revoke connect,resource from j123;
+
+         권한취소되면 접속 못한다
+
+=========================================================
+
+■ 유저확인
+    select username from all_users;
+
+■ 사용자계정삭제
+    drop user j123 cascade;
+
+ cascade는 유저가 생성한 테이블이 있어서 그냥 삭제되지않기때문에
+ cascade를 함께  써주어야 삭제 할 수 있다
+
+
+       

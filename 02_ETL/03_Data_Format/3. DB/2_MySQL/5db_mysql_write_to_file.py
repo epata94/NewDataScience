@@ -4,7 +4,7 @@ import MySQLdb
 import sys
 
 # Path to and name of a CSV output file
-output_file = sys.argv[1] #output_files/5data_from_mysql.csv
+output_file = 'output_files/5data_from_mysql.csv'
 
 # Connect to a MySQL database
 con = MySQLdb.connect(host='localhost', port=3306, db='my_suppliers', \

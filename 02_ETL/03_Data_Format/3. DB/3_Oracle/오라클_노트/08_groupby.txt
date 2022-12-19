@@ -1,0 +1,34 @@
+08_groupby.txt
+
+■ group by절 형식
+
+select * | 컬럼명,컬럼명 ... 
+from talbe명
+[where 조건]
+
+[group by 컬럼명,컬럼명 ...]
+[having 조건]
+
+[order by 컬럼명(키필드) asc | desc]
+
+==========================================================
+ 
+문제1) emp테이블에서 부서별(그룹화)로 가장 높은 급여 구하기
+
+> select max(sal), deptno from emp group by deptno;
+
+
+
+■ having절
+
+having절은 group by절에 의해 생성된 결과 중에서
+조건을 사용 할 때 having절을 사용한다.
+
+문제2) emp테이블에서 부서별 급여 평균이 2000이상인 자료만 출력하시오
+
+> select avg(sal), deptno from emp group by deptno having avg(sal)>=2000;
+
+
+문제3) emp테이블에서 부서별 최대 급여가 3000인 자료만 출력하시오
+
+> select deptno,max(sal) from emp group by deptno having max(sal)=3000;

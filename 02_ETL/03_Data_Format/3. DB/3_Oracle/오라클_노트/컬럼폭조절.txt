@@ -1,0 +1,37 @@
+set linesize 160;
+
+test29
+-----------------------
+set linesize 120;
+
+col name format a10;
+col pw format a10;
+col email format a12;
+col title format a12;
+col content format a30;
+-----------------------
+
+member
+
+col name format a10;
+col height format a7;
+col weight format a7;
+col age  format  99999;
+col sex format a7;
+
+emp
+
+col empno  format  9999;
+col ename format a10;
+col job format a10;
+col deptno  format  9999;
+col sal  format  999999;
+col comm  format  99999;
+col mgr  format  9999;
+
+
+col num  format  9999;
+col name format a10;
+col title format a20;
+
+
