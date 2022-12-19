@@ -1,5 +1,9 @@
 -- 주석 달기 연습
 
+-- 오라클 버전확인
+select * from v$version;
+
+
 -- 접속한 계정에서 테이블 목록 조회
 select * from tabs;
 
