@@ -74,7 +74,8 @@ FROM   employees;
 SELECT RPAD(first_name, 10, '-') AS name, LPAD(salary, 10, '*') AS sal 
 FROM   employees;
 
---  Q] 직무 아이디가 it_prog 인 사원의 이름 앞에 3자리만 출력하고 나머지 7자리는 * 출력하고 SALARY는 전체 10자리중 오른쪽으로 출력하고 나머지는 * 출력한다.
+--  Q] 직무 아이디가 it_prog 인 사원의 이름 앞에 3자리만 출력하고 나머지 7자리는 * 출력하고 SALARY는 전체 10자리중 오른쪽으로 출력하고 
+--- 나머지는 * 출력한다.
 SELECT 
   -- 전체 내용을 보여주지 않고 텍스트의 일부만 보여주는 응용
   RPAD(substr(first_name, 1, 3), LENGTH(first_name), '*') AS name,

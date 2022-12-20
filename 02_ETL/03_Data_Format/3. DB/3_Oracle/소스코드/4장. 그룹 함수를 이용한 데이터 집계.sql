@@ -4,14 +4,14 @@
 --4.1 그룹함수
 SELECT * FROM employees;
 -- COUNT, SUM, AVG, MIN, MAX, STDDEV, VARIANCE
-SELECT  AVG(salary), MAX(salary), MIN(salary), SUM(salary)
+SELECT  COUNT(salary), AVG(salary), MAX(salary), MIN(salary), SUM(salary), STDDEV(salary)
 FROM    employees
 WHERE   job_id LIKE 'SA%';
 
 SELECT   MIN(hire_date), MAX(hire_date)
 FROM     employees;
 
-SELECT MIN(first_name), MAX(last_name)
+SELECT MIN(first_name), MAX(first_name)
 FROM   employees;
 
 --모든 사원의 수를 출력하라
@@ -43,20 +43,31 @@ SELECT
   ROUND(SUM(salary*commission_pct), 2) sum_bonus, 
   COUNT(*) count, 
   ROUND(AVG(salary*commission_pct), 2) avg_bonus1, 
+  -- count(*)는 NULL 포함하여 개수를 세기 때문에 분모가 늘어나 값이 줄어든다.
   ROUND(SUM(salary*commission_pct)/count(*), 2) avg_bonus2
 FROM employees; --NULL은 연산에서 제외된다.
 
 --GROUP BY
+SELECT    department_id
+FROM      employees
+GROUP BY  department_id;
+
 SELECT    department_id,  AVG(salary)
 FROM      employees
 GROUP BY  department_id;
+
+
 
 -- 하나 이상의 열로 그룹화
 SELECT    department_id, job_id, SUM(salary)
 FROM      employees
 GROUP BY  department_id, job_id;
 
+SELECT  COUNT(first_name) 
+FROM    employees;
 -- 그룹 함수를 잘못 사용한 질의
+-- 개별적인 열과 그룹함수를 혼합해서 사용할 때에는 개별적인 열을 명시하는
+-- GROUP BY 절을 포함해야 한다.
 SELECT  department_id, COUNT(first_name)
 FROM    employees;
 
@@ -75,6 +86,7 @@ FROM     employees
 GROUP BY department_id
 HAVING   AVG(salary) >= 8000;
 
+-- AS 생략 가능
 SELECT   job_id, AVG(salary) PAYROLL
 FROM     employees
 WHERE    job_id NOT LIKE 'SA%'
@@ -82,21 +94,26 @@ GROUP BY job_id
 HAVING   AVG(salary) > 8000
 ORDER BY AVG(salary);
 
--- GROUPING SETS
-SELECT   department_id, job_id, manager_id, ROUND(AVG(salary), 2) AS avg_sal
-FROM     employees
-GROUP BY 
-GROUPING SETS ((department_id, job_id), (job_id, manager_id))
-ORDER BY department_id, job_id, manager_id;
+SELECT    department_id, job_id,manager_id, ROUND(AVG(salary), 2)
+FROM      employees
+GROUP BY  department_id, job_id, manager_id;
 
---GROUPING SETS와 같은 결과를 얻는 UNION ALL 구문
-SELECT department_id, job_id, NULL AS manager_id, ROUND(AVG(salary), 2) AS avg_salary
-FROM employees
-GROUP BY department_id, job_id
-UNION ALL
-SELECT NULL AS department_id, job_id, manager_id, ROUND(AVG(salary), 2) AS avg_salary
-FROM employees
-GROUP BY job_id, manager_id;
+-- 아래 grouping sets과 같은 결과 단계1
+select to_char(department_id), round(avg(salary),2)
+from employees
+group by department_id -- department_id별 급여 평균
+union all
+select job_id, round(avg(salary),2)
+from employees
+group by job_id -- job_id 별 급여평균
+order by 1;
+
+-- grouping set
+select department_id, job_id, round(avg(salary), 2)
+from employees
+group by grouping sets (department_id, job_id)
+order by department_id, job_id;
+
 
 SELECT DECODE(GROUPING(department_id), 1, '모든 부서', department_id) AS 부서명,
        DECODE(GROUPING(job_id), 1, '모든 업무', job_id) AS 업무명,
