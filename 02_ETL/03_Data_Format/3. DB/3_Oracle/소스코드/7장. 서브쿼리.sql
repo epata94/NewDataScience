@@ -1,3 +1,5 @@
+-- 서브쿼리: 쿼리의 각각의 절에 의존관계를 활용하여 중첩된 쿼리를 작성해 하나의 검색결과를 자동으로 완성
+
 --Nancy의 급여보다 많은 급여를 받는 사원의 이름과 급여를 출력하세요.
 SELECT salary FROM employees WHERE first_name='Nancy'; --12008
 SELECT first_name, salary FROM employees WHERE salary > 12008;
@@ -7,31 +9,33 @@ SELECT first_name, salary
 FROM   employees 
 WHERE  salary > (SELECT salary
               FROM   employees 
-              WHERE  first_name='Nancy');
+              WHERE  first_name='Nancy'); -- 단일행 서브쿼리
               
---급여를 평균 이상 받는 사원의 이름과 급여를 출력하세요.
+--Q] 급여를 평균 이상 받는 사원의 이름과 급여를 출력하세요.
 SELECT first_name, salary 
 FROM   employees 
 WHERE  salary >= (SELECT avg(salary)
                FROM   employees);
 
-
-SELECT first_name, salary 
-FROM   employees 
-WHERE  salary > (SELECT salary
-              FROM   employees 
-              WHERE  first_name='David'); 
-              
+-- 다중행 서브쿼리
 SELECT salary 
 FROM employees 
 WHERE first_name='David';
 
+-- 아래 구문은 에러를 발생: where의 조건으로 단일행의 결과가 출력되어야 하는데 여러 값이 오기 때문에 검색의 조건으로 활용할 수 없음
+SELECT first_name, salary 
+FROM   employees 
+WHERE  salary > (SELECT salary
+              FROM   employees 
+              WHERE  first_name='David');
 
+-- 다중행 서브쿼리
 SELECT first_name, salary 
 FROM   employees 
 WHERE  salary > ANY (SELECT salary
               FROM   employees 
               WHERE  first_name='David'); -- 4800, 6800, 9500
+
 
 
 SELECT first_name, department_id, job_id

@@ -112,6 +112,19 @@ SELECT SUM(quantity)
 FROM   sales_log
 WHERE  week_day='SALES_MON';
 
+-- PIVOT: 행으로 나열된 여러 개의 데이터를 공통의 속성으로 묶어 집계(평균, 합계등)하고 열로 나타낸다.
+-- 로그성 데이터를 분석용 데이터로 전환하는 과정
+-- SELECT
+-- FROM
+-- PIVOT(
+--    그룹함수(집계대상컬럼)
+--    for 피벗기준컬럼
+--    in (피벗컬럼 나열);
+--)
+-- WHERE
+-- ORDER BY
+-- 반드시 집계함수가 있어야 한다. 집계함수가 없는 형식으로 wide 형식의 pivot 테이블을 만들려면 pivot 함수 없이 
+-- case when then을 사용해야 한다.
 SELECT * 
 FROM   sales_log
 PIVOT
@@ -125,42 +138,7 @@ PIVOT
 )
 ORDER BY employee_id, week_id;
 
-CREATE OR REPLACE VIEW sales_log_view AS 
-    SELECT employee_id, week_day, quantity 
-    FROM sales_log;
-    
-SELECT * 
-FROM   sales_log_view
-PIVOT
-(
-  sum(quantity)
-  FOR week_day IN('SALES_MON' AS sales_mon, 
-                  'SALES_TUE' AS sales_tue, 
-                  'SALES_WED' AS sales_wed, 
-                  'SALES_THU' AS sales_thu, 
-                  'SALES_FRI' AS sales_fri)
-)
-ORDER BY employee_id;
-
-
-WITH temp AS (
-   SELECT employee_id, week_day, quantity
-    FROM sales_log
-)
-SELECT *
-FROM   temp
-PIVOT
-(
-  sum(quantity)
-  FOR week_day IN('SALES_MON' AS sales_mon, 
-                  'SALES_TUE' AS sales_tue, 
-                  'SALES_WED' AS sales_wed, 
-                  'SALES_THU' AS sales_thu, 
-                  'SALES_FRI' AS sales_fri)
-)
-ORDER BY employee_id;
-
-
+-- unpivot
 CREATE TABLE sales(
   employee_id  NUMBER(6),
   week_id      NUMBER(2),
@@ -175,6 +153,19 @@ INSERT INTO sales VALUES(1102, 5, 300, 300, 230, 120, 150);
 COMMIT;
 SELECT * FROM sales;
 
+-- UNPIVOT: 여러개의 열으로 나열된 여러 개의 데이터를 공통의 열로 묶어(Stack) 나열
+-- 복합속성을 단일 속성으로 전환하는 과정
+-- 포멧
+-- SELECT 
+-- FROM
+-- UNPIVOT
+--(
+--    [통합할 열의 이름: 기준 데이터의 값을 나타내는 이름]
+--    for [통합할 열의 이름: 기준 데이터에서 나열된 열의 공통 특성을 나타내는 이름]
+--    in ([기준데이터의 통합대상열1],[기준데이터의 통합대상열2]..)
+--)
+--where
+--order by
 SELECT employee_id, week_id, week_day, quantity
 FROM   sales
 UNPIVOT 
