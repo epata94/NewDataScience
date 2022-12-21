@@ -1,16 +1,33 @@
 ------------------------
 --5장 분석함수
 ------------------------
+-- 문법
+--Analytic_Function 
+--    OVER (PARTITION BY column_list
+--        ORDER BY column_list [ASC|DESC] 
+--        Windowing)
+
 SELECT 
   first_name, salary, 
+  -- RANK: 해당 값에 대한 우선순위를 결정(중복순위 계산함)
   RANK() OVER (ORDER BY salary DESC) AS rank,
+  -- DENSE_RANK: 해당 값에 대한 우선순위를 결정(중복순위 계산함)
   DENSE_RANK() OVER (ORDER BY salary DESC) AS dense_rank,
+  -- CUME_DIST: 최대값 1을 기준으로 분산된 값을 제공
   ROUND(CUME_DIST() OVER (ORDER BY salary DESC), 5) AS cume_dist,
-  ROUND(PERCENT_RANK() OVER (ORDER BY salary DESC), 5) AS pct_rank,
+  -- 최대값 1을 기준으로 백분율(Percent)값을 제공
+  -- 첫 번째 위치가 0부터 시작하고 두 번째 row부터의 위치는 (row의 rank-1) / (전체 row 개수 -1)이 됩니다.
+  -- rank를 기준으로 동일한 rank의 개수가 전체 대비 몇 %인지 표시
+  ROUND(PERCENT_RANK() OVER (ORDER BY salary DESC), 5) AS percent,
+  -- 전체 데이터 분포를 앞에서 부터 N개 구간으로 나누어 표시
+  NTILE(4) OVER (ORDER BY salary DESC) AS ntile ,
+  -- ROW_NUMBER: 검색결과에 따라 순차적으로 부여되는 행번호를 반환
   ROW_NUMBER() OVER (ORDER BY salary DESC) AS row_number,
+  -- 원래 레코드의 행번호(의사열)
   ROWNUM
 FROM employees;
 
+-- skip (중복)
 --RANK, DENSE_RANK, ROW_NUMBER
 SELECT employee_id, department_id, salary,
     RANK()       OVER (ORDER BY salary DESC) sal_rank,
@@ -18,12 +35,14 @@ SELECT employee_id, department_id, salary,
     ROW_NUMBER() OVER (ORDER BY salary DESC) sal_number
 FROM   employees;
 
+-- skip (중복)
 --CUME_DIST, PERCENT_RANK
 SELECT employee_id, department_id, salary,
     CUME_DIST()    OVER (ORDER BY salary DESC) sal_cume_dist,
     PERCENT_RANK() OVER (ORDER BY commission_pct DESC) sal_pct_rank
 FROM   employees;
 
+-- skip (중복)
 --CUME_DIST, PERCENT_RANK
 SELECT employee_id, department_id, salary,
     CUME_DIST()    OVER (ORDER BY salary DESC) sal_cume_dist,
@@ -33,17 +52,24 @@ SELECT employee_id, department_id, salary,
 FROM   employees;
 
 -- RATIO_TO_REPORT
+-- 해당 컬럼 값의 백분율을 소수점으로 제공
+-- 예) 매출
+--      30 <- 0.3
+--      50 <- 0.5
+--      20 <- 0.2
 SELECT first_name, salary, ROUND(RATIO_TO_REPORT(salary) OVER (), 4) AS salary_ratio
 FROM employees
 WHERE job_id='IT_PROG';
 
-
+-- skip 중복
 SELECT employee_id, department_id, salary,
        NTILE(10)  OVER (ORDER BY salary DESC) sal_quart_tile
 FROM   employees
 WHERE  department_id=50;
 
 -- LAG, LEAD
+-- LAG([열이름], [이전으로 이동수],[값이 없을 경우 반환값])
+-- LEAD([열이름], [이후로 이동수],[값이 없을 경우 반환값])
 SELECT employee_id, 
   LAG(salary, 1, 0) OVER (ORDER BY salary) AS lower_sal, 
   salary,
@@ -51,104 +77,15 @@ SELECT employee_id,
 FROM employees
 ORDER BY salary;
 
---FIRST_VALUE, LAST_VALUE
-SELECT employee_id,
-  FIRST_VALUE(salary) 
-    OVER (ORDER BY salary 
-      ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING) lower_sal,
-  salary my_sal,
-  LAST_VALUE(salary) 
-    OVER (ORDER BY salary 
-      ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING) higher_sal
-FROM   employees;
-
--- 모든 사원의 급여정보를 출력하세요.
--- 여기에 부서별로 가장 작은 급여액과 큰 급여액도 출력하세요.
-SELECT employee_id, department_id,
-  FIRST_VALUE(salary) 
-    OVER (PARTITION BY department_id 
-          ORDER BY salary 
-          ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING) AS lower_sal,
-  salary AS my_sal,
-  LAST_VALUE(salary) 
-    OVER (PARTITION BY department_id 
-          ORDER BY salary 
-          ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING) AS higher_sal
-FROM   employees;
-
-SELECT employee_id, department_id,
-  FIRST_VALUE(salary) 
-    OVER (PARTITION BY department_id 
-          ORDER BY salary 
-          ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING) AS lower_sal,
-  salary AS my_sal,
-  LAST_VALUE(salary) 
-    OVER (PARTITION BY department_id 
-          ORDER BY salary 
-          ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING) AS higher_sal,
-  LAST_VALUE(salary) 
-    OVER (PARTITION BY department_id 
-          ORDER BY salary 
-          ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING) - salary AS diff_sal
-FROM   employees;
-
 -- LISTAGG
+-- LISTAGG([값, 구문], [구분자]) 
+--    WITHIN GROUP(ORDER BY [열이름])
+-- 수집되는 값을 구분자로 join
+
 SELECT department_id, 
   LISTAGG(first_name, ',') WITHIN GROUP(ORDER BY hire_date) AS names
 FROM employees
 GROUP BY department_id;
-
-
---선형회귀 함수
---salary를 독립변수로 두고 commission_pct를 독리변수로 두었을 때
---모든 사원 급여의 평균과 보너스를 받는 사람의 급여 평균을 출력하세요.
-SELECT AVG(salary), REGR_AVGX(commission_pct, salary)
-FROM employees;
-
-SELECT AVG(salary)
-FROM employees
-WHERE commission_pct IS NOT NULL;
-
-SELECT AVG(commission_pct), REGR_AVGY(commission_pct, job_id)
-FROM employees;
-
-
-SELECT DISTINCT department_id, REGR_COUNT(manager_id, department_id) OVER (partition by department_id) "REGR_COUNT"
-FROM employees
-ORDER BY department_id;
-
-SELECT department_id, COUNT(*) 
-FROM employees
-GROUP BY department_id
-ORDER BY department_id;
-
-
-SELECT 
-  job_id, 
-  employee_id,
-  salary,
-  ROUND(SYSDATE-hire_date) "WORKING_DAY",
-  ROUND(REGR_SLOPE(salary, SYSDATE-hire_date) 
-    OVER (PARTITION BY job_id), 2) "REGR_SLOPE",
-  ROUND(REGR_INTERCEPT(salary, SYSDATE-hire_date) 
-    OVER (PARTITION BY job_id), 2) "REGR_INTERCEPT"
-FROM employees
-WHERE department_id = 80
-ORDER BY job_id, WORKING_DAY;
-
-SELECT 
-  DISTINCT
-  job_id, 
-  ROUND(REGR_SLOPE(salary, SYSDATE-hire_date) 
-    OVER (PARTITION BY job_id), 2) "REGR_SLOPE",
-  ROUND(REGR_INTERCEPT(salary, SYSDATE-hire_date) 
-    OVER (PARTITION BY job_id), 2) "REGR_INTERCEPT",
-  ROUND(REGR_R2(salary, SYSDATE-hire_date) 
-    OVER (PARTITION BY job_id), 2) "REGR_R2"
-FROM employees
-WHERE department_id = 80;
-
-
 
 --PIVOT, UNPIVOT
 CREATE TABLE   sales_log(

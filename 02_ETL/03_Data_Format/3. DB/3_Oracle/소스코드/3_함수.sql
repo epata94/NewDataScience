@@ -274,7 +274,7 @@ WHERE  first_name='Steven';
 SELECT first_name,
   TO_CHAR(hire_date, 'YYYY"년" MM"월" DD"일"') HIREDATE
 FROM   employees;
-
+select * from employees;
 
 SELECT first_name, last_name, TO_CHAR(salary, '$999,999') SALARY
 FROM   employees
@@ -369,9 +369,16 @@ FROM employees;
 -- COALESCE(expr1, expr2 ..) : 널이 아닌 첫번째 인자의 값을 선택
 -- 다른 활용예) 고객 데이터베이스에서 고객의 전화번호를 출력하고 싶은 경우
 -- 휴대폰, 집전화, 회사전화중 우선순위별 값이 있는 순위로 검색하고 싶을 때 유용함
+select COALESCE('010-123-4578', null, null) from dual;
+select COALESCE(null, '070-123-9865', null) from dual;
+select COALESCE(null, null, '02-123-9865') from dual;
+
+--Q] 위 예제를 COALESCE
 SELECT first_name, 
   COALESCE(salary + (salary*commission_pct), salary) AS ann_sal 
 FROM employees;
+
+
 
 --보너스가 650달러 보다 작거나 보너스가 없는 사원들에게 상품권을 지급하려 합니다.
 --해당 사원들의 이름과 보너스를 출력하세요.
@@ -420,7 +427,8 @@ select decode('css','java','백엔드 언어'
                     '기타언어') as language
 from dual;
 
--- Q] 직원 테이블에서 직무 id, 급여 그리고 직무 id가 IT_PROG, FI_MGR, FT_ACCOUNT는 각각 급여를 10,15,20% 인상한 급여를 revised_salary 열에 출력한다.
+-- Q] 직원 테이블에서 직무 id, 급여 그리고 직무 id가 IT_PROG, FI_MGR, FT_ACCOUNT는 각각 급여를 10,15,20% 인상한 급여를 
+-- revised_salary 열에 출력한다.
 SELECT  job_id, salary,
         DECODE(job_id, 'IT_PROG',    salary*1.10,
                        'FI_MGR',     salary*1.15,
@@ -447,18 +455,40 @@ SELECT job_id, salary,
 FROM   employees;
 
 
+
+
 -- 중첩함수
+-- step1
 SELECT   ADD_MONTHS(hire_date, 6) -- 입사후 3개월
 FROM     employees
 ORDER BY hire_date;
 
+--step2
 SELECT   NEXT_DAY(ADD_MONTHS(hire_date, 6), '금') -- 다음 금요일
 FROM     employees
 ORDER BY hire_date;
 
+--step3
 SELECT   TO_CHAR(NEXT_DAY(ADD_MONTHS(hire_date, 6), '금'), 'YYYY-MM-DD') AS "정규직 논의 대상일" --의 날짜
 FROM     employees
 ORDER BY hire_date;
+
+-- Q] 직원 이름별 급여, 입사년도, 입사한 날의 요일, 급여 인상액을 출력하시오.
+-- 출력 포맷 참고
+-- 급여 인상액은 다음과 같다.
+--  > 근속년도가 10년 이상이면 10% 인상
+--  > 5년이상 10년 미만이라면 5%인상
+--  > 5년 미만은 인상액 없음
+SELECT first_name, salary, 
+  TO_CHAR(hire_date, 'RRRR"년 입사"') AS year,
+  TO_CHAR(hire_date, 'day') AS day,
+  CASE WHEN TO_NUMBER(TO_CHAR(hire_date, 'YY')) >= 10
+            THEN TO_CHAR(salary*1.10, '$999,999')
+       WHEN TO_NUMBER(TO_CHAR(hire_date, 'YY')) >= 5
+            THEN TO_CHAR(salary*1.05, '$999,999')
+       ELSE TO_CHAR(salary,'$999,999')
+  END AS "INCREASING_SALARY"
+FROM employees;
 
 --집합연산자
 --UNION
@@ -470,7 +500,7 @@ SELECT employee_id, first_name
 FROM   employees
 WHERE  department_id=20;
 
---UNION ALL
+--UNION ALL (중복된 값도 포함: 201, Michael 값 참고)
 SELECT employee_id, first_name
 FROM   employees
 WHERE  hire_date LIKE '04%'
@@ -497,19 +527,16 @@ SELECT employee_id, first_name
 FROM   employees
 WHERE  department_id=20;
 
+-- 앞의 결과가 2개라 뺀 값의 차이도 존재
+SELECT employee_id, first_name
+FROM   employees
+WHERE  department_id=20
+minus
+SELECT employee_id, first_name
+FROM   employees
+WHERE  hire_date LIKE '04%';
 
---10
-SELECT first_name, salary, 
-  TO_CHAR(hire_date, 'RRRR"년 입사"') AS year,
-  TO_CHAR(hire_date, 'day') AS day,
-  CASE WHEN TO_NUMBER(TO_CHAR(hire_date, 'YY')) >= 10
-            THEN TO_CHAR(salary*1.10, '$999,999')
-       WHEN TO_NUMBER(TO_CHAR(hire_date, 'YY')) >= 5
-            THEN TO_CHAR(salary*1.05, '$999,999')
-       ELSE TO_CHAR(salary,'$999,999')
-  END AS "INCREASING_SALARY"
-FROM employees;
-
+-- skip
 SELECT first_name, salary, 
   TO_CHAR(hire_date, 'RRRR"년 입사"') AS year,
   TO_CHAR(hire_date, 'day') AS day,
