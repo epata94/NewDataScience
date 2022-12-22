@@ -125,7 +125,7 @@ SELECT *
 FROM   sales_log
 PIVOT
 (
-  sum(quantity)
+  avg(quantity)
   FOR week_day IN('SALES_MON' AS sales_mon, 
                   'SALES_TUE' AS sales_tue, 
                   'SALES_WED' AS sales_wed, 
