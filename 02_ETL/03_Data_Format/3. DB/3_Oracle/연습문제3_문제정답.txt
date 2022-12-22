@@ -1,0 +1,28 @@
+-- 급여의 편차가 가장 작은 부서의 번호를 출력하세요.
+select department_id
+from (
+select department_id, stddev(salary) as sd_sal from employees
+group by department_id
+order by sd_sal)
+where rownum=1
+;
+
+-- 103번 사원의 이름과 매니저의 이름을 출력하세요.
+-- 사원의 정보는 employees, 매니저 정보는... employees에 있음
+-- 같은 테이블에서 조인을 셀프조인이라고 합니다.
+-- 테이블 별칭이 반드시 필요함
+-- 열을 지정할 때 별칭을 이용해서 지정
+
+SELECT emp.first_name, emp.manager_id, man.first_name
+FROM employees emp, employees man
+WHERE emp.manager_id=man.employee_id and emp.employee_id=103
+;
+
+-- 60번 부서가 있는 지역의 우편번호를 출력하세요.
+select department_id, postal_code
+from departments, locations
+where department_id=60 and departments.location_id=locations.location_id;
+
+-- 급여를 가장 많이 받이 받는 사람의 이름은?
+select first_name from employees
+where salary = (select max(salary) from employees);
