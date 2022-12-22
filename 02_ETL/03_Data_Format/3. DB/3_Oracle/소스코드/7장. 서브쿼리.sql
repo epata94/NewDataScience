@@ -30,22 +30,36 @@ WHERE  salary > (SELECT salary
               WHERE  first_name='David');
 
 -- 다중행 서브쿼리
+-- ANY/ALL
+-- ANY: 하나라도 만족하면 되는 조건 / ALL: 모든 것을 만족하는 조건
+-- < ANY: 가장 큰 값보다 작은 조건    (MAX 조건)
+-- > ANY: 가장 작은 값보다 큰 조건    (MIN 조건)
+-- < all : 가장 작은 값보다 작은 조건  (MIN 조건)
+-- > all : 가장 큰 값보다 큰 조건     (MAX 조건) 
 SELECT first_name, salary 
 FROM   employees 
 WHERE  salary > ANY (SELECT salary
               FROM   employees 
               WHERE  first_name='David'); -- 4800, 6800, 9500
 
-
-
+-- IN에 서브쿼리 적용: 목록의 어떤 값과 같은지 확인
+-- Step1
+SELECT department_id 
+                 FROM employees 
+                 WHERE first_name='David'; -- 60, 80, 80
+-- Step2
+SELECT first_name, department_id, job_id
+FROM employees
+WHERE department_id IN (60, 80, 80);
+-- Step3                 
 SELECT first_name, department_id, job_id
 FROM employees
 WHERE department_id IN (SELECT department_id 
                  FROM employees 
-                 WHERE first_name='David');
+                 WHERE first_name='David'); -- 60, 80, 80
                  
-                 
---20번 부서에 근무하는 사원의 평균보다 많은 급여를 받는 사원의 이름과 급여를 출력하라
+            
+-- Q] 20번 부서에 근무하는 사원의 평균보다 많은 급여를 받는 사원의 이름과 급여를 출력하라
 SELECT first_name, salary
 FROM employees
 WHERE salary > (SELECT avg(salary)
@@ -53,6 +67,7 @@ WHERE salary > (SELECT avg(salary)
              WHERE department_id=20)
 ; 
 
+-- 상호연관 쿼리
 --자신이 속한 부서의 평균보다 많은 급여를 받는 사원의 이름과 급여를 출력하라.
 --상호연관 Sub Query를 작성해야 함
 --메인쿼리의 테이블이 서브쿼리에서 사용됨
@@ -63,8 +78,15 @@ WHERE salary > (SELECT avg(salary)
              WHERE b.department_id=a.department_id)
 ;
 
-
 --SELECT 절에 서브쿼리가 올 수 있다 -> Scalar Sub Query
+-- 상황에 따라 Join할 대상 범위를 줄여 성능을 높일 수도 있으나 항상 그렇지는 않다.
+-- 아래 조인의 결과를 대체 할 수 있다.
+--Join 을 이용한 쿼리문
+SELECT first_name, department_name
+FROM employees e JOIN departments d ON (e.department_id=d.department_id)
+ORDER BY first_name
+;
+
 SELECT first_name, (SELECT department_name
                FROM  departments d
                WHERE d.department_id=e.department_id) department_name
@@ -74,58 +96,20 @@ ORDER BY first_name
 
 
 
---Join 을 이용한 쿼리문
-SELECT first_name, department_name
-FROM employees e JOIN departments d ON (e.department_id=d.department_id)
-ORDER BY first_name
-;
-
 --인라인 뷰
-SELECT row_number, first_name, salary
-FROM (SELECT first_name, salary,
-      row_number() OVER (ORDER BY salary DESC) AS row_number
-      FROM employees)
-WHERE row_number between 1 and 10;
+-- from 절에 서브쿼리. from 절에는 테이블 또는 뷰가 올수 있다. 
+-- 서브쿼리도 독립적인 뷰이기 때문에 from 절에 오는 서브쿼리를 인라인 뷰라고 부른다.
+-- 급여를 가장 많이 받는 사람부터 상위 10명의 사원과 급여
 
-SELECT row_number, first_name, salary
-FROM (SELECT first_name, salary,
-      row_number() OVER (ORDER BY salary DESC) AS row_number
-      FROM employees)
-WHERE row_number between 11 and 20;
-
-SELECT ROWID, ROWNUM, employee_id, first_name
-FROM employees;
-
-SELECT rnum, first_name, salary
-FROM (SELECT first_name, salary, rownum AS rnum
-      FROM (SELECT first_name, salary
-            FROM employees
-            ORDER BY salary DESC)
-     )
-WHERE rnum between 11 and 20;
-
-
-SELECT rownum, first_name, salary
+SELECT  first_name, salary
 FROM (SELECT first_name, salary
       FROM employees
-      ORDER BY salary DESC)
-WHERE rownum between 1 and 10;
-
-SELECT first_name, salary
-FROM (SELECT first_name, salary
-      FROM employees
-      ORDER BY salary DESC)
-WHERE rownum between 11 and 20;
-
-SELECT rnum, first_name, salary
-FROM (SELECT first_name, salary, rownum AS rnum
-      FROM (SELECT first_name, salary
-            FROM employees
-            ORDER BY salary DESC)
-     )
-WHERE rnum between 11 and 20;
+      order by salary desc
+      )
+WHERE rownum between 1 and 10; -- MySQL의 limit 과 같은 기능
 
 
+-- 이후 skip
 SELECT employee_id, 
        LPAD(' ', 3*(LEVEL-1)) || first_name || ' ' || last_name,
        LEVEL
@@ -142,6 +126,8 @@ START WITH manager_id IS NULL
 CONNECT BY PRIOR employee_id=manager_id
 ORDER BY first_name
 ;
+
+-- 이후 SKIP
 
 SELECT employee_id, 
        LPAD(' ', 3*(LEVEL-1)) || first_name || ' ' || last_name,

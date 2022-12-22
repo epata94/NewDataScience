@@ -1,11 +1,7 @@
 ------------------------
 --5장 분석함수
 ------------------------
--- 문법
---Analytic_Function 
---    OVER (PARTITION BY column_list
---        ORDER BY column_list [ASC|DESC] 
---        Windowing)
+
 
 SELECT 
   first_name, salary, 
