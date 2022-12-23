@@ -8,8 +8,8 @@ import time
 
 url ="http://data.ex.co.kr/openapi/odtraffic/trafficAmountByCongest?key=test&type=json"
 
-def get_request_url(url):                 ## (1) 기상 정보(동네예보정보 조회 서비스) / (2) 통합대기환경 정보(대기오염정보 조회 서비스)
-    req = urllib.request.Request(url)     ## request 날리는 함수
+def get_request_url(url):
+    req = urllib.request.Request(url)
 
     try:
         response = urllib.request.urlopen(req)
@@ -27,3 +27,4 @@ else:
     raw_data = json.loads(response_data)
 
 print(type(raw_data))
+print(raw_data)

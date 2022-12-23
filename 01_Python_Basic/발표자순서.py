@@ -40,7 +40,7 @@ def combination_group(student_list, n):
     while True:
         num_of_remain = len(student_list)
         if num_of_remain > 0 and num_of_remain < n:
-            print(f'깍두기: {student_list}')
+            print(f'남은 사람: {student_list} <= 마지막 조에 편입')
             break
 
         # groups = itertools.combinations(student_list,n)
@@ -58,8 +58,9 @@ while True:
 
     select = input("\n\t1. N명 선정\n\t2. 발표자 순서\n\t3. N명 조합\n\n 메뉴를 선택하세요 ( 엔터는 종료 ) : ")
 
-    student_base_list = ['김유진','김지혜', '문성준', '박종민', '송지예', '양석훈', '이예지', '임성혁', '한권제', '현재봉']
-    # student_base_list = ['현재봉','김지혜','문성중']
+    # student_base_list = ['김유진','김지혜', '문성준', '박종민', '송지예', '양석훈', '이예지', '임성혁', '한권제', '현재봉']
+    # student_base_list = ['김유진','김지혜', '박종민', '송지예', '양석훈', '한권제', '현재봉']
+    student_base_list = ['김지혜','박종민','송지예']
     class_all_list = student_base_list[:]
     class_all_list.append('이현구')
 
