@@ -1,0 +1,66 @@
+[
+    {
+        "baseDate": "20221225",
+        "baseTime": "0600",
+        "category": "PTY",
+        "nx": 58,
+        "ny": 125,
+        "obsrValue": "0"
+    },
+    {
+        "baseDate": "20221225",
+        "baseTime": "0600",
+        "category": "REH",
+        "nx": 58,
+        "ny": 125,
+        "obsrValue": "69"
+    },
+    {
+        "baseDate": "20221225",
+        "baseTime": "0600",
+        "category": "RN1",
+        "nx": 58,
+        "ny": 125,
+        "obsrValue": "0"
+    },
+    {
+        "baseDate": "20221225",
+        "baseTime": "0600",
+        "category": "T1H",
+        "nx": 58,
+        "ny": 125,
+        "obsrValue": "-8.2"
+    },
+    {
+        "baseDate": "20221225",
+        "baseTime": "0600",
+        "category": "UUU",
+        "nx": 58,
+        "ny": 125,
+        "obsrValue": "0.3"
+    },
+    {
+        "baseDate": "20221225",
+        "baseTime": "0600",
+        "category": "VEC",
+        "nx": 58,
+        "ny": 125,
+        "obsrValue": "192"
+    },
+    {
+        "baseDate": "20221225",
+        "baseTime": "0600",
+        "category": "VVV",
+        "nx": 58,
+        "ny": 125,
+        "obsrValue": "1.4"
+    },
+    {
+        "baseDate": "20221225",
+        "baseTime": "0600",
+        "category": "WSD",
+        "nx": 58,
+        "ny": 125,
+        "obsrValue": "1.4"
+    }
+]
