@@ -6,8 +6,8 @@ import time
 # access_key="VNH7QeBnhzad%2B45QS4DMbIvJp0s%2Fx2iY9vdKxLYJJJEHMFFHDLr8HZJHuPgfjWRTg22OklmBOuSWznNeJktguQ%3D%3D"
 access_key="bgOnt78reFNsTUJuAwlI30JDObTxX6hbJCxyApJCtuf3xjJZJ%2FmOs8Vhg3GZAsLc1fXTkQ9sjq0mTEupWDdyyA%3D%3D"
 
-def get_Request_URL(url):                 ## (1) 기상 정보(동네예보정보 조회 서비스) / (2) 통합대기환경 정보(대기오염정보 조회 서비스)
-    req = urllib.request.Request(url)     ## request 날리는 함수
+def get_Request_URL(url):                 ## (1) 기상 정보(동네예보정보 조회 서비스)
+    req = urllib.request.Request(url)
 
     try:
         response = urllib.request.urlopen(req)

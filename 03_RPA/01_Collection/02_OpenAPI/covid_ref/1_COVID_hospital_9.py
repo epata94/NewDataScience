@@ -1,4 +1,5 @@
 from xml.etree.ElementTree import parse
+import cx_Oracle
 
 column_list = ['adtFrDd','sgguNm', 'sidoNm', 'spclAdmTyCd', 'telno','yadmNm']
 column_list = {'adtFrDd':'운영가능일자','sgguNm':'시군구명', 'sidoNm':'시도명', 'spclAdmTyCd':'구분코드', 'telno': '전화번호','yadmNm':'기관명'}

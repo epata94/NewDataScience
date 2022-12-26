@@ -5,6 +5,7 @@ create table test_table(
     loc     varchar2(13)
 );
 
+
 create table test_table(
     timestamp_min  timestamp,
     speed number(4)

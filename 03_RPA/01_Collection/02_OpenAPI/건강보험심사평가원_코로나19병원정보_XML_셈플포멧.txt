@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?> <= XML 선언부
+<response>
+	<header><resultCode>00</resultCode><resultMsg>NORMAL SERVICE.</resultMsg></header>
+	<body>
+		<items>
+			<item>
+				<adtFrDd>20200220</adtFrDd><sgguNm>강동구</sgguNm><sidoNm>서울</sidoNm><spclAdmTyCd>97</spclAdmTyCd><telno>02-517-1728</telno><yadmNm>(의)한국필의료재단 한국의원</yadmNm>
+			</item>
+			<item>
+				<adtFrDd>20200220</adtFrDd><sgguNm>광명시</sgguNm><sidoNm>경기</sidoNm><spclAdmTyCd>97</spclAdmTyCd><telno>1899-1510</telno><yadmNm>의료법인 신원의료재단 신원의원</yadmNm>
+			</item>
+			 ...
+		</items>
+		<numOfRows>10</numOfRows>       => 한 페이지에 응답받는 행(레코드, item)수
+		<pageNo>1</pageNo>              => 현재 페이지 번호
+		<totalCount>102</totalCount>    => 전체 데이터 갯수
+	</body>
+</response>

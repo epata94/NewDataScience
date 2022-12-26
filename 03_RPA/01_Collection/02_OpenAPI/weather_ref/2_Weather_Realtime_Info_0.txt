@@ -1,0 +1,2 @@
+* Request 검증
+http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtNcst?base_date=20221226&base_time=1749&nx=58&ny=125&serviceKey=bgOnt78reFNsTUJuAwlI30JDObTxX6hbJCxyApJCtuf3xjJZJ%2FmOs8Vhg3GZAsLc1fXTkQ9sjq0mTEupWDdyyA%3D%3D&DataType=JSON
