@@ -86,14 +86,8 @@ def preprocess_df (df):
     ny = df.loc[0,'ny']
     date_time = df.loc[0, 'baseDate'] + ' ' + df.loc[0, 'baseTime']
     preprocess_df = pd.pivot_table(df,index='DateTime',columns=['category'], values='obsrValue')
-    preprocess_df.insert(0,'date_time',[date_time])
-    preprocess_df.insert(1,'nx',[nx])
-    preprocess_df.insert(2,'ny',[ny])
-
-    preprocess_df.rename(columns={'date_time': 'DATE_TIME', 'nx': 'NX', 'ny': 'NY', 'PTY': '강수형태', 'REH': '습도',
-                       'RN1': '시간1_강수량','T1H':'기온','UUU':'동서바람성분','VEC':'풍향','VVV':'남북바람성분','WSD':'풍속'}, inplace=True)
-    redefined_columns = ['DATE_TIME','NX','NY','시간1_강수량','강수형태','기온','습도', '풍향','풍속','동서바람성분','남북바람성분']
-    preprocess_df = preprocess_df[redefined_columns]
+    preprocess_df.insert(0,'nx',[nx])
+    preprocess_df.insert(1,'ny',[ny])
     return preprocess_df
 
     # 다하고 전처리를 수집 파트, 전처리 파트, 데이터 베이스 파트 어디에서 하는 것이 좋은지 생각해 보자.
@@ -119,6 +113,6 @@ df_preprocessed = preprocess_df (df)
 
 file_name = '초단기실황조회_%s%s.csv' % (yyyymmdd, day_time)
 
-df_preprocessed.to_csv(file_name,index=False, encoding='cp949')
+df_preprocessed.to_csv(file_name)
 
 print(f'{file_name} SAVED\n')

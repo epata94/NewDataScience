@@ -1,4 +1,7 @@
-# * 목적: 열 데이터 추가 자동화
+# * 목적: 데이터 정렬
+# Step1: DB 데이터 분석
+# Step2: 테이블 생성
+# Step3: 변경된 포멧으로 저장
 
 import urllib.request
 import datetime
@@ -67,30 +70,8 @@ def get_update_time_info():        ## (1) 기상 정보(동네예보정보 조�
         print("\n<<가장 최신정보 업데이트를 실시합니다!!>>\n".center(30))
     return day_time
 
-def preprocess_df (df):
-    # raw format
-    # baseDate, baseTime, category, nx, ny, obsrValue
-    # 20221227, 0500, PTY, 58, 125, 0
-    # ........
-
-    # Target format
-    # date_time     nx ny   pty reh rn1 t1h uuu vec vvv wsd
-    # 202212270500  58 125   0  ...............
-
-    # 학생들이 병합할 수 있는 시간 5분
-
-    # df['DateTime'] = df['baseDate']+df['baseTime']
-    df.insert(0,'DateTime',df['baseDate']+df['baseTime'])
-    # df.drop(['baseDate','baseTime'], axis=1, inplace=True)
-    nx = df.loc[0,'nx']
-    ny = df.loc[0,'ny']
-    date_time = df.loc[0, 'baseDate'] + df.loc[0, 'baseTime']
-    preprocess_df = pd.pivot_table(df,index='DateTime',columns=['category'], values='obsrValue')
-    preprocess_df.insert(0,'nx',[nx])
-    preprocess_df.insert(1,'ny',[ny])
-    return preprocess_df
-
-    # 다하고 전처리를 수집 파트, 전처리 파트, 데이터 베이스 파트 어디에서 하는 것이 좋은지 생각해 보자.
+def preprocess_df_to_oracle (df):
+    pass
 
 url = 'http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtNcst'
 # 업데이트는 30~60 사이에 이루어짐
