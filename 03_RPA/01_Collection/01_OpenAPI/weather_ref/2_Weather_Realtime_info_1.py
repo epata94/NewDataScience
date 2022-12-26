@@ -1,6 +1,7 @@
-import urllib.request
-import datetime
-import json
+# 목적: 셈플 프로그램 검증
+# 실패시 Workaround
+# 키를 Encoding, Decoding을 교체하며 시도한다.
+# dataType 인자명을 _type으로 변경해본다.
 import time
 import requests
 # Encoding
@@ -11,6 +12,7 @@ access_key = "bgOnt78reFNsTUJuAwlI30JDObTxX6hbJCxyApJCtuf3xjJZJ/mOs8Vhg3GZAsLc1f
 def get_request_url():
     url = 'http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtNcst'
     params = {'base_date': base_date , 'base_time' : day_time, 'nx' : x_coodinate,'ny': y_coodinate, 'dataType': 'JSON' }
+    # params = {'base_date': base_date , 'base_time' : day_time, 'nx' : x_coodinate,'ny': y_coodinate, '_type': 'JSON' }
     response = requests.get(url, params=params)
 
     if response.status_code == 200:
