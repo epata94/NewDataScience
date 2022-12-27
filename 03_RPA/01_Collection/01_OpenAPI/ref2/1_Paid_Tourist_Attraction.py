@@ -3,8 +3,12 @@ import datetime
 import json
 import math
 #서비스명: 관광자원통계서비스
+# org key
 access_key="VNH7QeBnhzad%2B45QS4DMbIvJp0s%2Fx2iY9vdKxLYJJJEHMFFHDLr8HZJHuPgfjWRTg22OklmBOuSWznNeJktguQ%3D%3D"
-
+# new encoding key
+# access_key="bgOnt78reFNsTUJuAwlI30JDObTxX6hbJCxyApJCtuf3xjJZJ%2FmOs8Vhg3GZAsLc1fXTkQ9sjq0mTEupWDdyyA%3D%3D"
+# new decoding key
+# access_key="bgOnt78reFNsTUJuAwlI30JDObTxX6hbJCxyApJCtuf3xjJZJ/mOs8Vhg3GZAsLc1fXTkQ9sjq0mTEupWDdyyA=="
 def get_request_url(url):
     req = urllib.request.Request(url)
 
@@ -61,10 +65,10 @@ def main():
     nTotal = 0
     nItems = 100
 
-    nStartYear = 2019
+    nStartYear = 2021
     nEndYear = 2022
 
-    for year in range(nStartYear, nEndYear):
+    for year in range(nStartYear, nEndYear-1):
         for month in range(1,13):
             yyyymm ="{0}{1:0>2}".format(str(year),str(month))
             nPagenum = 1

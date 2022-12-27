@@ -28,11 +28,11 @@ while True:
     else:                menu_num = int(selection)
 
     if(menu_num == 1):
-        t = threading.Thread(target=scheduler_a)
+        t = threading.Thread(target=scheduler_a, daemon=True)
         t.start()
 
     elif(menu_num == 2):
-        t = threading.Thread(target=scheduler_b)
+        t = threading.Thread(target=scheduler_b, daemon=True)
         t.start()
     elif(menu_num == 3):
         pass
