@@ -6,14 +6,15 @@ def long_task():
         time.sleep(1)
         print("working:%s\n" % i)
 
-print("Start")
+print("메인 프로그램 Start")
 
 threads = []
 for i in range(5):
+    # target인자에 쓰레드로 동작할 함수 이름을 지정한다.
     t = threading.Thread(target=long_task)  # 스레드를 생성한다.
     threads.append(t)
 
 for t in threads:
     t.start()  # 스레드를 실행한다.
 
-print("End")
+print("메인 프로그램 End")

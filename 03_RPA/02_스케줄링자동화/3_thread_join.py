@@ -6,7 +6,7 @@ def long_task():
         time.sleep(1)
         print("working:%s\n" % i)
 
-print("Start")
+print("메인 프로그램 Start")
 
 threads = []
 for i in range(5):
@@ -17,6 +17,6 @@ for t in threads:
     t.start()
 
 for t in threads:
-    t.join()  # join으로 스레드가 종료될때까지 기다린다.
+    t.join()  # join으로 스레드가 종료될때까지 메인 프로그램이 기다린다.
 
-print("End")
+print("메인 프로그램 End")

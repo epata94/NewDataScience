@@ -2038,5 +2038,215 @@
         "rnum": 17,
         "sido": "서울특별시",
         "yyyymm": "202112"
+    },
+    {
+        "ForNum": 1415,
+        "NatNum": 197218,
+        "addrCd": 1117,
+        "gungu": "용산구",
+        "resNm": "국립중앙박물관",
+        "rnum": 1,
+        "sido": "서울특별시",
+        "yyyymm": "202201"
+    },
+    {
+        "ForNum": 0,
+        "NatNum": 0,
+        "addrCd": 1123,
+        "gungu": "동대문구",
+        "resNm": "세종대왕기념관",
+        "rnum": 2,
+        "sido": "서울특별시",
+        "yyyymm": "202201"
+    },
+    {
+        "ForNum": 29,
+        "NatNum": 2560,
+        "addrCd": 1123,
+        "gungu": "동대문구",
+        "resNm": "서울약령시 한의약박물관",
+        "rnum": 3,
+        "sido": "서울특별시",
+        "yyyymm": "202201"
+    },
+    {
+        "ForNum": 139,
+        "NatNum": 19257,
+        "addrCd": 1168,
+        "gungu": "강남구",
+        "resNm": "선릉·정릉",
+        "rnum": 4,
+        "sido": "서울특별시",
+        "yyyymm": "202201"
+    },
+    {
+        "ForNum": 0,
+        "NatNum": 0,
+        "addrCd": 1171,
+        "gungu": "송파구",
+        "resNm": "롯데월드",
+        "rnum": 5,
+        "sido": "서울특별시",
+        "yyyymm": "202201"
+    },
+    {
+        "ForNum": 0,
+        "NatNum": 0,
+        "addrCd": 1171,
+        "gungu": "송파구",
+        "resNm": "서울스카이",
+        "rnum": 6,
+        "sido": "서울특별시",
+        "yyyymm": "202201"
+    },
+    {
+        "ForNum": 0,
+        "NatNum": 0,
+        "addrCd": 1171,
+        "gungu": "송파구",
+        "resNm": "아쿠아리움",
+        "rnum": 7,
+        "sido": "서울특별시",
+        "yyyymm": "202201"
+    },
+    {
+        "ForNum": 1538,
+        "NatNum": 169553,
+        "addrCd": 1117,
+        "gungu": "용산구",
+        "resNm": "국립중앙박물관",
+        "rnum": 1,
+        "sido": "서울특별시",
+        "yyyymm": "202202"
+    },
+    {
+        "ForNum": 0,
+        "NatNum": 0,
+        "addrCd": 1123,
+        "gungu": "동대문구",
+        "resNm": "세종대왕기념관",
+        "rnum": 2,
+        "sido": "서울특별시",
+        "yyyymm": "202202"
+    },
+    {
+        "ForNum": 18,
+        "NatNum": 1906,
+        "addrCd": 1123,
+        "gungu": "동대문구",
+        "resNm": "서울약령시 한의약박물관",
+        "rnum": 3,
+        "sido": "서울특별시",
+        "yyyymm": "202202"
+    },
+    {
+        "ForNum": 191,
+        "NatNum": 19310,
+        "addrCd": 1168,
+        "gungu": "강남구",
+        "resNm": "선릉·정릉",
+        "rnum": 4,
+        "sido": "서울특별시",
+        "yyyymm": "202202"
+    },
+    {
+        "ForNum": 0,
+        "NatNum": 0,
+        "addrCd": 1171,
+        "gungu": "송파구",
+        "resNm": "롯데월드",
+        "rnum": 5,
+        "sido": "서울특별시",
+        "yyyymm": "202202"
+    },
+    {
+        "ForNum": 0,
+        "NatNum": 0,
+        "addrCd": 1171,
+        "gungu": "송파구",
+        "resNm": "서울스카이",
+        "rnum": 6,
+        "sido": "서울특별시",
+        "yyyymm": "202202"
+    },
+    {
+        "ForNum": 0,
+        "NatNum": 0,
+        "addrCd": 1171,
+        "gungu": "송파구",
+        "resNm": "아쿠아리움",
+        "rnum": 7,
+        "sido": "서울특별시",
+        "yyyymm": "202202"
+    },
+    {
+        "ForNum": 2177,
+        "NatNum": 127099,
+        "addrCd": 1117,
+        "gungu": "용산구",
+        "resNm": "국립중앙박물관",
+        "rnum": 1,
+        "sido": "서울특별시",
+        "yyyymm": "202203"
+    },
+    {
+        "ForNum": 0,
+        "NatNum": 0,
+        "addrCd": 1123,
+        "gungu": "동대문구",
+        "resNm": "세종대왕기념관",
+        "rnum": 2,
+        "sido": "서울특별시",
+        "yyyymm": "202203"
+    },
+    {
+        "ForNum": 8,
+        "NatNum": 5737,
+        "addrCd": 1123,
+        "gungu": "동대문구",
+        "resNm": "서울약령시 한의약박물관",
+        "rnum": 3,
+        "sido": "서울특별시",
+        "yyyymm": "202203"
+    },
+    {
+        "ForNum": 302,
+        "NatNum": 32752,
+        "addrCd": 1168,
+        "gungu": "강남구",
+        "resNm": "선릉·정릉",
+        "rnum": 4,
+        "sido": "서울특별시",
+        "yyyymm": "202203"
+    },
+    {
+        "ForNum": 0,
+        "NatNum": 0,
+        "addrCd": 1171,
+        "gungu": "송파구",
+        "resNm": "롯데월드",
+        "rnum": 5,
+        "sido": "서울특별시",
+        "yyyymm": "202203"
+    },
+    {
+        "ForNum": 0,
+        "NatNum": 0,
+        "addrCd": 1171,
+        "gungu": "송파구",
+        "resNm": "서울스카이",
+        "rnum": 6,
+        "sido": "서울특별시",
+        "yyyymm": "202203"
+    },
+    {
+        "ForNum": 0,
+        "NatNum": 0,
+        "addrCd": 1171,
+        "gungu": "송파구",
+        "resNm": "아쿠아리움",
+        "rnum": 7,
+        "sido": "서울특별시",
+        "yyyymm": "202203"
     }
 ]

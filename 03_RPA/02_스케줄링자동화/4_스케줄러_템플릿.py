@@ -5,14 +5,16 @@ print('< 데이터 수집기 시뮬레이션 프로그램 ver1.0>')
 
 def scheduler_a():
     print('\n')
-    for i in range(10):
-        time.sleep(1)
-        print("\t\t\t\t\tAAA 데이터 초기 데이터 구축:%s" % i)
+    # while True:
+    for i in range(1000000):
+        time.sleep(1) # 수집주기 1초 /
+        print("\t\t\t\t\tAAA 데이터 데이터 수집:%s" % i)
 def scheduler_b():
     print()
-    for i in range(10):
+    for i in range(1000000):
+    # while True:
         time.sleep(1)
-        print("\t\t\t\t\t\t\t\t\t\t\t\tBBB 데이터 초기 데이터 구축:%s" % i)
+        print("\t\t\t\t\t\t\t\t\t\t\t\tBBB 데이터 데이터 수집:%s" % i)
 
 def print_main_menu():
     print('\n1. AAA 실시간 데이터 구축')

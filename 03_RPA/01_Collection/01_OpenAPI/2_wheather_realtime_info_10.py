@@ -1,5 +1,4 @@
-import threading
-import time
+# 목적: 열 이름 재정의, 열순서 재정의
 import requests
 import json
 from datetime import datetime, timedelta
@@ -8,10 +7,7 @@ import pandas as pd
 import cx_Oracle
 
 access_key ='bgOnt78reFNsTUJuAwlI30JDObTxX6hbJCxyApJCtuf3xjJZJ/mOs8Vhg3GZAsLc1fXTkQ9sjq0mTEupWDdyyA=='
-
-print('< 기상정보 데이터 수집기 ver1.0>')
-
-def get_request_url(url,yyyymmdd,hhmm,x_coodinate,y_coodinate):
+def get_request_url(url):
     params = {'serviceKey': access_key , 'numOfRows' : 10, 'pageNo' : 1,
         'dataType': 'JSON','base_date':yyyymmdd,'base_time':hhmm,
         'nx':x_coodinate, 'ny':y_coodinate
@@ -71,6 +67,10 @@ def preprocess_df(df):
 def preprocessed_df_to_oracle(df):
     con = cx_Oracle.connect('open_source/1111@localhost:1521/xe')
     cur = con.cursor()
+    # sql_insert = '''
+    #         insert into weather(DATE_TIME, NX, NY, 시간1_강수량, 강수형태, 기온, 습도, 풍향,풍속,동서바람성분,남북바람성분)
+    #         values(:DATE_TIME, :NX, :NY, :시간1_강수량, :강수형태, :기온, :습도, :풍향,:풍속,:동서바람성분,:남북바람성분)
+    #         '''
     sql_insert = '''
             insert into weather(DATE_TIME, NX, NY, 시간1_강수량, 강수형태, 기온, 습도, 풍향,풍속,동서바람성분,남북바람성분) 
             values(:DATE_TIME, :NX, :NY, :시간1_강수량, :강수형태, :기온, :습도, :풍향,:풍속,:동서바람성분,:남북바람성분)
@@ -78,7 +78,7 @@ def preprocessed_df_to_oracle(df):
     DATE_TIME = df.iloc[0]['DATE_TIME']
     NX = int(df.iloc[0]['NX'])  # int 값에 대해서는 int 형으로 변환해줘야 한다.
     NY = int(df.iloc[0]['NY'])
-    시간1_강수량 = df.iloc[0]['시간1_강수량']
+    시간1_강수량 = df.iloc[0]['시간1_강수량'] # 현재 데이터 프레임의 행인덱스가 date_time이므로 loc가 안된다.
     강수형태 = df.iloc[0]['강수형태']
     기온 = df.iloc[0]['기온']
     습도 = df.iloc[0]['습도']
@@ -97,53 +97,25 @@ def preprocessed_df_to_oracle(df):
     con.close()
 
 
-def weather_info_collector():
-    url = 'http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtNcst'
-    # 업데이트는 40~60 사이에 이루어짐
-    request_time = get_update_time_info()
-    yyyymmdd = request_time.strftime("%Y%m%d")
-    hhmm = request_time.strftime("%H%M")
+url = 'http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtNcst'
+# 업데이트는 40~60 사이에 이루어짐
+request_time = get_update_time_info()
+yyyymmdd = request_time.strftime("%Y%m%d")
+hhmm = request_time.strftime("%H%M")
 
-    # 구로동 좌표
-    x_coodinate = "58"
-    y_coodinate = "125"
+# 구로동 좌표
+x_coodinate = "58"
+y_coodinate = "125"
 
-    raw_str_json = get_request_url(url,yyyymmdd,hhmm,x_coodinate,y_coodinate)
+raw_str_json = get_request_url(url)
 
-    if raw_str_json:
-        raw_json = json.loads(raw_str_json)
+if raw_str_json:
+    raw_json = json.loads(raw_str_json)
 
-    column_list, all_data = json_to_df_info(raw_json)
+column_list, all_data = json_to_df_info(raw_json)
 
-    df = pd.DataFrame(all_data, columns=column_list)
+df = pd.DataFrame(all_data, columns=column_list)
 
-    df_preprocessed = preprocess_df(df)
+df_preprocessed = preprocess_df (df)
 
-    preprocessed_df_to_oracle(df_preprocessed)
-
-def weather_info_scheduler():
-    print('기상정보 수집기 스케줄러 동작.\n')
-    while True:
-        weather_info_collector()
-        print("수집완료.")
-        time.sleep(3600) # 1시간 주기로 데이터 수집
-
-def print_main_menu():
-    print('\n1. 기상데이터 실시간 데이터 구축')
-    print('2. 스케줄러 종료')
-    print('* 엔터: 메뉴 업데이트\n')
-
-while True:
-    print_main_menu()
-    print('아래행에 메뉴입력: ')
-    selection = input()
-    if selection == '':  continue
-    else:                menu_num = int(selection)
-
-    if(menu_num == 1):
-        t = threading.Thread(target=weather_info_scheduler, daemon=True)
-        t.start()
-    elif(menu_num == 2):
-        break
-    elif (menu_num == 0):
-        continue
+preprocessed_df_to_oracle(df_preprocessed)
