@@ -122,41 +122,6 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\02_ETL\04_Collection\02_OpenAPI\02_Data\2011_2017_서울특별시_관광지별_방문객.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\02_ETL\04_Collection\02_OpenAPI\02_Data\2017_서울특별시_관광지별_방문객.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\02_ETL\04_Collection\02_OpenAPI\02_Data\standadization.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\02_ETL\04_Collection\03_Web_crawling\01_Beautiful_Soup\movie_rank_test.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\02_ETL\04_Collection\Ref\Python_Web_Scraping\data\captcha_samples\samples.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
         <entry key="\Ref\data-cleansing-main\Chapter01\views\tempext.csv">
           <value>
             <Attribute>
