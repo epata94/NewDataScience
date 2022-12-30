@@ -29,4 +29,5 @@ for num in range(0,len(t)):
         u[num]='-'
         note_pad.write(" %s\t|\t%s\t|\t%s%s\n"%(num+1,t[num],u[num],r[num]))
 
+note_pad.close()
 print("end")

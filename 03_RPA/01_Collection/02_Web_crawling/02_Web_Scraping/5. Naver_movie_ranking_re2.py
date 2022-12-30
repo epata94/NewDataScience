@@ -16,7 +16,7 @@ r=range_ac.findall(str(tags))
 up_down=re.compile('img alt[=]["]([a-z]{2,4})["]')
 u=up_down.findall(str(tags))
 
-note_pad = open('Naver_Ranking_ver.csv', 'w', encoding='utf8')
+note_pad = open('Naver_Ranking_re_v1.csv', 'w', encoding='cp949')
 note_pad.write("순위,영화명,t변동폭\n")
 for num in range(0,len(t)):
     if u[num]=='na':
