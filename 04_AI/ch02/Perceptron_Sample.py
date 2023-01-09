@@ -9,7 +9,7 @@ class Perceptron(object):
 
     def fit(self, X, y):
         rgen = np.random.RandomState(self.random_state)
-        # scale: 표준 편차 0.01, size: 특성 개수 보다 1개 크게 만든다. (절편 고려)
+        # scale: 표준 편차 0.01, size: 특성 개수(2) 보다 1개 크게 만든다. (절편 고려)
         self.w_ = rgen.normal(loc=0.0, scale=0.01, size=1 + X.shape[1])
         self.errors_ = []
 
@@ -51,4 +51,5 @@ X = df.iloc[0:100, [0, 2]].values
 pass
 
 p = Perceptron()
-p.net_input(X)
+p.fit(X,y)
+pass
