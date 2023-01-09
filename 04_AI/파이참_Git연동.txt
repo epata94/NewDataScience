@@ -1,0 +1,9 @@
+참고 문서
+https://thinkingncoding.tistory.com/103
+
+1. 최초 프로젝트 생성 (파이참)
+2. 파이참 상단 메뉴(VCS >> Share Project on GitHub) 클릭
+깃 클라이언트 설치 안되어 있으면 먼저 설치
+깃 - 파이참 계정 연동이 안되어 있으면 연동
+3. 다른 컴퓨터에서 Pull
+https://githum.com/[계정명]/[레파지토리명]
