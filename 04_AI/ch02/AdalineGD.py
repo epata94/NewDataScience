@@ -54,6 +54,8 @@ class AdalineGD(object):
             # 바꾸어 로지스틱 회귀 분류기를 구현합니다.
             output = self.activation(net_input)
             errors = (y - output)
+            # 모든 X의 값에 대한 error 값을 학습률를 곱하기 위하여 점곱과 넘파이의 브로드캐스팅 사용
+            # X.T.shape = (2,100) errors.shape =(100,) => (100,1)
             self.w_[1:] += self.eta * X.T.dot(errors)
             self.w_[0] += self.eta * errors.sum()
             cost = (errors**2).sum() / 2.0
@@ -62,6 +64,7 @@ class AdalineGD(object):
 
     def net_input(self, X):
         """최종 입력 계산"""
+        # 점곱을 활용하여 전체 X 값에 가중치와 편향을 더한 값을 구한다.
         return np.dot(X, self.w_[1:]) + self.w_[0]
 
     def activation(self, X):
