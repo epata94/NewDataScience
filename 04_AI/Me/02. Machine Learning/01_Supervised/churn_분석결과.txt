@@ -1,0 +1,4 @@
+Logistic
+ 독립변수 최적화 분석 결과
+총 조합 갯수: 258096
+MAX 조합: area_code intl_plan vmail_message night_calls intl_calls >> 86.92 %

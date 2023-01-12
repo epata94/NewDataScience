@@ -1,0 +1,79 @@
+# 데이터 출처 : https://www.kaggle.com/uciml/breast-cancer-wisconsin-data/download
+# 데이터 필드의 의미
+# 2열: 종속변수 => 폐암 악성종양 검증
+# 3열~32열: 폐의 특성 (폐의 둘레, 질감, 반경, 압축성 ..)
+
+# 학습 목표: 데이터 셋에 최적화된 머신러닝 모델 선택
+# 머신러닝 모델: SVM.SVC
+# 머신러닝 모델 선정 사유: 예측값을 범주형에도 적용가능하며 이에 다른 머신러닝 대비 최고의 정답률을 보임
+# 교차 검증 K 값: 고려 않함
+# 훈련데이터, 검증데이터 선정:  N/A
+# 성능평가: 1순위 => 정답률, 2순위 => 프로그램 수행 속도
+# 목표 정답률: 선형회귀 통계 모델의 최고정답률(50.88%) 이상
+# 측정 정답률
+# 독립변수 최적화 분석 결과
+# 총 조합 갯수: 4090, 26개~30개의 독립변수 조합
+# MAX 조합: radius_mean texture_mean smoothness_mean compactness_mean
+# concavity_mean concave_points_mean symmetry_mean compactness_se
+# concavity_se fractal_dimension_mean radius_se texture_se perimeter_se
+# area_se smoothness_se concave_points_se symmetry_se fractal_dimension_se
+# radius_worst texture_worst perimeter_worst smoothness_worst
+# compactness_worst concave_points_worst symmetry_worst
+# fractal_dimension_worst >> 95.80 %
+# 프로그램 소요 시간:  0:01:39.746401
+
+import pandas as pd
+from sklearn import svm,metrics
+from sklearn.model_selection import train_test_split
+import operator
+from itertools import combinations
+from datetime import datetime
+
+match_dic={}
+start_combi = 26
+
+
+print("최적의 독립변수 선정하기 (교차검증 적용) ")
+breast_cancer = pd.read_csv('data.csv',sep=',',header=0)
+breast_cancer.columns = breast_cancer.columns.str.replace(' ','_')
+
+
+# 전체 독립변수 식별
+colums_list = ['radius_mean', 'texture_mean', 'area_mean', 'smoothness_mean', 'compactness_mean',
+               'concavity_mean', 'concave_points_mean', 'symmetry_mean', 'compactness_se', 'concavity_se',
+               'fractal_dimension_mean', 'radius_se', 'texture_se', 'perimeter_se', 'area_se', 'smoothness_se',
+               'concave_points_se', 'symmetry_se', 'fractal_dimension_se', 'radius_worst', 'texture_worst', 'perimeter_worst',
+               'area_worst', 'smoothness_worst', 'compactness_worst', 'concavity_worst', 'concave_points_worst', 'symmetry_worst',
+               'fractal_dimension_worst']
+end_combi = len(colums_list)+1
+label = breast_cancer['diagnosis']
+
+start_time = datetime.now()
+
+# 최적의 독립변수 식별
+for num in range(start_combi, end_combi):
+    combi_list = list(combinations(colums_list,num))
+    for tup in combi_list:
+        # 종속 변수 식별
+        data_header_list = list(tup)
+        clf = svm.SVC(gamma='auto')
+        train_data, test_data, train_label, test_label = \
+        train_test_split(breast_cancer[data_header_list],label)
+        clf.fit(train_data, train_label)
+        pre = clf.predict(test_data)
+        ac_score = metrics.accuracy_score(test_label, pre)
+        data_header_name = ' '.join(data_header_list)
+        accuracy_round = round(ac_score*100, 2)
+        match_dic[data_header_name] = accuracy_round
+        print(f'\n데이터 행 조합: {data_header_name}')
+        print(f'>> 정답률: {accuracy_round}%')
+
+end_time = datetime.now()
+
+# 정답률 최대값 찾기
+match_dic = sorted(match_dic.items(), key=operator.itemgetter(1),reverse=True)
+
+print("\n\n 독립변수 최적화 분석 결과")
+print(f'총 조합 갯수: {len(match_dic)}, {start_combi}개~{end_combi}개의 독립변수 조합')
+print("MAX 조합: %s >> %.2f %%"%(match_dic[0][0],match_dic[0][1]))
+print("프로그램 소요 시간: ", end_time-start_time)
