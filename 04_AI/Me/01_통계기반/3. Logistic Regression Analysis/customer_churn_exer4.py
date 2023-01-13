@@ -21,11 +21,11 @@ dependent_variable = churn['churn']
 
 
 match_dic={}
-colums_list=['account_length', 'area_code', 'intl_plan', 'vmail_plan', 'vmail_message', 'day_mins', 'day_calls', 'day_charge', 'eve_mins', 'eve_calls', 'eve_charge', 'night_mins', 'night_calls', 'night_charge', 'intl_mins', 'intl_calls', 'intl_charge', 'custserv_calls']
+colums_list=['account_length', 'area_code', 'intl_plan', 'vmail_plan', 'vmail_message', 'day_mins', 'day_calls', 'day_charge', 'eve_mins', 'eve_calls', 'eve_charge', 'night_mins', 'night_calls', 'night_charge', 'intl_mins', 'intl_calls', 'intl_charge', 'custserv_calls','total_charges']
 len_colums = len(colums_list)
 
 dependent_variable = churn['churn']
-for num in range(5,len_colums+1):
+for num in range(8,len_colums+1):
 	combi_list = list(combinations(colums_list, num))
 	if num == 2:
 		print("debug")
@@ -37,7 +37,7 @@ for num in range(5,len_colums+1):
 		independent_variables_with_constant = sm.add_constant(independent_variables, prepend=True)
 		logit_model = sm.Logit(dependent_variable, independent_variables_with_constant).fit()
 		match_count = 0
-		new_observatios = churn.ix[:, independent_variables.columns]
+		new_observatios = churn.loc[:, independent_variables.columns]
 		new_observatios_with_constant = sm.add_constant(new_observatios, prepend=True)
 		y_predicted = logit_model.predict(new_observatios_with_constant)
 		y_predicted_rounded = [round(score, 0) for score in y_predicted]
