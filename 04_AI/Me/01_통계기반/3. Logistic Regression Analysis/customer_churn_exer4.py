@@ -25,7 +25,7 @@ colums_list=['account_length', 'area_code', 'intl_plan', 'vmail_plan', 'vmail_me
 len_colums = len(colums_list)
 
 dependent_variable = churn['churn']
-for num in range(8,len_colums+1):
+for num in range(9,len_colums+1):
 	combi_list = list(combinations(colums_list, num))
 	if num == 2:
 		print("debug")
@@ -56,3 +56,8 @@ match_dic = sorted(match_dic.items(), key=operator.itemgetter(1),reverse=True)
 print("\n\n 독립변수 최적화 분석 결과")
 print('총 조합 갯수: %d'%len(match_dic))
 print("MAX 조합: %s >> %.2f %%"%(match_dic[0][0],match_dic[0][1]))
+
+
+#  독립변수 최적화 분석 결과
+# 총 조합 갯수: 354522
+# MAX 조합: account_length intl_plan vmail_message day_calls eve_calls night_calls intl_mins intl_calls intl_charge >> 86.74 %

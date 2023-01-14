@@ -87,7 +87,7 @@ getting-started/)를 참고하세요.
 
 어떤 독자들은 `.ipynb` 코드 파일에 무엇인지 모를 수 있습니다. 이 파일은 IPython 노트북입니다. 이 책의 코드는 평범한 파이썬 `.py` 스크립트 대신에 IPython 노트북에 담겨 있습니다. IPython 노트북이 데이터 분석 프로젝트에 안성맞춤이기 때문입니다! IPython 노트북을 사용하면 한 곳에서 모든 것을 처리할 수 있습니다. 코드, 코드를 실행한 결과, 그래프, 막다운(markdown)과 LaTeX 문법을을 지원하는 문서까지 가능합니다!
 
-![](./images/ipynb_ex1.png)
+![](images/ipynb_ex1.png)
 
 **노트:**  "IPython 노트북"은 최근에 "[주피터(Jupyter) 노트북](http://jupyter.org)"으로 바뀌었습니다. 주피터는 파이썬 외에도 줄리아(Julia), R 등의 다른 언어를 지원하는 프로젝트입니다. 파이썬 사용자에게는 달라지는 것이 없습니다. 이름만 바뀌었을 뿐입니다("IPython 노트북" 대신 "주피터 노트북"이라고 부릅니다).
 
@@ -110,7 +110,7 @@ getting-started/)를 참고하세요.
 
 주피터가 기본 브라우저를 실행합니다(일반적으로 [http://localhost:8888/](http://localhost:8888/)에서 실행됩니다). 이제 주피터 메뉴에서 원하는 노트북을 선택해 열 수 있습니다.
 
-![](./images/ipynb_ex2.png)
+![](images/ipynb_ex2.png)
 
 주피터 노트북에 대한 더 자세한 내용은 [주피터 초보자 가이드](http://jupyter-notebook-beginner-guide.readthedocs.org/en/latest/what_is_jupyter.html)와 [주피터 노트북 기본사항](https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Notebook%20Basics.html)을 참고하세요.
 
