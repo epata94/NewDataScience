@@ -217,6 +217,7 @@ for k in range(2,9):
     # s값은 -1 ~ 1 사이의 값을 가지며 1이면 그 샘플은 자신의 속한 클러스터와 매우 유사
     # -1 이면 매우 다르다.
     # km.labels_ : 현재 클러스터의 ID
+    # silhouette_score 점수가 높을 수록 좋다.
     print("score for %d clusters:%.3f" % (k, silhouette_score(test_data,km.labels_)))
 
 print("\n Step3] 상품 키워드 구하기")
