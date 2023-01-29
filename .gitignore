@@ -1,8 +1,16 @@
 /venv/
 .idea/*
+.idea/
 /04_AI/Ref/머신러닝교과서/
 /04_AI/Ref/혼공머신/
 /04_AI/Ref/
 /04_AI/머신러닝교과서/
 /04_AI/혼공머신/
 /04_AI/02_머신러닝/bigdata_example/
+/Ref/
+/Ref/data-cleansing-main/
+/Ref/손잡_Pandas/
+/Ref/Hands-On-Neural-Networks-with-Keras-master
+/Ref/이것이데이터분석이다
+/Ref/*
+/.idea/*.xml
