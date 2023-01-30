@@ -14,4 +14,10 @@
 /Ref/이것이데이터분석이다
 /Ref/*
 /.idea/*.xml
-/04_AI/04_응용/02_추천시스템/01_협업필터링/movie_data/
+.idea/*.xml
+/.idea/misc.xml
+/.idea/csv-plugin.xml
+/.idea/NewDataScience.iml
+.idea/misc.xml
+.idea/csv-plugin.xml
+.idea/NewDataScience.iml
