@@ -1,4 +1,5 @@
 from flask import Flask
+# pip install flask-restful
 from flask_restful import Resource, Api
 
 app = Flask(__name__)
@@ -21,4 +22,5 @@ class Multi(Resource):
 
 api.add_resource(Multi,'/multi/<int:num>')
 if __name__ == '__main__':
-    app.run(host='localhost')
+    # app.run(host='localhost')
+    app.run(host='192.168.0.47')
